@@ -16,6 +16,7 @@
 		2F00CE71258E25030066D8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */; };
 		2F00CE7C258E25030066D8B1 /* OpenConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE7B258E25030066D8B1 /* OpenConnectTests.swift */; };
 		2F00CE87258E25030066D8B1 /* OpenConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE86258E25030066D8B1 /* OpenConnectUITests.swift */; };
+		2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE97258E32890066D8B1 /* UIImage+Assets.swift */; };
 		57FEA50F3E5D975AB9B34D98 /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A06599E76883D131DAB905E /* Pods_OpenConnect.framework */; };
 		D2160E936940515E1D7D3A48 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E9EE122382AD6C1BE5603 /* Pods_OpenConnectTests.framework */; };
 		E8E496FBBCE32FC04FC72B3D /* Pods_OpenConnect_OpenConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117C624A4D4AD56584BA363 /* Pods_OpenConnect_OpenConnectUITests.framework */; };
@@ -56,6 +57,7 @@
 		2F00CE82258E25030066D8B1 /* OpenConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F00CE86258E25030066D8B1 /* OpenConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenConnectUITests.swift; sourceTree = "<group>"; };
 		2F00CE88258E25030066D8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F00CE97258E32890066D8B1 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
 		4C0E9EE122382AD6C1BE5603 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A06599E76883D131DAB905E /* Pods_OpenConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6117C624A4D4AD56584BA363 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,11 +130,11 @@
 		2F00CE60258E25020066D8B1 /* OpenConnect */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CE95258E31D30066D8B1 /* Resources */,
 				2F00CE61258E25020066D8B1 /* AppDelegate.swift */,
 				2F00CE63258E25020066D8B1 /* SceneDelegate.swift */,
 				2F00CE65258E25020066D8B1 /* ViewController.swift */,
 				2F00CE67258E25020066D8B1 /* Main.storyboard */,
-				2F00CE6D258E25030066D8B1 /* Assets.xcassets */,
 				2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */,
 				2F00CE72258E25030066D8B1 /* Info.plist */,
 				2F00CE6A258E25020066D8B1 /* OpenConnect.xcdatamodeld */,
@@ -158,6 +160,23 @@
 			path = OpenConnectUITests;
 			sourceTree = "<group>";
 		};
+		2F00CE95258E31D30066D8B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CE96258E327B0066D8B1 /* Generated */,
+				2F00CE6D258E25030066D8B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F00CE96258E327B0066D8B1 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CE97258E32890066D8B1 /* UIImage+Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +187,6 @@
 				9AFF73F52E3AF130143F37AF /* Pods-OpenConnectTests.debug.xcconfig */,
 				073E494D02A3CF9E066AEC78 /* Pods-OpenConnectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +198,7 @@
 			buildConfigurationList = 2F00CE8B258E25030066D8B1 /* Build configuration list for PBXNativeTarget "OpenConnect" */;
 			buildPhases = (
 				96FEB6DE0A7EA0D6337A1D84 /* [CP] Check Pods Manifest.lock */,
+				2F00CE94258E31470066D8B1 /* Pod: SwiftGen Run Script */,
 				2F00CE5A258E25020066D8B1 /* Sources */,
 				2F00CE5B258E25020066D8B1 /* Frameworks */,
 				2F00CE5C258E25020066D8B1 /* Resources */,
@@ -301,6 +320,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F00CE94258E31470066D8B1 /* Pod: SwiftGen Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Pod: SwiftGen Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		5B6D4F043F1CB7B430EFDF30 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
+				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
