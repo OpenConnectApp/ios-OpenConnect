@@ -16,6 +16,9 @@
 		2F00CE71258E25030066D8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */; };
 		2F00CE7C258E25030066D8B1 /* OpenConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE7B258E25030066D8B1 /* OpenConnectTests.swift */; };
 		2F00CE87258E25030066D8B1 /* OpenConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE86258E25030066D8B1 /* OpenConnectUITests.swift */; };
+		57FEA50F3E5D975AB9B34D98 /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A06599E76883D131DAB905E /* Pods_OpenConnect.framework */; };
+		D2160E936940515E1D7D3A48 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E9EE122382AD6C1BE5603 /* Pods_OpenConnectTests.framework */; };
+		E8E496FBBCE32FC04FC72B3D /* Pods_OpenConnect_OpenConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117C624A4D4AD56584BA363 /* Pods_OpenConnect_OpenConnectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073E494D02A3CF9E066AEC78 /* Pods-OpenConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnectTests.release.xcconfig"; path = "Target Support Files/Pods-OpenConnectTests/Pods-OpenConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		075DA665999B456024740AEC /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F00CE5E258E25020066D8B1 /* OpenConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F00CE61258E25020066D8B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F00CE63258E25020066D8B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		2F00CE82258E25030066D8B1 /* OpenConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F00CE86258E25030066D8B1 /* OpenConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenConnectUITests.swift; sourceTree = "<group>"; };
 		2F00CE88258E25030066D8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0E9EE122382AD6C1BE5603 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A06599E76883D131DAB905E /* Pods_OpenConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117C624A4D4AD56584BA363 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		726DB78B3EC2D71181FBE8EB /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AFF73F52E3AF130143F37AF /* Pods-OpenConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnectTests/Pods-OpenConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD286B3D899D5B2A63C29F2F /* Pods-OpenConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect.release.xcconfig"; path = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect.release.xcconfig"; sourceTree = "<group>"; };
+		CF59E5D1D5ACD0BF8D03217A /* Pods-OpenConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FEA50F3E5D975AB9B34D98 /* Pods_OpenConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2160E936940515E1D7D3A48 /* Pods_OpenConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E496FBBCE32FC04FC72B3D /* Pods_OpenConnect_OpenConnectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E349782852DDEF773FB3E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A06599E76883D131DAB905E /* Pods_OpenConnect.framework */,
+				6117C624A4D4AD56584BA363 /* Pods_OpenConnect_OpenConnectUITests.framework */,
+				4C0E9EE122382AD6C1BE5603 /* Pods_OpenConnectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F00CE55258E25020066D8B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				2F00CE7A258E25030066D8B1 /* OpenConnectTests */,
 				2F00CE85258E25030066D8B1 /* OpenConnectUITests */,
 				2F00CE5F258E25020066D8B1 /* Products */,
+				2F730B13896FCB55C09A3D8C /* Pods */,
+				0E349782852DDEF773FB3E97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +158,20 @@
 			path = OpenConnectUITests;
 			sourceTree = "<group>";
 		};
+		2F730B13896FCB55C09A3D8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF59E5D1D5ACD0BF8D03217A /* Pods-OpenConnect.debug.xcconfig */,
+				CD286B3D899D5B2A63C29F2F /* Pods-OpenConnect.release.xcconfig */,
+				726DB78B3EC2D71181FBE8EB /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */,
+				075DA665999B456024740AEC /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */,
+				9AFF73F52E3AF130143F37AF /* Pods-OpenConnectTests.debug.xcconfig */,
+				073E494D02A3CF9E066AEC78 /* Pods-OpenConnectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F00CE8B258E25030066D8B1 /* Build configuration list for PBXNativeTarget "OpenConnect" */;
 			buildPhases = (
+				96FEB6DE0A7EA0D6337A1D84 /* [CP] Check Pods Manifest.lock */,
 				2F00CE5A258E25020066D8B1 /* Sources */,
 				2F00CE5B258E25020066D8B1 /* Frameworks */,
 				2F00CE5C258E25020066D8B1 /* Resources */,
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F00CE8E258E25030066D8B1 /* Build configuration list for PBXNativeTarget "OpenConnectTests" */;
 			buildPhases = (
+				5B6D4F043F1CB7B430EFDF30 /* [CP] Check Pods Manifest.lock */,
 				2F00CE73258E25030066D8B1 /* Sources */,
 				2F00CE74258E25030066D8B1 /* Frameworks */,
 				2F00CE75258E25030066D8B1 /* Resources */,
@@ -173,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F00CE91258E25030066D8B1 /* Build configuration list for PBXNativeTarget "OpenConnectUITests" */;
 			buildPhases = (
+				E3FB916EC14CE1DBCF335CD1 /* [CP] Check Pods Manifest.lock */,
 				2F00CE7E258E25030066D8B1 /* Sources */,
 				2F00CE7F258E25030066D8B1 /* Frameworks */,
 				2F00CE80258E25030066D8B1 /* Resources */,
@@ -255,6 +299,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B6D4F043F1CB7B430EFDF30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenConnectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FEB6DE0A7EA0D6337A1D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FB916EC14CE1DBCF335CD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenConnect-OpenConnectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F00CE5A258E25020066D8B1 /* Sources */ = {
@@ -437,6 +550,7 @@
 		};
 		2F00CE8C258E25030066D8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF59E5D1D5ACD0BF8D03217A /* Pods-OpenConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +570,7 @@
 		};
 		2F00CE8D258E25030066D8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD286B3D899D5B2A63C29F2F /* Pods-OpenConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +590,7 @@
 		};
 		2F00CE8F258E25030066D8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AFF73F52E3AF130143F37AF /* Pods-OpenConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +613,7 @@
 		};
 		2F00CE90258E25030066D8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073E494D02A3CF9E066AEC78 /* Pods-OpenConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +636,7 @@
 		};
 		2F00CE92258E25030066D8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726DB78B3EC2D71181FBE8EB /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +657,7 @@
 		};
 		2F00CE93258E25030066D8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075DA665999B456024740AEC /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
