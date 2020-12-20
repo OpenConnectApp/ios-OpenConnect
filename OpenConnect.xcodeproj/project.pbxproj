@@ -24,6 +24,13 @@
 		2F00CEB1258F28C70066D8B1 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CEAC258F28C70066D8B1 /* Montserrat-SemiBold.ttf */; };
 		2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEB3258F29000066D8B1 /* Theme+UIFont.swift */; };
 		2F00CEB8258F29FB0066D8B1 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEB7258F29FB0066D8B1 /* UIFont+Extensions.swift */; };
+		2F00CEBB258F2C9C0066D8B1 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEBA258F2C9C0066D8B1 /* ModuleBuilder.swift */; };
+		2F00CEBF258F2D360066D8B1 /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEBE258F2D360066D8B1 /* BaseViewInput.swift */; };
+		2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEC1258F2DB40066D8B1 /* Constants.swift */; };
+		2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEC3258F2DEB0066D8B1 /* Strings.swift */; };
+		2F00CEC7258F2E440066D8B1 /* Reusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEC6258F2E440066D8B1 /* Reusable+UICollectionView.swift */; };
+		2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEC8258F2E720066D8B1 /* Reusable+UITableView.swift */; };
+		2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CECA258F2E900066D8B1 /* Reusable.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +78,13 @@
 		2F00CEAC258F28C70066D8B1 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		2F00CEB3258F29000066D8B1 /* Theme+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+UIFont.swift"; sourceTree = "<group>"; };
 		2F00CEB7258F29FB0066D8B1 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		2F00CEBA258F2C9C0066D8B1 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		2F00CEBE258F2D360066D8B1 /* BaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
+		2F00CEC1258F2DB40066D8B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F00CEC3258F2DEB0066D8B1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2F00CEC6258F2E440066D8B1 /* Reusable+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UICollectionView.swift"; sourceTree = "<group>"; };
+		2F00CEC8258F2E720066D8B1 /* Reusable+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UITableView.swift"; sourceTree = "<group>"; };
+		2F00CECA258F2E900066D8B1 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +150,6 @@
 				2F00CE61258E25020066D8B1 /* AppDelegate.swift */,
 				2F00CE63258E25020066D8B1 /* SceneDelegate.swift */,
 				2F00CE9C258F26C70066D8B1 /* Configurations */,
-				2F00CE9D258F26D50066D8B1 /* Core */,
 				2F00CEA6258F272C0066D8B1 /* DB */,
 				2F00CE9E258F26DF0066D8B1 /* Dependecy */,
 				2F00CE9F258F26EC0066D8B1 /* Networking */,
@@ -195,6 +208,7 @@
 		2F00CE9D258F26D50066D8B1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CEB9258F2C8F0066D8B1 /* ModuleBuilder */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -202,6 +216,8 @@
 		2F00CE9E258F26DF0066D8B1 /* Dependecy */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CEBC258F2D230066D8B1 /* UIComponents */,
+				2F00CE9D258F26D50066D8B1 /* Core */,
 				2F00CEB5258F29E20066D8B1 /* Utils */,
 			);
 			path = Dependecy;
@@ -276,7 +292,9 @@
 		2F00CEB5258F29E20066D8B1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CEC0258F2DA10066D8B1 /* Constants */,
 				2F00CEB6258F29EA0066D8B1 /* Extensions */,
+				2F00CEC5258F2E2E0066D8B1 /* Reusable */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -287,6 +305,49 @@
 				2F00CEB7258F29FB0066D8B1 /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F00CEB9258F2C8F0066D8B1 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEBA258F2C9C0066D8B1 /* ModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		2F00CEBC258F2D230066D8B1 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEBD258F2D2B0066D8B1 /* BaseViewInput */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2F00CEBD258F2D2B0066D8B1 /* BaseViewInput */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEBE258F2D360066D8B1 /* BaseViewInput.swift */,
+			);
+			path = BaseViewInput;
+			sourceTree = "<group>";
+		};
+		2F00CEC0258F2DA10066D8B1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEC1258F2DB40066D8B1 /* Constants.swift */,
+				2F00CEC3258F2DEB0066D8B1 /* Strings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2F00CEC5258F2E2E0066D8B1 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEC6258F2E440066D8B1 /* Reusable+UICollectionView.swift */,
+				2F00CEC8258F2E720066D8B1 /* Reusable+UITableView.swift */,
+				2F00CECA258F2E900066D8B1 /* Reusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -557,10 +618,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
+				2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */,
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
+				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
+				2F00CEBB258F2C9C0066D8B1 /* ModuleBuilder.swift in Sources */,
+				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
+				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,
+				2F00CEBF258F2D360066D8B1 /* BaseViewInput.swift in Sources */,
+				2F00CEC7258F2E440066D8B1 /* Reusable+UICollectionView.swift in Sources */,
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
 				2F00CEB8258F29FB0066D8B1 /* UIFont+Extensions.swift in Sources */,
 			);
