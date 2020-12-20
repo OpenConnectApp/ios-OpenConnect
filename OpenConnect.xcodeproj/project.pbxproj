@@ -54,6 +54,8 @@
 		2F00CEFA258F5BCB0066D8B1 /* SelectExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF4258F5BCB0066D8B1 /* SelectExchangeViewController.swift */; };
 		2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF5258F5BCB0066D8B1 /* SelectExchangeProtocols.swift */; };
 		2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */; };
+		2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEFE258F5CB10066D8B1 /* SelectExchangeTVCell.swift */; };
+		2F00CF01258F5CCE0066D8B1 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CF00258F5CCE0066D8B1 /* Exchange.swift */; };
 		2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CF02258F9B7A0066D8B1 /* Theme.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
@@ -132,6 +134,8 @@
 		2F00CEF4258F5BCB0066D8B1 /* SelectExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeViewController.swift; sourceTree = "<group>"; };
 		2F00CEF5258F5BCB0066D8B1 /* SelectExchangeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeProtocols.swift; sourceTree = "<group>"; };
 		2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeInteractor.swift; sourceTree = "<group>"; };
+		2F00CEFE258F5CB10066D8B1 /* SelectExchangeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeTVCell.swift; sourceTree = "<group>"; };
+		2F00CF00258F5CCE0066D8B1 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
 		2F00CF02258F9B7A0066D8B1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 		2F00CEA4258F27110066D8B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CF00258F5CCE0066D8B1 /* Exchange.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 		2F00CEEF258F5AF20066D8B1 /* Exchanges */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CEFD258F5CA50066D8B1 /* Cell */,
 				2F00CEF0258F5AF80066D8B1 /* Select */,
 			);
 			path = Exchanges;
@@ -444,6 +450,14 @@
 				2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */,
 			);
 			path = Select;
+			sourceTree = "<group>";
+		};
+		2F00CEFD258F5CA50066D8B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEFE258F5CB10066D8B1 /* SelectExchangeTVCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -767,9 +781,11 @@
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
 				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
 				2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */,
+				2F00CF01258F5CCE0066D8B1 /* Exchange.swift in Sources */,
 				2F00CED6258F56460066D8B1 /* UILabel+Extensions.swift in Sources */,
 				2F00CEDC258F57890066D8B1 /* UIButton+Extensions.swift in Sources */,
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
+				2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */,
 				2F00CED8258F56650066D8B1 /* UIImageView+Extensions.swift in Sources */,
 				2F00CED4258F56270066D8B1 /* UIStackView+Extensions.swift in Sources */,
 				2F00CEE0258F57CA0066D8B1 /* UIApplication+Extensions.swift in Sources */,

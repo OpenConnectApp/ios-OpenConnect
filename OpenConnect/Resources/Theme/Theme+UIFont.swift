@@ -24,7 +24,7 @@ public enum FontName: Equatable {
 public enum Montserrat: String, RawRepresentable {
     case light = "Montserrat-Light"
     case regular = "Montserrat-Regular"
-    case mediun = "Montserrat-Mediun"
+    case medium = "Montserrat-Medium"
     case semiBold = "Montserrat-Semibold"
     case bold = "Montserrat-Bold"
 }
@@ -55,6 +55,10 @@ public enum FontSize {
 public extension UIFont {
 
     static let title = UIFont(.montserrat(.bold), size: 28)
+
+    static let heading = UIFont(.montserrat(.semiBold), size: 14)
+
+    static let sectionBigTitle = UIFont(.montserrat(.medium), size: 18)
 
     static let body = UIFont(.montserrat(.regular), size: 16)
 

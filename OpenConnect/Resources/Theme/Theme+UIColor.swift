@@ -10,4 +10,9 @@ import UIKit
 
 public extension UIColor {
     static let background = UIColor(hexString: "#25294a")
+    static let backgroundDark = UIColor(hexString: "#1d203c")
+    static let silver = UIColor(hexString: "#dfe0e3")
+    static let silver40 = UIColor(hexString: "#dfe0e3").withAlphaComponent(0.4)
+    static let warmBlue = UIColor(hexString: "#454de3")
+    static let darkGreyBlue = UIColor(hexString: "#30345a")
 }

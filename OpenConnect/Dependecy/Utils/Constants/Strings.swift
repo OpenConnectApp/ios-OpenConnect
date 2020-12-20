@@ -18,6 +18,7 @@ public enum Strings {
 
     public enum NavigationTitle {
         public static let home = "Home"
+        public static let selectExchange = "Select your Exchange"
     }
 
     public enum Button {
