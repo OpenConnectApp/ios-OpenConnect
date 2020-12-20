@@ -28,97 +28,146 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00FC115FE7D12ED73E301BCF36ED76A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0B327C3D561BFD4615E1D69A2F50B60C /* Pods-OpenConnectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38108EB8BCC7A2170F7EE4DFFDA8B0 /* Pods-OpenConnectTests-dummy.m */; };
-		4053A84FCB80BACE5169A782319F188E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4F96D5F676D1403DCF457116FCFAAEB9 /* Pods-OpenConnectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B977AE3FCCF9FB27C07CBDBC3C195BD2 /* Pods-OpenConnectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3F98755A5108B503E327DF91B0CB0BC /* Pods-OpenConnect-OpenConnectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A8C1CD5B19BA9143ECBCECA875ADA0 /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B327C3D561BFD4615E1D69A2F50B60C /* Pods-OpenConnectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB107A52CDE88FC3437F7A91DA08FDE6 /* Pods-OpenConnectTests-dummy.m */; };
+		0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96946FCFDB862AF79A5404C0BE9982F7 /* TinyConstraints.swift */; };
+		426FF4ACAD9517241A9EA058266F744D /* Pods-OpenConnect-OpenConnectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD12D8F1E94B025B5ECC6F8FF2A521C /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488D8A2EEDB97D5655DCE727A4C5A64D /* Pods-OpenConnect-OpenConnectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096CCB6D4D8B84B2E91BAE7C14EA0FC /* Pods-OpenConnect-OpenConnectUITests-dummy.m */; };
+		4F96D5F676D1403DCF457116FCFAAEB9 /* Pods-OpenConnectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAD182EA628DF27083314BFBB8ADB86 /* Pods-OpenConnectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F24FD2588996A693871DA7B371EF1B /* TinyConstraints-dummy.m */; };
+		6BB199DA3672F9F0FD276D36CBBFB94A /* Pods-OpenConnect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7690F5A2B8A7C2D2A6B1C12D18EBBFC1 /* Pods-OpenConnect-dummy.m */; };
+		7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3417AEA83573FB1BCBBC7CC8F1EF3DAA /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871F29DDE5553E8B6B06A97100397A12 /* TinyConstraints+superview.swift */; };
+		891C63B653775798C7A2F73FF2A56F3E /* Pods-OpenConnect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 338303A1A3689700233B570437819B07 /* Pods-OpenConnect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6AB6C5DC1CCFF16BE209FA440DE0552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E36C931438880F579BB569B01BF240A8 /* Pods-OpenConnect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1132BED57EB2D342138744FC1CA1BA /* Pods-OpenConnect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E66B7AFB0E6DB7569F41340029657069 /* Pods-OpenConnect-OpenConnectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C886BEC197B6B55BE520D1C4486C6AC6 /* Pods-OpenConnect-OpenConnectUITests-dummy.m */; };
-		EB65844AE18C7631C6F2750F1405ABEF /* Pods-OpenConnect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A7E478F86759EA8216ACD076DDECC8 /* Pods-OpenConnect-dummy.m */; };
+		CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10058EF92643FC7E2635EB21A8729E /* Constraints.swift */; };
+		CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB91364659680CFD8C87D346A9B8587 /* TinyEdgeInsets.swift */; };
+		CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF21281E73E31C2C7CBA7348827708 /* Abstraction.swift */; };
+		DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBAB8639BAE0A2C8052DF1B81659F87 /* Stack.swift */; };
+		E64A1AF162956B2A292E94E07823A469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EAAE3CFD5FD7C605478DE7EE72FCBA2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC6DFDA8E3BA7475F1AD35133A8B25 /* Constrainable.swift */; };
+		F3AD585CD7D35AABEE4A8F55EA0E7E6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5CDFC455E427B8CBE5B64F6BE18BAB6B /* PBXContainerItemProxy */ = {
+		070FA0BCC8F3E336930D9D5F924FC23F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
-			remoteInfo = SwiftGen;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
 		};
-		A46915D8431B59E160D8B3B05DA469B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		CF0B641C407439B5B6A19C0839881071 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
-			remoteInfo = SwiftGen;
-		};
-		E7AD5B56FF8E05DF65FBC57B0E9BE1DF /* PBXContainerItemProxy */ = {
+		1535017989927186E16A9F0E1D1B0183 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		E95F7CF6A2364E4599000A11513CE263 /* PBXContainerItemProxy */ = {
+		16B94B3B1C225AD6DAE308AF0CD3697A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		1C98D4A03ED1A333876A8C73E254D301 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA49DD2324C7A211B2A1B135CE2CE024;
 			remoteInfo = "Pods-OpenConnect";
 		};
+		459CED6066E9B4232694AE6B820C57CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
+		7A3873C6CBFAA868A128825B056AE8D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+		925A0D4E7F34E3D5E9B9E43C6E307647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03C5374F06FD0570DFE3822BD4131C1F /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenConnect_OpenConnectUITests.framework; path = "Pods-OpenConnect-OpenConnectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1132BED57EB2D342138744FC1CA1BA /* Pods-OpenConnect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnect-umbrella.h"; sourceTree = "<group>"; };
-		0D764BE7595062FA96148BE44C8C2951 /* Pods-OpenConnectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		10BE79FB30C653E61FCC5EC9475A0B84 /* Pods-OpenConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D47C2B17C14C2AEBCD67CE74E345F5F /* Pods-OpenConnectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnectTests-Info.plist"; sourceTree = "<group>"; };
-		2653929C882B89B16CC5783461711955 /* Pods-OpenConnect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnect.modulemap"; sourceTree = "<group>"; };
-		2D68FD335C9C67D5CE0EAB9766988710 /* Pods-OpenConnect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnect-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3260C69C1E1274FDAB90FB84E2706502 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect-OpenConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17F7DC2E270444DE242281639DC1B482 /* Pods-OpenConnect-OpenConnectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnect-OpenConnectUITests.modulemap"; sourceTree = "<group>"; };
+		1CD86512A1143905AF36A0BB5F992A9A /* Pods-OpenConnectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		22B412F950C8BF02B51C03582C7FEC60 /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		338303A1A3689700233B570437819B07 /* Pods-OpenConnect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnect-umbrella.h"; sourceTree = "<group>"; };
+		3417AEA83573FB1BCBBC7CC8F1EF3DAA /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		34CF21281E73E31C2C7CBA7348827708 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
 		3A95B4F97187A8E95596F720255E0F34 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenConnectTests.framework; path = "Pods-OpenConnectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C00EB77C497573FF9D21FFD48AC279F /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
-		40A8C1CD5B19BA9143ECBCECA875ADA0 /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnect-OpenConnectUITests-umbrella.h"; sourceTree = "<group>"; };
-		43E214CA5826E50226E3FC6433037185 /* Pods-OpenConnect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B06DA2FCD721B10A41FA383FA4437A0 /* Pods-OpenConnect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-Info.plist"; sourceTree = "<group>"; };
-		514FD9CC7201D7192E3E1882E197D3F8 /* Pods-OpenConnectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnectTests.modulemap"; sourceTree = "<group>"; };
-		53DC65A630DAE564E25010AB501FD92D /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		62F5523010DA31EC5FE3008B36D6AB9B /* Pods-OpenConnect-OpenConnectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnect-OpenConnectUITests.modulemap"; sourceTree = "<group>"; };
-		654A6C84F21020C373FDFA753A8BEF57 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		6B4F8F3FE262E6A67B23F824C11E398C /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		42E7F6719EE58B450F7E5EAFDF67868D /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
+		4A10058EF92643FC7E2635EB21A8729E /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		59F7FEA60D7831CC63FF8594EF2CB59E /* TinyConstraints.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.release.xcconfig; sourceTree = "<group>"; };
+		59FBC655E09F5E30C908195876820C44 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		5E003384449096AA25F93F1CEB90EC98 /* Pods-OpenConnect-OpenConnectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-OpenConnectUITests-Info.plist"; sourceTree = "<group>"; };
+		6A479296834FCEB14ECE4CE4E078D369 /* Pods-OpenConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DCDF15370765FCBE481197C2D422F1C /* Pods-OpenConnect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnect.modulemap"; sourceTree = "<group>"; };
+		6FAD182EA628DF27083314BFBB8ADB86 /* Pods-OpenConnectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnectTests-umbrella.h"; sourceTree = "<group>"; };
+		7096CCB6D4D8B84B2E91BAE7C14EA0FC /* Pods-OpenConnect-OpenConnectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnect-OpenConnectUITests-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		733780A250126816CF1AC3B180E12847 /* Pods-OpenConnect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-Info.plist"; sourceTree = "<group>"; };
+		7690F5A2B8A7C2D2A6B1C12D18EBBFC1 /* Pods-OpenConnect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnect-dummy.m"; sourceTree = "<group>"; };
+		782FE8C210D1950CEA699797B3B2DB16 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect-OpenConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		78917DC46FE6A892EA2473EAD5D37031 /* Pods-OpenConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect.release.xcconfig"; sourceTree = "<group>"; };
+		7EBAB8639BAE0A2C8052DF1B81659F87 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		827240737164C8FA0122118C0458531C /* Pods-OpenConnectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnectTests-Info.plist"; sourceTree = "<group>"; };
+		8582A99CF086AD0CB3C2EA2CCE6AFFAE /* Pods-OpenConnect-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenConnect-frameworks.sh"; sourceTree = "<group>"; };
+		859065F07B6F37F24ADF65ECF9E2CB98 /* Pods-OpenConnectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenConnectTests.modulemap"; sourceTree = "<group>"; };
+		871F29DDE5553E8B6B06A97100397A12 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		87EBC0D84964EEE54DC22F7F38A37A2C /* TinyConstraints.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.debug.xcconfig; sourceTree = "<group>"; };
+		96946FCFDB862AF79A5404C0BE9982F7 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2A7E478F86759EA8216ACD076DDECC8 /* Pods-OpenConnect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnect-dummy.m"; sourceTree = "<group>"; };
-		B2FA402507B6957C46F8332A0106A826 /* Pods-OpenConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect.debug.xcconfig"; sourceTree = "<group>"; };
-		B3DA6E6F2A1F5E119072913BFDF06794 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
-		B977AE3FCCF9FB27C07CBDBC3C195BD2 /* Pods-OpenConnectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnectTests-umbrella.h"; sourceTree = "<group>"; };
-		C886BEC197B6B55BE520D1C4486C6AC6 /* Pods-OpenConnect-OpenConnectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnect-OpenConnectUITests-dummy.m"; sourceTree = "<group>"; };
-		CB3FA5C8631A934AE3FB3148ECF16A4E /* Pods-OpenConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnectTests.release.xcconfig"; sourceTree = "<group>"; };
-		D13D77FAE5C43E1952343F6A211EC9F4 /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D94D16A5309AC913E0FD8EB60171EBB8 /* Pods-OpenConnect-OpenConnectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-OpenConnectUITests-Info.plist"; sourceTree = "<group>"; };
+		AA865599FBF7EBA6170E4B203D2EA2DB /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB107A52CDE88FC3437F7A91DA08FDE6 /* Pods-OpenConnectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnectTests-dummy.m"; sourceTree = "<group>"; };
+		B4F24FD2588996A693871DA7B371EF1B /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		B5EC6DFDA8E3BA7475F1AD35133A8B25 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		B6B1F296F9F7DB94E04B69F998BA15C2 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		BB7B3E9F045845857B99D38B9D0F9A84 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
+		BDB91364659680CFD8C87D346A9B8587 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		C68FE2525D2B87FF078B05472A88C5F1 /* Pods-OpenConnectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCD12D8F1E94B025B5ECC6F8FF2A521C /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenConnect-OpenConnectUITests-umbrella.h"; sourceTree = "<group>"; };
+		D7DB7BCC9ABA8EADAD6743FAE61CCEA3 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
+		D8B4011481355B835227B01E709B2EBB /* Pods-OpenConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		D9E1CCDBD7A459572E2A71C926D2D877 /* Pods_OpenConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenConnect.framework; path = "Pods-OpenConnect.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4BE925B245C3D08D6FB752C2131EA4B /* Pods-OpenConnectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnectTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E55992F969E13F9C62F96AEF861EBD02 /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EBE01C52FF5AEEE6CA830E5DAFABE628 /* Pods-OpenConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnect.release.xcconfig"; sourceTree = "<group>"; };
-		FA38108EB8BCC7A2170F7EE4DFFDA8B0 /* Pods-OpenConnectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenConnectTests-dummy.m"; sourceTree = "<group>"; };
+		DBC9FA08D1583731B4734C245AF740DC /* Pods-OpenConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCAF952A54913E7611A10CA8D408C93F /* Pods-OpenConnect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnect-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E11A8C35B0784A522E4B501217D55BB5 /* Pods-OpenConnect-OpenConnectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenConnect-OpenConnectUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EB33DAA657988C125809F605149B362E /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F00AE38DDFE10C31D99227FE91010A61 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		F8E197B4983FADB5DD95407C267A8E4D /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		FFE449082DCA5BE49401B5368C38BCE3 /* Pods-OpenConnect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenConnect-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F66C5E9DD2C2F7135D8B861D0CDA633 /* Frameworks */ = {
+		32F7B1692C515EDFBBE83C228E102067 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FC115FE7D12ED73E301BCF36ED76A2 /* Foundation.framework in Frameworks */,
+				F3AD585CD7D35AABEE4A8F55EA0E7E6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE3CFD5FD7C605478DE7EE72FCBA2B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,22 +179,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF6A97518969609C9F5179E237C6B4DA /* Frameworks */ = {
+		8E8A00D7AFD7D69E3969396A49CAE337 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4053A84FCB80BACE5169A782319F188E /* Foundation.framework in Frameworks */,
+				E64A1AF162956B2A292E94E07823A469 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		463A951ECF142606318EFB8EB73F16FA /* Support Files */ = {
+		286AAD41AB901245872CD7C7305CA855 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				6B4F8F3FE262E6A67B23F824C11E398C /* SwiftLint.debug.xcconfig */,
-				654A6C84F21020C373FDFA753A8BEF57 /* SwiftLint.release.xcconfig */,
+				49D2668B1635B683DFF048FA20FDB6DB /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		2A1008ECA995591AC73C758ACDB6F9BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F713ACBF4659321BFE3E8BA766433FD /* SwiftGen */,
+				286AAD41AB901245872CD7C7305CA855 /* SwiftLint */,
+				EDEFE9737FC0FB9721352544E6D3AC06 /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A6E4ADD9709717B7F52E366CB28FBA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1F296F9F7DB94E04B69F998BA15C2 /* TinyConstraints.modulemap */,
+				B4F24FD2588996A693871DA7B371EF1B /* TinyConstraints-dummy.m */,
+				42E7F6719EE58B450F7E5EAFDF67868D /* TinyConstraints-Info.plist */,
+				F8E197B4983FADB5DD95407C267A8E4D /* TinyConstraints-prefix.pch */,
+				3417AEA83573FB1BCBBC7CC8F1EF3DAA /* TinyConstraints-umbrella.h */,
+				87EBC0D84964EEE54DC22F7F38A37A2C /* TinyConstraints.debug.xcconfig */,
+				59F7FEA60D7831CC63FF8594EF2CB59E /* TinyConstraints.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
+		49D2668B1635B683DFF048FA20FDB6DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00AE38DDFE10C31D99227FE91010A61 /* SwiftLint.debug.xcconfig */,
+				59FBC655E09F5E30C908195876820C44 /* SwiftLint.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftLint";
@@ -159,80 +242,83 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		57CE83037799B0E54C14ED0DAB124221 /* Pods */ = {
+		5F713ACBF4659321BFE3E8BA766433FD /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
-				DB5E32CA8DDFDB8C0200EB70B70C6363 /* SwiftGen */,
-				7EE0E8A4D47E630617D6FA1C06D52FB4 /* SwiftLint */,
+				9B3032E4AE9739953F5684EA2C05D119 /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftGen;
+			path = SwiftGen;
 			sourceTree = "<group>";
 		};
-		5FC66AB721FF746DB94BE59AC76E0E63 /* Products */ = {
+		601AA01F83CE64E930E4861C9BFF8A2F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9E1CCDBD7A459572E2A71C926D2D877 /* Pods_OpenConnect.framework */,
-				03C5374F06FD0570DFE3822BD4131C1F /* Pods_OpenConnect_OpenConnectUITests.framework */,
-				3A95B4F97187A8E95596F720255E0F34 /* Pods_OpenConnectTests.framework */,
+				65DC8C2CB6B50ED70FB01419AFBB5DCF /* Pods-OpenConnect */,
+				7D43FCE31F73C1BAFB1619502D99561E /* Pods-OpenConnect-OpenConnectUITests */,
+				87EF4C4A4CC04EF063D0D5EDFE0A1638 /* Pods-OpenConnectTests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		74FF8AFA0C54DFAD55FE79A405734B4D /* Pods-OpenConnectTests */ = {
+		65DC8C2CB6B50ED70FB01419AFBB5DCF /* Pods-OpenConnect */ = {
 			isa = PBXGroup;
 			children = (
-				514FD9CC7201D7192E3E1882E197D3F8 /* Pods-OpenConnectTests.modulemap */,
-				0D764BE7595062FA96148BE44C8C2951 /* Pods-OpenConnectTests-acknowledgements.markdown */,
-				E4BE925B245C3D08D6FB752C2131EA4B /* Pods-OpenConnectTests-acknowledgements.plist */,
-				FA38108EB8BCC7A2170F7EE4DFFDA8B0 /* Pods-OpenConnectTests-dummy.m */,
-				1D47C2B17C14C2AEBCD67CE74E345F5F /* Pods-OpenConnectTests-Info.plist */,
-				B977AE3FCCF9FB27C07CBDBC3C195BD2 /* Pods-OpenConnectTests-umbrella.h */,
-				10BE79FB30C653E61FCC5EC9475A0B84 /* Pods-OpenConnectTests.debug.xcconfig */,
-				CB3FA5C8631A934AE3FB3148ECF16A4E /* Pods-OpenConnectTests.release.xcconfig */,
+				6DCDF15370765FCBE481197C2D422F1C /* Pods-OpenConnect.modulemap */,
+				DCAF952A54913E7611A10CA8D408C93F /* Pods-OpenConnect-acknowledgements.markdown */,
+				FFE449082DCA5BE49401B5368C38BCE3 /* Pods-OpenConnect-acknowledgements.plist */,
+				7690F5A2B8A7C2D2A6B1C12D18EBBFC1 /* Pods-OpenConnect-dummy.m */,
+				8582A99CF086AD0CB3C2EA2CCE6AFFAE /* Pods-OpenConnect-frameworks.sh */,
+				733780A250126816CF1AC3B180E12847 /* Pods-OpenConnect-Info.plist */,
+				338303A1A3689700233B570437819B07 /* Pods-OpenConnect-umbrella.h */,
+				D8B4011481355B835227B01E709B2EBB /* Pods-OpenConnect.debug.xcconfig */,
+				78917DC46FE6A892EA2473EAD5D37031 /* Pods-OpenConnect.release.xcconfig */,
 			);
-			name = "Pods-OpenConnectTests";
-			path = "Target Support Files/Pods-OpenConnectTests";
+			name = "Pods-OpenConnect";
+			path = "Target Support Files/Pods-OpenConnect";
 			sourceTree = "<group>";
 		};
-		7EE0E8A4D47E630617D6FA1C06D52FB4 /* SwiftLint */ = {
+		7D43FCE31F73C1BAFB1619502D99561E /* Pods-OpenConnect-OpenConnectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				463A951ECF142606318EFB8EB73F16FA /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		8D1747E9D08518E96E07945737999261 /* Pods-OpenConnect-OpenConnectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				62F5523010DA31EC5FE3008B36D6AB9B /* Pods-OpenConnect-OpenConnectUITests.modulemap */,
-				D13D77FAE5C43E1952343F6A211EC9F4 /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown */,
-				E55992F969E13F9C62F96AEF861EBD02 /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist */,
-				C886BEC197B6B55BE520D1C4486C6AC6 /* Pods-OpenConnect-OpenConnectUITests-dummy.m */,
-				D94D16A5309AC913E0FD8EB60171EBB8 /* Pods-OpenConnect-OpenConnectUITests-Info.plist */,
-				40A8C1CD5B19BA9143ECBCECA875ADA0 /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */,
-				53DC65A630DAE564E25010AB501FD92D /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */,
-				3260C69C1E1274FDAB90FB84E2706502 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */,
+				17F7DC2E270444DE242281639DC1B482 /* Pods-OpenConnect-OpenConnectUITests.modulemap */,
+				EB33DAA657988C125809F605149B362E /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.markdown */,
+				AA865599FBF7EBA6170E4B203D2EA2DB /* Pods-OpenConnect-OpenConnectUITests-acknowledgements.plist */,
+				7096CCB6D4D8B84B2E91BAE7C14EA0FC /* Pods-OpenConnect-OpenConnectUITests-dummy.m */,
+				E11A8C35B0784A522E4B501217D55BB5 /* Pods-OpenConnect-OpenConnectUITests-frameworks.sh */,
+				5E003384449096AA25F93F1CEB90EC98 /* Pods-OpenConnect-OpenConnectUITests-Info.plist */,
+				CCD12D8F1E94B025B5ECC6F8FF2A521C /* Pods-OpenConnect-OpenConnectUITests-umbrella.h */,
+				22B412F950C8BF02B51C03582C7FEC60 /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */,
+				782FE8C210D1950CEA699797B3B2DB16 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */,
 			);
 			name = "Pods-OpenConnect-OpenConnectUITests";
 			path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests";
 			sourceTree = "<group>";
 		};
-		9E89C408E4BDE8D42E55D5E90DCFED59 /* Pods-OpenConnect */ = {
+		87EF4C4A4CC04EF063D0D5EDFE0A1638 /* Pods-OpenConnectTests */ = {
 			isa = PBXGroup;
 			children = (
-				2653929C882B89B16CC5783461711955 /* Pods-OpenConnect.modulemap */,
-				2D68FD335C9C67D5CE0EAB9766988710 /* Pods-OpenConnect-acknowledgements.markdown */,
-				43E214CA5826E50226E3FC6433037185 /* Pods-OpenConnect-acknowledgements.plist */,
-				A2A7E478F86759EA8216ACD076DDECC8 /* Pods-OpenConnect-dummy.m */,
-				4B06DA2FCD721B10A41FA383FA4437A0 /* Pods-OpenConnect-Info.plist */,
-				0A1132BED57EB2D342138744FC1CA1BA /* Pods-OpenConnect-umbrella.h */,
-				B2FA402507B6957C46F8332A0106A826 /* Pods-OpenConnect.debug.xcconfig */,
-				EBE01C52FF5AEEE6CA830E5DAFABE628 /* Pods-OpenConnect.release.xcconfig */,
+				859065F07B6F37F24ADF65ECF9E2CB98 /* Pods-OpenConnectTests.modulemap */,
+				C68FE2525D2B87FF078B05472A88C5F1 /* Pods-OpenConnectTests-acknowledgements.markdown */,
+				1CD86512A1143905AF36A0BB5F992A9A /* Pods-OpenConnectTests-acknowledgements.plist */,
+				AB107A52CDE88FC3437F7A91DA08FDE6 /* Pods-OpenConnectTests-dummy.m */,
+				827240737164C8FA0122118C0458531C /* Pods-OpenConnectTests-Info.plist */,
+				6FAD182EA628DF27083314BFBB8ADB86 /* Pods-OpenConnectTests-umbrella.h */,
+				DBC9FA08D1583731B4734C245AF740DC /* Pods-OpenConnectTests.debug.xcconfig */,
+				6A479296834FCEB14ECE4CE4E078D369 /* Pods-OpenConnectTests.release.xcconfig */,
 			);
-			name = "Pods-OpenConnect";
-			path = "Target Support Files/Pods-OpenConnect";
+			name = "Pods-OpenConnectTests";
+			path = "Target Support Files/Pods-OpenConnectTests";
+			sourceTree = "<group>";
+		};
+		9B3032E4AE9739953F5684EA2C05D119 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB7BCC9ABA8EADAD6743FAE61CCEA3 /* SwiftGen.debug.xcconfig */,
+				BB7B3E9F045845857B99D38B9D0F9A84 /* SwiftGen.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGen";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -240,9 +326,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				57CE83037799B0E54C14ED0DAB124221 /* Pods */,
-				5FC66AB721FF746DB94BE59AC76E0E63 /* Products */,
-				F7E9E9D17FFC6E1AAD58DCD835938B88 /* Targets Support Files */,
+				2A1008ECA995591AC73C758ACDB6F9BA /* Pods */,
+				DADB2428A96682DE3E803F354BDF9C5C /* Products */,
+				601AA01F83CE64E930E4861C9BFF8A2F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,46 +340,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB5E32CA8DDFDB8C0200EB70B70C6363 /* SwiftGen */ = {
+		DADB2428A96682DE3E803F354BDF9C5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA1FE80EF3FAD8A89ED8759D7F931102 /* Support Files */,
+				D9E1CCDBD7A459572E2A71C926D2D877 /* Pods_OpenConnect.framework */,
+				03C5374F06FD0570DFE3822BD4131C1F /* Pods_OpenConnect_OpenConnectUITests.framework */,
+				3A95B4F97187A8E95596F720255E0F34 /* Pods_OpenConnectTests.framework */,
+				248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */,
 			);
-			name = SwiftGen;
-			path = SwiftGen;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F7E9E9D17FFC6E1AAD58DCD835938B88 /* Targets Support Files */ = {
+		EDEFE9737FC0FB9721352544E6D3AC06 /* TinyConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				9E89C408E4BDE8D42E55D5E90DCFED59 /* Pods-OpenConnect */,
-				8D1747E9D08518E96E07945737999261 /* Pods-OpenConnect-OpenConnectUITests */,
-				74FF8AFA0C54DFAD55FE79A405734B4D /* Pods-OpenConnectTests */,
+				34CF21281E73E31C2C7CBA7348827708 /* Abstraction.swift */,
+				B5EC6DFDA8E3BA7475F1AD35133A8B25 /* Constrainable.swift */,
+				4A10058EF92643FC7E2635EB21A8729E /* Constraints.swift */,
+				7EBAB8639BAE0A2C8052DF1B81659F87 /* Stack.swift */,
+				96946FCFDB862AF79A5404C0BE9982F7 /* TinyConstraints.swift */,
+				871F29DDE5553E8B6B06A97100397A12 /* TinyConstraints+superview.swift */,
+				BDB91364659680CFD8C87D346A9B8587 /* TinyEdgeInsets.swift */,
+				2A6E4ADD9709717B7F52E366CB28FBA6 /* Support Files */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FA1FE80EF3FAD8A89ED8759D7F931102 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3DA6E6F2A1F5E119072913BFDF06794 /* SwiftGen.debug.xcconfig */,
-				3C00EB77C497573FF9D21FFD48AC279F /* SwiftGen.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftGen";
+			name = TinyConstraints;
+			path = TinyConstraints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		05E49B6E9B46E5085C9459CB92726ED4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3F98755A5108B503E327DF91B0CB0BC /* Pods-OpenConnect-OpenConnectUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C898FCB88EB8C307D63BBE0612FE858 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,31 +378,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F13F658E5906C37653264BF35232460C /* Headers */ = {
+		560F48C1D08F374D58EBFFD4518EE1D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36C931438880F579BB569B01BF240A8 /* Pods-OpenConnect-umbrella.h in Headers */,
+				426FF4ACAD9517241A9EA058266F744D /* Pods-OpenConnect-OpenConnectUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63BBFE70C6721257F97860EEBCC5622 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891C63B653775798C7A2F73FF2A56F3E /* Pods-OpenConnect-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA49DD2324C7A211B2A1B135CE2CE024 /* Pods-OpenConnect */ = {
+		45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC49A5F359FC1D094504EB8A0F6EC905 /* Build configuration list for PBXNativeTarget "Pods-OpenConnect" */;
+			buildConfigurationList = DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
 			buildPhases = (
-				F13F658E5906C37653264BF35232460C /* Headers */,
-				171CE4A33868BEDF7B89B6B9C0A5FE69 /* Sources */,
-				1F66C5E9DD2C2F7135D8B861D0CDA633 /* Frameworks */,
-				623843CF6C71A361D3429D4F8C17FE9A /* Resources */,
+				98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */,
+				B22F16F1C73358E59AE260C86E3D1F1D /* Sources */,
+				36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */,
+				7465A1319E37DADA12A8BAEB409143AA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D94D40E19B572EFFF53F56191514073 /* PBXTargetDependency */,
-				CB7462BFBDE30FCE180235891426B66C /* PBXTargetDependency */,
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA49DD2324C7A211B2A1B135CE2CE024 /* Pods-OpenConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1393AAE52D39D8957E573A96BB8060CB /* Build configuration list for PBXNativeTarget "Pods-OpenConnect" */;
+			buildPhases = (
+				F63BBFE70C6721257F97860EEBCC5622 /* Headers */,
+				C64F60A76A3EC553D91712B83E054E0B /* Sources */,
+				8E8A00D7AFD7D69E3969396A49CAE337 /* Frameworks */,
+				EC284E2C58EADBECB6732D3089F801A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9051EE6AC5947E5F027751DB8DE35F2 /* PBXTargetDependency */,
+				C22CDCBC57EF49296D42B64F974FBEEB /* PBXTargetDependency */,
+				BBA891EBBDCEFC6009A2A1EFC9FD00FE /* PBXTargetDependency */,
 			);
 			name = "Pods-OpenConnect";
 			productName = "Pods-OpenConnect";
@@ -345,7 +456,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F27D2AAD2149C1BD75CE7C0A34ECAD5F /* PBXTargetDependency */,
+				525DE33475417CAB45922158314174E2 /* PBXTargetDependency */,
 			);
 			name = "Pods-OpenConnectTests";
 			productName = "Pods-OpenConnectTests";
@@ -354,18 +465,19 @@
 		};
 		F6B95E51A27CC1F4581F2D0B96CAA516 /* Pods-OpenConnect-OpenConnectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6F3D3D12CCC2E6F3ACA9EF14887C55E /* Build configuration list for PBXNativeTarget "Pods-OpenConnect-OpenConnectUITests" */;
+			buildConfigurationList = 6B794A6DB8B967C3BA6BEA20DB79F542 /* Build configuration list for PBXNativeTarget "Pods-OpenConnect-OpenConnectUITests" */;
 			buildPhases = (
-				05E49B6E9B46E5085C9459CB92726ED4 /* Headers */,
-				3D5AD3C528331DC0F0E1F673DE077139 /* Sources */,
-				AF6A97518969609C9F5179E237C6B4DA /* Frameworks */,
-				283440528B77B6E06C62524014E5B57A /* Resources */,
+				560F48C1D08F374D58EBFFD4518EE1D1 /* Headers */,
+				5FD4599452DFAFFBCF134A6BA0509B00 /* Sources */,
+				32F7B1692C515EDFBBE83C228E102067 /* Frameworks */,
+				E5470CC03701FBC1322F74F4A171F631 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7929AD6C5AEFCED84C55D40986AEACF6 /* PBXTargetDependency */,
-				CD4224D7A7BEE539CA653A0F1A981018 /* PBXTargetDependency */,
+				43FC9F900AFD1EBFAFB14CDAEB0B5B69 /* PBXTargetDependency */,
+				2447047C4A2BC0AD3EE67F116ED242D5 /* PBXTargetDependency */,
+				7A9CBA39527589A95ADE779E078B8277 /* PBXTargetDependency */,
 			);
 			name = "Pods-OpenConnect-OpenConnectUITests";
 			productName = "Pods-OpenConnect-OpenConnectUITests";
@@ -390,7 +502,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5FC66AB721FF746DB94BE59AC76E0E63 /* Products */;
+			productRefGroup = DADB2428A96682DE3E803F354BDF9C5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -399,19 +511,13 @@
 				D141DDF92438A8CE7DBE9A42F480533E /* Pods-OpenConnectTests */,
 				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+				45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		283440528B77B6E06C62524014E5B57A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		623843CF6C71A361D3429D4F8C17FE9A /* Resources */ = {
+		7465A1319E37DADA12A8BAEB409143AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,6 +525,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7F1E8A152A48157DDA3FB91E66AEA157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5470CC03701FBC1322F74F4A171F631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC284E2C58EADBECB6732D3089F801A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,61 +556,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		171CE4A33868BEDF7B89B6B9C0A5FE69 /* Sources */ = {
+		5FD4599452DFAFFBCF134A6BA0509B00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB65844AE18C7631C6F2750F1405ABEF /* Pods-OpenConnect-dummy.m in Sources */,
+				488D8A2EEDB97D5655DCE727A4C5A64D /* Pods-OpenConnect-OpenConnectUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5AD3C528331DC0F0E1F673DE077139 /* Sources */ = {
+		B22F16F1C73358E59AE260C86E3D1F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66B7AFB0E6DB7569F41340029657069 /* Pods-OpenConnect-OpenConnectUITests-dummy.m in Sources */,
+				CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */,
+				EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */,
+				CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */,
+				DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */,
+				80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */,
+				602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */,
+				0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */,
+				CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64F60A76A3EC553D91712B83E054E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB199DA3672F9F0FD276D36CBBFB94A /* Pods-OpenConnect-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7929AD6C5AEFCED84C55D40986AEACF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftGen;
-			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
-			targetProxy = 5CDFC455E427B8CBE5B64F6BE18BAB6B /* PBXContainerItemProxy */;
-		};
-		7D94D40E19B572EFFF53F56191514073 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftGen;
-			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
-			targetProxy = CF0B641C407439B5B6A19C0839881071 /* PBXContainerItemProxy */;
-		};
-		CB7462BFBDE30FCE180235891426B66C /* PBXTargetDependency */ = {
+		2447047C4A2BC0AD3EE67F116ED242D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = A46915D8431B59E160D8B3B05DA469B3 /* PBXContainerItemProxy */;
+			targetProxy = 16B94B3B1C225AD6DAE308AF0CD3697A /* PBXContainerItemProxy */;
 		};
-		CD4224D7A7BEE539CA653A0F1A981018 /* PBXTargetDependency */ = {
+		43FC9F900AFD1EBFAFB14CDAEB0B5B69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = E7AD5B56FF8E05DF65FBC57B0E9BE1DF /* PBXContainerItemProxy */;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 459CED6066E9B4232694AE6B820C57CF /* PBXContainerItemProxy */;
 		};
-		F27D2AAD2149C1BD75CE7C0A34ECAD5F /* PBXTargetDependency */ = {
+		525DE33475417CAB45922158314174E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-OpenConnect";
 			target = AA49DD2324C7A211B2A1B135CE2CE024 /* Pods-OpenConnect */;
-			targetProxy = E95F7CF6A2364E4599000A11513CE263 /* PBXContainerItemProxy */;
+			targetProxy = 1C98D4A03ED1A333876A8C73E254D301 /* PBXContainerItemProxy */;
+		};
+		7A9CBA39527589A95ADE779E078B8277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 7A3873C6CBFAA868A128825B056AE8D2 /* PBXContainerItemProxy */;
+		};
+		BBA891EBBDCEFC6009A2A1EFC9FD00FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 070FA0BCC8F3E336930D9D5F924FC23F /* PBXContainerItemProxy */;
+		};
+		C22CDCBC57EF49296D42B64F974FBEEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 1535017989927186E16A9F0E1D1B0183 /* PBXContainerItemProxy */;
+		};
+		D9051EE6AC5947E5F027751DB8DE35F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 925A0D4E7F34E3D5E9B9E43C6E307647 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0FC1F0034542601DF1F5A76D5F10376C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EBC0D84964EEE54DC22F7F38A37A2C /* TinyConstraints.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1AF4013C45370D954BC095E6F3A70C73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB3FA5C8631A934AE3FB3148ECF16A4E /* Pods-OpenConnectTests.release.xcconfig */;
+			baseConfigurationReference = 6A479296834FCEB14ECE4CE4E078D369 /* Pods-OpenConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -528,7 +709,7 @@
 		};
 		2202230BF25CAB2FDC609A71D79055BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3DA6E6F2A1F5E119072913BFDF06794 /* SwiftGen.debug.xcconfig */;
+			baseConfigurationReference = D7DB7BCC9ABA8EADAD6743FAE61CCEA3 /* SwiftGen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -542,9 +723,9 @@
 			};
 			name = Debug;
 		};
-		3A9F009846E02FCB326D1E71A9DBCE73 /* Release */ = {
+		36587306907E3BCB905756577024A80C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE01C52FF5AEEE6CA830E5DAFABE628 /* Pods-OpenConnect.release.xcconfig */;
+			baseConfigurationReference = 78917DC46FE6A892EA2473EAD5D37031 /* Pods-OpenConnect.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -580,12 +761,10 @@
 			};
 			name = Release;
 		};
-		4AB49F42E99A29A939C3087CD1132F89 /* Debug */ = {
+		3B7165CE72FA0260993EC86E2AC48993 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2FA402507B6957C46F8332A0106A826 /* Pods-OpenConnect.debug.xcconfig */;
+			baseConfigurationReference = 59F7FEA60D7831CC63FF8594EF2CB59E /* TinyConstraints.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -594,32 +773,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4ED59B5FFBE9F174959F9724B36C9D01 /* Release */ = {
+		46BABCAAB30C0CBB9E8D86F3DDB3E199 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3260C69C1E1274FDAB90FB84E2706502 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */;
+			baseConfigurationReference = 782FE8C210D1950CEA699797B3B2DB16 /* Pods-OpenConnect-OpenConnectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -654,47 +833,10 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		5BB56D5DD3B1E6C888602E17F22CCF9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53DC65A630DAE564E25010AB501FD92D /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		68A5A619EDF2730D305D8C57E38E9F6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 654A6C84F21020C373FDFA753A8BEF57 /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 59FBC655E09F5E30C908195876820C44 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -771,9 +913,46 @@
 			};
 			name = Release;
 		};
+		A6CDF671143D4EC1334211406D2B898D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B412F950C8BF02B51C03582C7FEC60 /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B3EA9E3AC20B54A6071EE93A3F6A10F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B4F8F3FE262E6A67B23F824C11E398C /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = F00AE38DDFE10C31D99227FE91010A61 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -853,9 +1032,46 @@
 			};
 			name = Debug;
 		};
+		C25ACED3E5169C6FF5AD982D09CE00B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B4011481355B835227B01E709B2EBB /* Pods-OpenConnect.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenConnect/Pods-OpenConnect.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CF3B4AB84D0F77E437676BAFB9C2086C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C00EB77C497573FF9D21FFD48AC279F /* SwiftGen.release.xcconfig */;
+			baseConfigurationReference = BB7B3E9F045845857B99D38B9D0F9A84 /* SwiftGen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -872,7 +1088,7 @@
 		};
 		F09F70DFE3C5A6DE65365B747C40B968 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10BE79FB30C653E61FCC5EC9475A0B84 /* Pods-OpenConnectTests.debug.xcconfig */;
+			baseConfigurationReference = DBC9FA08D1583731B4734C245AF740DC /* Pods-OpenConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -910,6 +1126,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1393AAE52D39D8957E573A96BB8060CB /* Build configuration list for PBXNativeTarget "Pods-OpenConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25ACED3E5169C6FF5AD982D09CE00B1 /* Debug */,
+				36587306907E3BCB905756577024A80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -928,6 +1153,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6B794A6DB8B967C3BA6BEA20DB79F542 /* Build configuration list for PBXNativeTarget "Pods-OpenConnect-OpenConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CDF671143D4EC1334211406D2B898D /* Debug */,
+				46BABCAAB30C0CBB9E8D86F3DDB3E199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -937,11 +1171,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6F3D3D12CCC2E6F3ACA9EF14887C55E /* Build configuration list for PBXNativeTarget "Pods-OpenConnect-OpenConnectUITests" */ = {
+		DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5BB56D5DD3B1E6C888602E17F22CCF9F /* Debug */,
-				4ED59B5FFBE9F174959F9724B36C9D01 /* Release */,
+				0FC1F0034542601DF1F5A76D5F10376C /* Debug */,
+				3B7165CE72FA0260993EC86E2AC48993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -951,15 +1185,6 @@
 			buildConfigurations = (
 				2202230BF25CAB2FDC609A71D79055BB /* Debug */,
 				CF3B4AB84D0F77E437676BAFB9C2086C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC49A5F359FC1D094504EB8A0F6EC905 /* Build configuration list for PBXNativeTarget "Pods-OpenConnect" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AB49F42E99A29A939C3087CD1132F89 /* Debug */,
-				3A9F009846E02FCB326D1E71A9DBCE73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -445,6 +445,7 @@
 				2F00CE5A258E25020066D8B1 /* Sources */,
 				2F00CE5B258E25020066D8B1 /* Frameworks */,
 				2F00CE5C258E25020066D8B1 /* Resources */,
+				20448A44D12C6DF9C04F610D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,6 +483,7 @@
 				2F00CE7E258E25030066D8B1 /* Sources */,
 				2F00CE7F258E25030066D8B1 /* Frameworks */,
 				2F00CE80258E25030066D8B1 /* Resources */,
+				6F82F78C7411320F22B088B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -589,6 +591,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		20448A44D12C6DF9C04F610D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenConnect/Pods-OpenConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenConnect/Pods-OpenConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenConnect/Pods-OpenConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2F00CE94258E31470066D8B1 /* Pod: SwiftGen Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,6 +686,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F82F78C7411320F22B088B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

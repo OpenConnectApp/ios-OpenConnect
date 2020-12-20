@@ -9,6 +9,7 @@ target 'OpenConnect' do
   use_frameworks!
   pod 'SwiftLint'
   pod 'SwiftGen'
+  pod 'TinyConstraints'
   
   # Pods for OpenConnect
 
