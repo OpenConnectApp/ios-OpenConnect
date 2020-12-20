@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,12 @@
 		2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEE9258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift */; };
 		2F00CEEC258F59B00066D8B1 /* Utils+UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEEB258F59B00066D8B1 /* Utils+UIColor+Extensions.swift */; };
 		2F00CEEE258F59CF0066D8B1 /* Utils+UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEED258F59CF0066D8B1 /* Utils+UIApplication+Extensions.swift */; };
+		2F00CEF7258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF1258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift */; };
+		2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF2258F5BCB0066D8B1 /* SelectExchangePresenter.swift */; };
+		2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF3258F5BCB0066D8B1 /* SelectExchangeRouter.swift */; };
+		2F00CEFA258F5BCB0066D8B1 /* SelectExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF4258F5BCB0066D8B1 /* SelectExchangeViewController.swift */; };
+		2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF5258F5BCB0066D8B1 /* SelectExchangeProtocols.swift */; };
+		2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +125,12 @@
 		2F00CEE9258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		2F00CEEB258F59B00066D8B1 /* Utils+UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		2F00CEED258F59CF0066D8B1 /* Utils+UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		2F00CEF1258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeModuleBuilder.swift; sourceTree = "<group>"; };
+		2F00CEF2258F5BCB0066D8B1 /* SelectExchangePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangePresenter.swift; sourceTree = "<group>"; };
+		2F00CEF3258F5BCB0066D8B1 /* SelectExchangeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeRouter.swift; sourceTree = "<group>"; };
+		2F00CEF4258F5BCB0066D8B1 /* SelectExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeViewController.swift; sourceTree = "<group>"; };
+		2F00CEF5258F5BCB0066D8B1 /* SelectExchangeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeProtocols.swift; sourceTree = "<group>"; };
+		2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +302,7 @@
 		2F00CEA5258F27190066D8B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CEEF258F5AF20066D8B1 /* Exchanges */,
 				2F00CE65258E25020066D8B1 /* ViewController.swift */,
 			);
 			path = Modules;
@@ -407,6 +420,27 @@
 				2F00CECD258F555B0066D8B1 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F00CEEF258F5AF20066D8B1 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEF0258F5AF80066D8B1 /* Select */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		2F00CEF0258F5AF80066D8B1 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEF1258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift */,
+				2F00CEF2258F5BCB0066D8B1 /* SelectExchangePresenter.swift */,
+				2F00CEF3258F5BCB0066D8B1 /* SelectExchangeRouter.swift */,
+				2F00CEF4258F5BCB0066D8B1 /* SelectExchangeViewController.swift */,
+				2F00CEF5258F5BCB0066D8B1 /* SelectExchangeProtocols.swift */,
+				2F00CEF6258F5BCB0066D8B1 /* SelectExchangeInteractor.swift */,
+			);
+			path = Select;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -713,9 +747,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F00CEDE258F57AC0066D8B1 /* UIBarButton+Extension.swift in Sources */,
+				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
 				2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */,
 				2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */,
+				2F00CEF7258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift in Sources */,
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
@@ -726,6 +762,7 @@
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
+				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
 				2F00CED6258F56460066D8B1 /* UILabel+Extensions.swift in Sources */,
 				2F00CEDC258F57890066D8B1 /* UIButton+Extensions.swift in Sources */,
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
@@ -734,11 +771,14 @@
 				2F00CEE0258F57CA0066D8B1 /* UIApplication+Extensions.swift in Sources */,
 				2F00CEE6258F58F00066D8B1 /* Optional+Extensions.swift in Sources */,
 				2F00CECE258F555B0066D8B1 /* UIViewController+Extensions.swift in Sources */,
+				2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */,
 				2F00CEE2258F58A00066D8B1 /* Theme+UIColor.swift in Sources */,
+				2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */,
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
 				2F00CEDA258F56840066D8B1 /* UICollectionView+Extensions.swift in Sources */,
 				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,
+				2F00CEFA258F5BCB0066D8B1 /* SelectExchangeViewController.swift in Sources */,
 				2F00CEBF258F2D360066D8B1 /* BaseViewInput.swift in Sources */,
 				2F00CEC7258F2E440066D8B1 /* Reusable+UICollectionView.swift in Sources */,
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
