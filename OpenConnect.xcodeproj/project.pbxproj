@@ -11,7 +11,6 @@
 		2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE61258E25020066D8B1 /* AppDelegate.swift */; };
 		2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE63258E25020066D8B1 /* SceneDelegate.swift */; };
 		2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE65258E25020066D8B1 /* ViewController.swift */; };
-		2F00CE69258E25020066D8B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE67258E25020066D8B1 /* Main.storyboard */; };
 		2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE6A258E25020066D8B1 /* OpenConnect.xcdatamodeld */; };
 		2F00CE6E258E25030066D8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6D258E25030066D8B1 /* Assets.xcassets */; };
 		2F00CE71258E25030066D8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */; };
@@ -47,7 +46,6 @@
 		2F00CE61258E25020066D8B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F00CE63258E25020066D8B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F00CE65258E25020066D8B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F00CE68258E25020066D8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F00CE6B258E25020066D8B1 /* OpenConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenConnect.xcdatamodel; sourceTree = "<group>"; };
 		2F00CE6D258E25030066D8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F00CE70258E25030066D8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,14 +118,17 @@
 		2F00CE60258E25020066D8B1 /* OpenConnect */ = {
 			isa = PBXGroup;
 			children = (
-				2F00CE95258E31D30066D8B1 /* Resources */,
+				2F00CE72258E25030066D8B1 /* Info.plist */,
 				2F00CE61258E25020066D8B1 /* AppDelegate.swift */,
 				2F00CE63258E25020066D8B1 /* SceneDelegate.swift */,
-				2F00CE65258E25020066D8B1 /* ViewController.swift */,
-				2F00CE67258E25020066D8B1 /* Main.storyboard */,
-				2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */,
-				2F00CE72258E25030066D8B1 /* Info.plist */,
-				2F00CE6A258E25020066D8B1 /* OpenConnect.xcdatamodeld */,
+				2F00CE9C258F26C70066D8B1 /* Configurations */,
+				2F00CE9D258F26D50066D8B1 /* Core */,
+				2F00CEA6258F272C0066D8B1 /* DB */,
+				2F00CE9E258F26DF0066D8B1 /* Dependecy */,
+				2F00CE9F258F26EC0066D8B1 /* Networking */,
+				2F00CE95258E31D30066D8B1 /* Resources */,
+				2F00CEA0258F26F40066D8B1 /* Services */,
+				2F00CEA2258F27010066D8B1 /* Source */,
 			);
 			path = OpenConnect;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 		2F00CE95258E31D30066D8B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */,
 				2F00CE96258E327B0066D8B1 /* Generated */,
 				2F00CE6D258E25030066D8B1 /* Assets.xcassets */,
 			);
@@ -165,6 +167,73 @@
 				2F00CE97258E32890066D8B1 /* UIImage+Assets.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		2F00CE9C258F26C70066D8B1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2F00CE9D258F26D50066D8B1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F00CE9E258F26DF0066D8B1 /* Dependecy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependecy;
+			sourceTree = "<group>";
+		};
+		2F00CE9F258F26EC0066D8B1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2F00CEA0258F26F40066D8B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F00CEA2258F27010066D8B1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CEA5258F27190066D8B1 /* Modules */,
+				2F00CEA4258F27110066D8B1 /* Model */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F00CEA4258F27110066D8B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F00CEA5258F27190066D8B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CE65258E25020066D8B1 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2F00CEA6258F272C0066D8B1 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2F00CE6A258E25020066D8B1 /* OpenConnect.xcdatamodeld */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -300,7 +369,6 @@
 			files = (
 				2F00CE71258E25030066D8B1 /* LaunchScreen.storyboard in Resources */,
 				2F00CE6E258E25030066D8B1 /* Assets.xcassets in Resources */,
-				2F00CE69258E25020066D8B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,14 +538,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2F00CE67258E25020066D8B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F00CE68258E25020066D8B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
