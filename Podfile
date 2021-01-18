@@ -10,6 +10,7 @@ target 'OpenConnect' do
   pod 'SwiftLint'
   pod 'SwiftGen'
   pod 'TinyConstraints'
+  pod 'Tabman', '~> 2.9'
   
   # Pods for OpenConnect
 

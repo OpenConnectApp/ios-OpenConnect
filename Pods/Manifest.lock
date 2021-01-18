@@ -1,24 +1,32 @@
 PODS:
+  - Pageboy (3.6.2)
   - SwiftGen (6.4.0)
   - SwiftLint (0.40.3)
+  - Tabman (2.9.1):
+    - Pageboy (~> 3.6.0)
   - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
   - SwiftGen
   - SwiftLint
+  - Tabman (~> 2.9)
   - TinyConstraints
 
 SPEC REPOS:
   trunk:
+    - Pageboy
     - SwiftGen
     - SwiftLint
+    - Tabman
     - TinyConstraints
 
 SPEC CHECKSUMS:
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  Tabman: 085d89c65be9e883629bdaf5b1453a6397e57846
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 34395647fc48ee60f3371aa7be58757fbb2117e0
+PODFILE CHECKSUM: 2ffeb8daa6446483c63e62f57f19da32b680eee2
 
 COCOAPODS: 1.10.0
