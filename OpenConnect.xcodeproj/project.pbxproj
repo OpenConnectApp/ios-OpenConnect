@@ -82,6 +82,9 @@
 		2F6E42F425B589BD00A74122 /* ExchangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EE25B589BD00A74122 /* ExchangesViewController.swift */; };
 		2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EF25B589BD00A74122 /* ExchangesProtocols.swift */; };
 		2F6E42F625B589BD00A74122 /* ExchangesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */; };
+		2F6E42F925B58A5900A74122 /* HomeExchangesHeaderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42F825B58A5900A74122 /* HomeExchangesHeaderTVCell.swift */; };
+		2F6E42FB25B58A8900A74122 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42FA25B58A8900A74122 /* SectionHeaderView.swift */; };
+		2F6E42FD25B58AC500A74122 /* ExchangesInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42FC25B58AC500A74122 /* ExchangesInfoTVCell.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -187,6 +190,9 @@
 		2F6E42EE25B589BD00A74122 /* ExchangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesViewController.swift; sourceTree = "<group>"; };
 		2F6E42EF25B589BD00A74122 /* ExchangesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesProtocols.swift; sourceTree = "<group>"; };
 		2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesInteractor.swift; sourceTree = "<group>"; };
+		2F6E42F825B58A5900A74122 /* HomeExchangesHeaderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExchangesHeaderTVCell.swift; sourceTree = "<group>"; };
+		2F6E42FA25B58A8900A74122 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		2F6E42FC25B58AC500A74122 /* ExchangesInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesInfoTVCell.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -551,6 +557,7 @@
 		2F6E42DD25B588C100A74122 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E42F725B58A4A00A74122 /* Cell */,
 				2F6E42EA25B5898A00A74122 /* Exchanges */,
 				2F6E42DE25B588D400A74122 /* HomeModuleBuilder.swift */,
 				2F6E42DF25B588D400A74122 /* HomePresenter.swift */,
@@ -573,6 +580,16 @@
 				2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */,
 			);
 			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		2F6E42F725B58A4A00A74122 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E42F825B58A5900A74122 /* HomeExchangesHeaderTVCell.swift */,
+				2F6E42FA25B58A8900A74122 /* SectionHeaderView.swift */,
+				2F6E42FC25B58AC500A74122 /* ExchangesInfoTVCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -911,11 +928,13 @@
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
 				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
 				2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */,
+				2F6E42FB25B58A8900A74122 /* SectionHeaderView.swift in Sources */,
 				2F00CF01258F5CCE0066D8B1 /* Exchange.swift in Sources */,
 				2F00CED6258F56460066D8B1 /* UILabel+Extensions.swift in Sources */,
 				2F6E42D925B5884B00A74122 /* RootRouter.swift in Sources */,
 				2F6E42CA25B5730C00A74122 /* SearchExchangeViewController.swift in Sources */,
 				2F00CEDC258F57890066D8B1 /* UIButton+Extensions.swift in Sources */,
+				2F6E42F925B58A5900A74122 /* HomeExchangesHeaderTVCell.swift in Sources */,
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
 				2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */,
 				2F00CED8258F56650066D8B1 /* UIImageView+Extensions.swift in Sources */,
@@ -928,6 +947,7 @@
 				2F6E42DA25B5884B00A74122 /* RootViewController.swift in Sources */,
 				2F00CECE258F555B0066D8B1 /* UIViewController+Extensions.swift in Sources */,
 				2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */,
+				2F6E42FD25B58AC500A74122 /* ExchangesInfoTVCell.swift in Sources */,
 				2F00CEE2258F58A00066D8B1 /* Theme+UIColor.swift in Sources */,
 				2F6E42DB25B5884B00A74122 /* RootProtocols.swift in Sources */,
 				2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */,
