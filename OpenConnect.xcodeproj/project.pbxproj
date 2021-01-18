@@ -70,6 +70,12 @@
 		2F6E42DA25B5884B00A74122 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42D425B5884B00A74122 /* RootViewController.swift */; };
 		2F6E42DB25B5884B00A74122 /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42D525B5884B00A74122 /* RootProtocols.swift */; };
 		2F6E42DC25B5884B00A74122 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42D625B5884B00A74122 /* RootInteractor.swift */; };
+		2F6E42E425B588D400A74122 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42DE25B588D400A74122 /* HomeModuleBuilder.swift */; };
+		2F6E42E525B588D400A74122 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42DF25B588D400A74122 /* HomePresenter.swift */; };
+		2F6E42E625B588D400A74122 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E025B588D400A74122 /* HomeRouter.swift */; };
+		2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E125B588D400A74122 /* HomeViewController.swift */; };
+		2F6E42E825B588D400A74122 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E225B588D400A74122 /* HomeProtocols.swift */; };
+		2F6E42E925B588D400A74122 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E325B588D400A74122 /* HomeInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -163,6 +169,12 @@
 		2F6E42D425B5884B00A74122 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2F6E42D525B5884B00A74122 /* RootProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
 		2F6E42D625B5884B00A74122 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		2F6E42DE25B588D400A74122 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
+		2F6E42DF25B588D400A74122 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		2F6E42E025B588D400A74122 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2F6E42E125B588D400A74122 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F6E42E225B588D400A74122 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		2F6E42E325B588D400A74122 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +348,7 @@
 		2F00CEA5258F27190066D8B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E42DD25B588C100A74122 /* Home */,
 				2F6E42D025B5883F00A74122 /* Root */,
 				2F00CEEF258F5AF20066D8B1 /* Exchanges */,
 				2F00CE65258E25020066D8B1 /* ViewController.swift */,
@@ -521,6 +534,19 @@
 				2F6E42D625B5884B00A74122 /* RootInteractor.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		2F6E42DD25B588C100A74122 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E42DE25B588D400A74122 /* HomeModuleBuilder.swift */,
+				2F6E42DF25B588D400A74122 /* HomePresenter.swift */,
+				2F6E42E025B588D400A74122 /* HomeRouter.swift */,
+				2F6E42E125B588D400A74122 /* HomeViewController.swift */,
+				2F6E42E225B588D400A74122 /* HomeProtocols.swift */,
+				2F6E42E325B588D400A74122 /* HomeInteractor.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -828,6 +854,7 @@
 			files = (
 				2F00CEDE258F57AC0066D8B1 /* UIBarButton+Extension.swift in Sources */,
 				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
+				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
 				2F6E42D725B5884B00A74122 /* RootModuleBuilder.swift in Sources */,
 				2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */,
@@ -838,6 +865,7 @@
 				2F6E42CB25B5730C00A74122 /* SearchExchangeProtocols.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
+				2F6E42E425B588D400A74122 /* HomeModuleBuilder.swift in Sources */,
 				2F00CEEC258F59B00066D8B1 /* Utils+UIColor+Extensions.swift in Sources */,
 				2F6E42CC25B5730C00A74122 /* SearchExchangeInteractor.swift in Sources */,
 				2F6E42CF25B5867000A74122 /* BottomAlertController.swift in Sources */,
@@ -859,15 +887,19 @@
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
 				2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */,
 				2F00CED8258F56650066D8B1 /* UIImageView+Extensions.swift in Sources */,
+				2F6E42E925B588D400A74122 /* HomeInteractor.swift in Sources */,
 				2F00CED4258F56270066D8B1 /* UIStackView+Extensions.swift in Sources */,
 				2F00CEE0258F57CA0066D8B1 /* UIApplication+Extensions.swift in Sources */,
 				2F00CEE6258F58F00066D8B1 /* Optional+Extensions.swift in Sources */,
+				2F6E42E825B588D400A74122 /* HomeProtocols.swift in Sources */,
+				2F6E42E625B588D400A74122 /* HomeRouter.swift in Sources */,
 				2F6E42DA25B5884B00A74122 /* RootViewController.swift in Sources */,
 				2F00CECE258F555B0066D8B1 /* UIViewController+Extensions.swift in Sources */,
 				2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */,
 				2F00CEE2258F58A00066D8B1 /* Theme+UIColor.swift in Sources */,
 				2F6E42DB25B5884B00A74122 /* RootProtocols.swift in Sources */,
 				2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */,
+				2F6E42E525B588D400A74122 /* HomePresenter.swift in Sources */,
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
 				2F00CEDA258F56840066D8B1 /* UICollectionView+Extensions.swift in Sources */,
 				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
