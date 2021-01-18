@@ -22,7 +22,7 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
         Exchange(title: "Coin DCX Sub Profile", image: Asset.icExhangeDeribit.image),
         Exchange(title: "Kraken", image: Asset.icExchangeDelta.image),
         Exchange(title: "Bitfinex", image: Asset.appLogo.image),
-        Exchange(title: "CEX.io", image: Asset.appLogo.image),
+        Exchange(title: "CEX.io", image: Asset.appLogo.image)
     ]
     
     // MARK: Initialization
