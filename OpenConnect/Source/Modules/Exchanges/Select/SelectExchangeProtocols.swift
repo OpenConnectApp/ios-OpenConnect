@@ -11,12 +11,13 @@ import UIKit
 
 // MARK: View
 protocol SelectExchangeViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func dismissScreen(completion: @escaping () -> Void)
 }
 
 // MARK: Presenter
 protocol SelectExchangeViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func addNewExchange()
+    func exchangeSelected(at: IndexPath)
 }
 
 protocol SelectExchangeModuleInput: AnyObject {

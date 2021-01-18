@@ -95,6 +95,7 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
     }
     
     @objc private func closeNavBtnTapped() {
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
     // MARK: SearchExchangeViewInput
@@ -114,6 +115,10 @@ extension SearchExchangeViewController: UITableViewDelegate, UITableViewDataSour
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
         cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.addNewExchange(at: indexPath)
     }
 }
 

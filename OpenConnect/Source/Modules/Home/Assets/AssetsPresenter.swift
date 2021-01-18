@@ -22,6 +22,9 @@ final class AssetsPresenter: AssetsViewOutput, AssetsModuleInput, AssetsInteract
     }
     
     // MARK: AssetsViewOutput methods
+    func assetSelected(at: IndexPath) {
+        self.router.showAssetDetail()
+    }
     
     // MARK: AssetsInteractorOutput methods
 }

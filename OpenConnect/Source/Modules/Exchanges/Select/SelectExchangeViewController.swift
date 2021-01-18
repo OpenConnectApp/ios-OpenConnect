@@ -80,6 +80,8 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
         tableView.dataSource = self
 
         closeBtn.addTarget(self, action: #selector(closeBtnTapped), for: .touchUpInside)
+
+        addExchangeBtn.addTarget(self, action: #selector(addExchangeBtnTapped), for: .touchUpInside)
     }
     
     //Apply Theming for views here
@@ -137,8 +139,15 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
             completion()
         })
     }
+
+    @objc private func addExchangeBtnTapped() {
+        self.presenter.addNewExchange()
+    }
     
     // MARK: SelectExchangeViewInput
+    func dismissScreen(completion: @escaping () -> Void) {
+        self.dismiss(animated: true, completion: completion)
+    }
 }
 
 extension SelectExchangeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -155,5 +164,9 @@ extension SelectExchangeViewController: UITableViewDelegate, UITableViewDataSour
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
         cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath, isSelected: indexPath.row == 0)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.exchangeSelected(at: indexPath)
     }
 }

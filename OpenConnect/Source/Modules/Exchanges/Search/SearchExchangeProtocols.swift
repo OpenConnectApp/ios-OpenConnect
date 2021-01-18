@@ -16,7 +16,7 @@ protocol SearchExchangeViewInput: AnyObject {
 
 // MARK: Presenter
 protocol SearchExchangeViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func addNewExchange(at: IndexPath)
 }
 
 protocol SearchExchangeModuleInput: AnyObject {
@@ -37,5 +37,5 @@ protocol SearchExchangeInteractorInput: AnyObject {
 
 // MARK: Router
 protocol SearchExchangeRouterInput: AnyObject {
-    // TO-DO: Declare router methods
+    func showAddNewExchange()
 }

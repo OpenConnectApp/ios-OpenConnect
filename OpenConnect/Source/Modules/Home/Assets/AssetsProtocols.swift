@@ -16,7 +16,7 @@ protocol AssetsViewInput: AnyObject {
 
 // MARK: Presenter
 protocol AssetsViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func assetSelected(at: IndexPath)
 }
 
 protocol AssetsModuleInput: AnyObject {
@@ -37,5 +37,5 @@ protocol AssetsInteractorInput: AnyObject {
 
 // MARK: Router
 protocol AssetsRouterInput: AnyObject {
-    // TO-DO: Declare router methods
+    func showAssetDetail()
 }

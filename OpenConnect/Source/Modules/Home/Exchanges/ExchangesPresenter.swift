@@ -22,6 +22,9 @@ final class ExchangesPresenter: ExchangesViewOutput, ExchangesModuleInput, Excha
     }
     
     // MARK: ExchangesViewOutput methods
+    func exchangeSelected(at: IndexPath) {
+        self.router.showExchangeDetail()
+    }
     
     // MARK: ExchangesInteractorOutput methods
 }

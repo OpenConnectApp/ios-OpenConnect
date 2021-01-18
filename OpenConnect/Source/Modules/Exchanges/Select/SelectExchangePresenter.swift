@@ -15,13 +15,26 @@ final class SelectExchangePresenter: SelectExchangeViewOutput, SelectExchangeMod
     weak var view: SelectExchangeViewInput?
     var router: SelectExchangeRouterInput!
     var interactor: SelectExchangeInteractorInput!
+
+    private var addExchangeCompletion: () -> Void
     
     // MARK: Initialization
     
-    init() {
+    init(addExchangeCompletion: @escaping () -> Void) {
+        self.addExchangeCompletion = addExchangeCompletion
     }
     
     // MARK: SelectExchangeViewOutput methods
+    func addNewExchange() {
+        self.view?.dismissScreen { [addExchangeCompletion = self.addExchangeCompletion] in
+            addExchangeCompletion()
+        }
+    }
+
+    func exchangeSelected(at: IndexPath) {
+        self.view?.dismissScreen {
+        }
+    }
     
     // MARK: SelectExchangeInteractorOutput methods
 }

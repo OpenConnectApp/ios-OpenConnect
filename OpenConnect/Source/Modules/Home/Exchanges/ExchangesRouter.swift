@@ -20,4 +20,8 @@ final class ExchangesRouter: ExchangesRouterInput {
     }
     
     // MARK: ExchangesRouterInput methods
+    func showExchangeDetail() {
+        let vc = ProfileRootModuleBuilder.buildModule(dependency: (), payload: ())
+        self.viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -22,6 +22,9 @@ final class SearchExchangePresenter: SearchExchangeViewOutput, SearchExchangeMod
     }
     
     // MARK: SearchExchangeViewOutput methods
+    func addNewExchange(at: IndexPath) {
+        self.router.showAddNewExchange()
+    }
     
     // MARK: SearchExchangeInteractorOutput methods
 }

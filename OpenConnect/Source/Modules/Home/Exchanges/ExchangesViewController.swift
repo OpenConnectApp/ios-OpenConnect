@@ -115,5 +115,6 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return
         }
+        self.presenter.exchangeSelected(at: indexPath)
     }
 }

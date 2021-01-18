@@ -119,5 +119,6 @@ extension AssetsViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return
         }
+        self.presenter.assetSelected(at: indexPath)
     }
 }
