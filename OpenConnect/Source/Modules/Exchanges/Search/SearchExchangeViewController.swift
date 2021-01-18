@@ -45,7 +45,7 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
         Exchange(title: "BitBNS", image: Asset.appLogo.image)
     ]
 
-    private var closeBarBtn: UIBarButtonItem = .init(image: Asset.icNavClose.image, style: .plain, target: self, action: #selector(closeNavBtnTapped))
+    private lazy var closeBarBtn: UIBarButtonItem = .init(image: Asset.icNavClose.image, style: .plain, target: self, action: #selector(closeNavBtnTapped))
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -112,7 +112,7 @@ extension SearchExchangeViewController: UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(exchange: exchanges[indexPath.row])
+        cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath)
         return cell
     }
 }

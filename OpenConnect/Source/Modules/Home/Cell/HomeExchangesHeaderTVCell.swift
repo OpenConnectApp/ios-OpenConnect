@@ -15,6 +15,10 @@ class HomeExchangesHeaderTVCell: UITableViewCell, Reusable {
 
     private var balLabel: UILabel = .label(color: .silver, font: UIFont(.montserrat(.semiBold), size: 20))
 
+    private var balDropdownIcon: UIImageView = .imageView(image: Asset.icRoundArrowDown.image, contentMode: .scaleAspectFit)
+
+    private var growthIcon: UIImageView = .imageView(image: Asset.icGrowthUp.image, contentMode: .scaleAspectFit)
+
     private var growthLabel: UILabel = .label(color: .aquamarine, font: UIFont(.montserrat(.semiBold), size: 16))
 
     private var growthDaysLabel: UILabel = .label(color: .silver40, font: UIFont(.montserrat(.medium), size: 10))
@@ -38,7 +42,7 @@ class HomeExchangesHeaderTVCell: UITableViewCell, Reusable {
 
     private func setupViews() {
         self.selectionStyle = .none
-        self.contentView.addAutoSubviews([avalBalLabel, balLabel, growthLabel, growthDaysLabel, graphView])
+        self.contentView.addAutoSubviews([avalBalLabel, balLabel, balDropdownIcon, growthIcon, growthLabel, growthDaysLabel, graphView])
     }
 
     private func themeViews() {
@@ -51,6 +55,16 @@ class HomeExchangesHeaderTVCell: UITableViewCell, Reusable {
 
         balLabel.leadingToSuperview(offset: 24)
         balLabel.topToBottom(of: avalBalLabel, offset: 1)
+
+        balDropdownIcon.width(16)
+        balDropdownIcon.aspectRatio(1)
+        balDropdownIcon.centerY(to: balLabel)
+        balDropdownIcon.leadingToTrailing(of: balLabel, offset: 5)
+
+        growthIcon.width(12)
+        growthIcon.aspectRatio(1)
+        growthIcon.centerY(to: growthLabel)
+        growthIcon.trailingToLeading(of: growthLabel, offset: -2)
 
         growthLabel.trailingToSuperview(offset: 24)
         growthLabel.topToSuperview(offset: 25)

@@ -153,7 +153,7 @@ extension SelectExchangeViewController: UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(exchange: exchanges[indexPath.row])
+        cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath, isSelected: indexPath.row == 0)
         return cell
     }
 }

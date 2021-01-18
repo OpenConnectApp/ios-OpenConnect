@@ -60,7 +60,7 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
     
     //Apply Theming for views here
     private func themeViews() {
-        self.view.backgroundColor = .backgroundDark
+        self.view.backgroundColor = .background
     }
     
     //Apply AutoLayout Constraints

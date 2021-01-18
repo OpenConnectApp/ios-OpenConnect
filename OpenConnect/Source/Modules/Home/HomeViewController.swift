@@ -23,6 +23,8 @@ final class HomeViewController: TabmanViewController, HomeViewInput {
 
     private var tabTitles: [String] = ["Exchanges", "Assets"]
 
+    private lazy var hamburgerBarBtn: UIBarButtonItem = .init(image: Asset.icNavHamburger.image, style: .plain, target: self, action: #selector(hamburgerNavBtnTapped))
+
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -49,7 +51,7 @@ final class HomeViewController: TabmanViewController, HomeViewInput {
 
         // Create bar
         let bar = TMBar.ButtonBar()
-        bar.backgroundView.style = .flat(color: .background)
+        bar.backgroundView.style = .flat(color: .darkGreyBlue)
         bar.layout.transitionStyle = .snap
         bar.indicator.weight = .custom(value: 0)
 
@@ -62,14 +64,20 @@ final class HomeViewController: TabmanViewController, HomeViewInput {
 
         // Add to view
         addBar(bar, dataSource: self, at: .top)
+
+        self.navigationItem.rightBarButtonItem = hamburgerBarBtn
     }
     
     //Apply Theming for views here
     private func themeViews() {
+        self.view.backgroundColor = .background
     }
     
     //Apply AutoLayout Constraints
     private func setupConstraints() { 
+    }
+
+    @objc private func hamburgerNavBtnTapped() {
     }
     
     // MARK: HomeViewInput

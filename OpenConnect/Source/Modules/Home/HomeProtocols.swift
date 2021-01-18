@@ -39,8 +39,3 @@ protocol HomeInteractorInput: AnyObject {
 protocol HomeRouterInput: AnyObject {
     // TO-DO: Declare router methods
 }
-
-// MARK: HomeModuleBuilder
-protocol HomeBuilder {
-    static func buildModule() -> HomeViewController
-}

@@ -29,8 +29,12 @@ internal enum Asset {
   internal static let icExhangeDeribit = ImageAsset(name: "ic_exhange_deribit")
   internal static let icCamera = ImageAsset(name: "ic_camera")
   internal static let icDownRound = ImageAsset(name: "ic_down_round")
+  internal static let icGrowthUp = ImageAsset(name: "ic_growth_up")
+  internal static let icRoundArrowDown = ImageAsset(name: "ic_round_arrow_down")
+  internal static let icRoundTick = ImageAsset(name: "ic_round_tick")
   internal static let icUpRound = ImageAsset(name: "ic_up_round")
   internal static let icNavClose = ImageAsset(name: "ic_nav_close")
+  internal static let icNavHamburger = ImageAsset(name: "ic_nav_hamburger")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

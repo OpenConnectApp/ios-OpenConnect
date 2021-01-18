@@ -33,8 +33,8 @@ class SectionHeaderView: UITableViewHeaderFooterView, Reusable {
     }
 
     private func themeViews() {
-        self.backgroundColor = .clear
-        self.tintColor = .clear
+        self.backgroundColor = .background
+        self.tintColor = .background
     }
 
     private func setupConstraints() {

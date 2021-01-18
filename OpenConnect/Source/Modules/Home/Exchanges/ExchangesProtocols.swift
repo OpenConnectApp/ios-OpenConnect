@@ -39,8 +39,3 @@ protocol ExchangesInteractorInput: AnyObject {
 protocol ExchangesRouterInput: AnyObject {
     // TO-DO: Declare router methods
 }
-
-// MARK: ExchangesModuleBuilder
-protocol ExchangesBuilder {
-    static func buildModule() -> ExchangesViewController
-}

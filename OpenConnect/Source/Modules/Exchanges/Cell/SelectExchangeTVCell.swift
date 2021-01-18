@@ -15,6 +15,8 @@ class SelectExchangeTVCell: UITableViewCell, Reusable {
 
     private var iconImageView: UIImageView = .imageView()
 
+    private var tickIcon: UIImageView = .imageView(image: Asset.icRoundTick.image, contentMode: .scaleAspectFit)
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -32,7 +34,7 @@ class SelectExchangeTVCell: UITableViewCell, Reusable {
 
     private func setupViews() {
         self.selectionStyle = .none
-        self.contentView.addAutoSubviews([iconImageView, titleLabel])
+        self.contentView.addAutoSubviews([iconImageView, titleLabel, tickIcon])
     }
 
     private func themeViews() {
@@ -47,13 +49,19 @@ class SelectExchangeTVCell: UITableViewCell, Reusable {
         iconImageView.topToSuperview(offset: 12)
         iconImageView.bottomToSuperview(offset: -12)
 
+        tickIcon.width(20)
+        tickIcon.aspectRatio(1)
+        tickIcon.centerYToSuperview()
+        tickIcon.trailingToSuperview(offset: 24)
+
         titleLabel.leadingToTrailing(of: iconImageView, offset: 12)
         titleLabel.centerYToSuperview()
-        titleLabel.trailingToSuperview(offset: 34)
+        titleLabel.trailingToLeading(of: tickIcon, offset: -10)
     }
 
-    func configure(exchange: Exchange) {
+    func configure(exchange: Exchange, indexPath: IndexPath, isSelected: Bool = false) {
         titleLabel.text = exchange.title
         iconImageView.image = exchange.image
+        tickIcon.isHidden = !isSelected
     }
 }

@@ -39,8 +39,3 @@ protocol AssetsInteractorInput: AnyObject {
 protocol AssetsRouterInput: AnyObject {
     // TO-DO: Declare router methods
 }
-
-// MARK: AssetsModuleBuilder
-protocol AssetsBuilder {
-    static func buildModule() -> AssetsViewController
-}

@@ -49,7 +49,7 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
 
         // Create bar
         let bar = TMBar.ButtonBar()
-        bar.backgroundView.style = .flat(color: .background)
+        bar.backgroundView.style = .flat(color: .darkGreyBlue)
         bar.layout.transitionStyle = .snap
         bar.indicator.weight = .custom(value: 0)
 
@@ -66,6 +66,7 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
     
     //Apply Theming for views here
     private func themeViews() {
+        self.view.backgroundColor = .background
     }
     
     //Apply AutoLayout Constraints

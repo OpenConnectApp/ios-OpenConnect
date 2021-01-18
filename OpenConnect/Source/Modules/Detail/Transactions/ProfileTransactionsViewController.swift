@@ -49,7 +49,7 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
     
     //Apply Theming for views here
     private func themeViews() {
-        self.view.backgroundColor = .backgroundDark
+        self.view.backgroundColor = .background
 
         tableView.separatorColor = UIColor.warmBlue.withAlphaComponent(0.4)
         tableView.separatorStyle = .singleLine
