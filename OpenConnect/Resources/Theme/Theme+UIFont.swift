@@ -64,5 +64,7 @@ public extension UIFont {
     
     static let body = UIFont(.montserrat(.regular), size: 16)
 
+    static let bodyMedium = UIFont(.montserrat(.regular), size: 14)
+
     static let button = UIFont(.montserrat(.semiBold), size: 16)
 }
