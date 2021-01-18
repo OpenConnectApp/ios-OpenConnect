@@ -76,6 +76,12 @@
 		2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E125B588D400A74122 /* HomeViewController.swift */; };
 		2F6E42E825B588D400A74122 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E225B588D400A74122 /* HomeProtocols.swift */; };
 		2F6E42E925B588D400A74122 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42E325B588D400A74122 /* HomeInteractor.swift */; };
+		2F6E42F125B589BD00A74122 /* ExchangesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EB25B589BD00A74122 /* ExchangesModuleBuilder.swift */; };
+		2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EC25B589BD00A74122 /* ExchangesPresenter.swift */; };
+		2F6E42F325B589BD00A74122 /* ExchangesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42ED25B589BD00A74122 /* ExchangesRouter.swift */; };
+		2F6E42F425B589BD00A74122 /* ExchangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EE25B589BD00A74122 /* ExchangesViewController.swift */; };
+		2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42EF25B589BD00A74122 /* ExchangesProtocols.swift */; };
+		2F6E42F625B589BD00A74122 /* ExchangesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -175,6 +181,12 @@
 		2F6E42E125B588D400A74122 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F6E42E225B588D400A74122 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		2F6E42E325B588D400A74122 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2F6E42EB25B589BD00A74122 /* ExchangesModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesModuleBuilder.swift; sourceTree = "<group>"; };
+		2F6E42EC25B589BD00A74122 /* ExchangesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesPresenter.swift; sourceTree = "<group>"; };
+		2F6E42ED25B589BD00A74122 /* ExchangesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesRouter.swift; sourceTree = "<group>"; };
+		2F6E42EE25B589BD00A74122 /* ExchangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesViewController.swift; sourceTree = "<group>"; };
+		2F6E42EF25B589BD00A74122 /* ExchangesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesProtocols.swift; sourceTree = "<group>"; };
+		2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -539,6 +551,7 @@
 		2F6E42DD25B588C100A74122 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E42EA25B5898A00A74122 /* Exchanges */,
 				2F6E42DE25B588D400A74122 /* HomeModuleBuilder.swift */,
 				2F6E42DF25B588D400A74122 /* HomePresenter.swift */,
 				2F6E42E025B588D400A74122 /* HomeRouter.swift */,
@@ -547,6 +560,19 @@
 				2F6E42E325B588D400A74122 /* HomeInteractor.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2F6E42EA25B5898A00A74122 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E42EB25B589BD00A74122 /* ExchangesModuleBuilder.swift */,
+				2F6E42EC25B589BD00A74122 /* ExchangesPresenter.swift */,
+				2F6E42ED25B589BD00A74122 /* ExchangesRouter.swift */,
+				2F6E42EE25B589BD00A74122 /* ExchangesViewController.swift */,
+				2F6E42EF25B589BD00A74122 /* ExchangesProtocols.swift */,
+				2F6E42F025B589BD00A74122 /* ExchangesInteractor.swift */,
+			);
+			path = Exchanges;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -855,13 +881,19 @@
 				2F00CEDE258F57AC0066D8B1 /* UIBarButton+Extension.swift in Sources */,
 				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
 				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
+				2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */,
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
 				2F6E42D725B5884B00A74122 /* RootModuleBuilder.swift in Sources */,
+				2F6E42F425B589BD00A74122 /* ExchangesViewController.swift in Sources */,
 				2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */,
 				2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */,
 				2F00CEF7258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift in Sources */,
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
+				2F6E42F625B589BD00A74122 /* ExchangesInteractor.swift in Sources */,
+				2F6E42F325B589BD00A74122 /* ExchangesRouter.swift in Sources */,
+				2F6E42F125B589BD00A74122 /* ExchangesModuleBuilder.swift in Sources */,
+				2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */,
 				2F6E42CB25B5730C00A74122 /* SearchExchangeProtocols.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
