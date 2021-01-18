@@ -13,6 +13,7 @@ public extension UIColor {
     static let backgroundDark = UIColor(hexString: "#1d203c")
     static let silver = UIColor(hexString: "#dfe0e3")
     static let silver40 = UIColor(hexString: "#dfe0e3").withAlphaComponent(0.4)
+    static let silver20 = UIColor(hexString: "#dfe0e3").withAlphaComponent(0.2)
     static let steel = UIColor(hexString: "#858ba1")
     static let warmBlue = UIColor(hexString: "#454de3")
     static let aquamarine = UIColor(hexString: "#01d7a3")

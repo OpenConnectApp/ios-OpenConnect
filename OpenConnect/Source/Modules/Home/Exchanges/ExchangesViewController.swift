@@ -15,6 +15,15 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
     var presenter: ExchangesViewOutput!
 
     private var tableView: UITableView = .tableview()
+
+    private var exchanges: [Exchange] = [
+        Exchange(title: "Binance Main Profile", image: Asset.icExchangeCoindcx.image),
+        Exchange(title: "Delta.Exchange BTC", image: Asset.icExchangeBinance.image),
+        Exchange(title: "Coin DCX Sub Profile", image: Asset.icExhangeDeribit.image),
+        Exchange(title: "Kraken", image: Asset.icExchangeDelta.image),
+        Exchange(title: "Bitfinex", image: Asset.appLogo.image),
+        Exchange(title: "CEX.io", image: Asset.appLogo.image),
+    ]
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -72,7 +81,7 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         }
-        return 5
+        return exchanges.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,7 +91,7 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         let cell: ExchangesInfoTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure()
+        cell.configure(exchange: exchanges[indexPath.row])
         return cell
     }
 

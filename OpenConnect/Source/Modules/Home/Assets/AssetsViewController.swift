@@ -15,6 +15,19 @@ final class AssetsViewController: UIViewController, AssetsViewInput {
     var presenter: AssetsViewOutput!
     
     private var tableView: UITableView = .tableview()
+
+    private var assets: [Exchange] = [
+        Exchange(title: "Bitcoin", image: Asset.icExchangeCoindcx.image),
+        Exchange(title: "Litecoin", image: Asset.icExchangeBinance.image),
+        Exchange(title: "Deribit", image: Asset.icExhangeDeribit.image),
+        Exchange(title: "Kraken", image: Asset.icExchangeDelta.image),
+        Exchange(title: "Bitfinex", image: Asset.appLogo.image),
+        Exchange(title: "CEX.io", image: Asset.appLogo.image),
+        Exchange(title: "Coinbase", image: Asset.appLogo.image),
+        Exchange(title: "Kucoin", image: Asset.appLogo.image),
+        Exchange(title: "BitMex", image: Asset.appLogo.image),
+        Exchange(title: "BitBNS", image: Asset.appLogo.image)
+    ]
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -72,7 +85,7 @@ extension AssetsViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         }
-        return 5
+        return assets.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,7 +95,7 @@ extension AssetsViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         let cell: ExchangesInfoTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure()
+        cell.configure(exchange: assets[indexPath.row])
         return cell
     }
 

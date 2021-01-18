@@ -77,9 +77,9 @@ class ExchangesInfoTVCell: UITableViewCell, Reusable {
         priceBtcLabel.bottomToSuperview(offset: -12)
     }
 
-    func configure() {
-        exchangeIcon.image = Asset.icExchangeBinance.image
-        exchangeNameLabel.text = "Binance Main Profile"
+    func configure(exchange: Exchange) {
+        exchangeIcon.image = exchange.image
+        exchangeNameLabel.text = exchange.title
         priceLabel.text = "INR 6.08cr"
         priceBtcLabel.text = "3.705 BTC"
         balLabel.text = "15% Bal."
