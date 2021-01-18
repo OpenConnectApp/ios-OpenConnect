@@ -50,4 +50,8 @@ public enum Strings {
         public static let noNetwork = "Check your internet connection\nand try again"
         public static let somethingWentWrong = "Oops! Our engineers are trying to fix\nit as soon as possible"
     }
+
+    public enum AddExchangeScreen {
+        public static let message = "If you import past transactions, we’ll not only import transactions that happen from now on but also import your transaction history"
+    }
 }

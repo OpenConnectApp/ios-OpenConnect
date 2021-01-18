@@ -27,6 +27,7 @@ internal enum Asset {
   internal static let icExchangeCoindcx = ImageAsset(name: "ic_exchange_coindcx")
   internal static let icExchangeDelta = ImageAsset(name: "ic_exchange_delta")
   internal static let icExhangeDeribit = ImageAsset(name: "ic_exhange_deribit")
+  internal static let icCamera = ImageAsset(name: "ic_camera")
   internal static let icDownRound = ImageAsset(name: "ic_down_round")
   internal static let icUpRound = ImageAsset(name: "ic_up_round")
   internal static let icNavClose = ImageAsset(name: "ic_nav_close")

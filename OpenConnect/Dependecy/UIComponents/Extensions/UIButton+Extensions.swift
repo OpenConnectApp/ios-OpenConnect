@@ -25,7 +25,8 @@ public extension UIButton {
             color: color,
             font: font,
             backgroundColor: backgroundColor,
-            radius: radius
+            radius: radius,
+            theme: theme
         )
     }
 

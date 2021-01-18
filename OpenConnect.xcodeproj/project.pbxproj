@@ -116,6 +116,9 @@
 		2F6E434C25B5A4ED00A74122 /* AddExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E434625B5A4ED00A74122 /* AddExchangeViewController.swift */; };
 		2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E434725B5A4ED00A74122 /* AddExchangeProtocols.swift */; };
 		2F6E434E25B5A4ED00A74122 /* AddExchangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E434825B5A4ED00A74122 /* AddExchangeInteractor.swift */; };
+		2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435025B5BA4600A74122 /* AddExchangeTextFieldView.swift */; };
+		2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */; };
+		2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -255,6 +258,9 @@
 		2F6E434625B5A4ED00A74122 /* AddExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeViewController.swift; sourceTree = "<group>"; };
 		2F6E434725B5A4ED00A74122 /* AddExchangeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeProtocols.swift; sourceTree = "<group>"; };
 		2F6E434825B5A4ED00A74122 /* AddExchangeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeInteractor.swift; sourceTree = "<group>"; };
+		2F6E435025B5BA4600A74122 /* AddExchangeTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeTextFieldView.swift; sourceTree = "<group>"; };
+		2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeSwitchView.swift; sourceTree = "<group>"; };
+		2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,6 +555,7 @@
 				2F00CED1258F56060066D8B1 /* UITableView+Extensions.swift */,
 				2F00CECF258F55BC0066D8B1 /* UIView+Extensions.swift */,
 				2F00CECD258F555B0066D8B1 /* UIViewController+Extensions.swift */,
+				2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -731,6 +738,7 @@
 		2F6E434225B5A4D600A74122 /* AddExchange */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E434F25B5BA3800A74122 /* View */,
 				2F6E434325B5A4ED00A74122 /* AddExchangeModuleBuilder.swift */,
 				2F6E434425B5A4ED00A74122 /* AddExchangePresenter.swift */,
 				2F6E434525B5A4ED00A74122 /* AddExchangeRouter.swift */,
@@ -739,6 +747,15 @@
 				2F6E434825B5A4ED00A74122 /* AddExchangeInteractor.swift */,
 			);
 			path = AddExchange;
+			sourceTree = "<group>";
+		};
+		2F6E434F25B5BA3800A74122 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E435025B5BA4600A74122 /* AddExchangeTextFieldView.swift */,
+				2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -1047,6 +1064,7 @@
 				2F00CEDE258F57AC0066D8B1 /* UIBarButton+Extension.swift in Sources */,
 				2F6E430625B58C3300A74122 /* AssetsPresenter.swift in Sources */,
 				2F6E431325B5956A00A74122 /* ProfileOverviewModuleBuilder.swift in Sources */,
+				2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */,
 				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
 				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
 				2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */,
@@ -1089,6 +1107,7 @@
 				2F6E42DC25B5884B00A74122 /* RootInteractor.swift in Sources */,
 				2F00CEE4258F58D40066D8B1 /* Collection+Extensions.swift in Sources */,
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
+				2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */,
 				2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
@@ -1141,6 +1160,7 @@
 				2F6E431725B5956A00A74122 /* ProfileOverviewProtocols.swift in Sources */,
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
 				2F00CEB8258F29FB0066D8B1 /* UIFont+Extensions.swift in Sources */,
+				2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */,
 				2F6E42D825B5884B00A74122 /* RootPresenter.swift in Sources */,
 				2F6E434B25B5A4ED00A74122 /* AddExchangeRouter.swift in Sources */,
 			);
