@@ -97,6 +97,12 @@
 		2F6E431625B5956A00A74122 /* ProfileOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431025B5956A00A74122 /* ProfileOverviewViewController.swift */; };
 		2F6E431725B5956A00A74122 /* ProfileOverviewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431125B5956A00A74122 /* ProfileOverviewProtocols.swift */; };
 		2F6E431825B5956A00A74122 /* ProfileOverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431225B5956A00A74122 /* ProfileOverviewInteractor.swift */; };
+		2F6E432025B596E400A74122 /* ProfileTransactionsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431A25B596E400A74122 /* ProfileTransactionsModuleBuilder.swift */; };
+		2F6E432125B596E400A74122 /* ProfileTransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431B25B596E400A74122 /* ProfileTransactionsPresenter.swift */; };
+		2F6E432225B596E400A74122 /* ProfileTransactionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431C25B596E400A74122 /* ProfileTransactionsRouter.swift */; };
+		2F6E432325B596E400A74122 /* ProfileTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431D25B596E400A74122 /* ProfileTransactionsViewController.swift */; };
+		2F6E432425B596E400A74122 /* ProfileTransactionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431E25B596E400A74122 /* ProfileTransactionsProtocols.swift */; };
+		2F6E432525B596E400A74122 /* ProfileTransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E431F25B596E400A74122 /* ProfileTransactionsInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -217,6 +223,12 @@
 		2F6E431025B5956A00A74122 /* ProfileOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewViewController.swift; sourceTree = "<group>"; };
 		2F6E431125B5956A00A74122 /* ProfileOverviewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewProtocols.swift; sourceTree = "<group>"; };
 		2F6E431225B5956A00A74122 /* ProfileOverviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewInteractor.swift; sourceTree = "<group>"; };
+		2F6E431A25B596E400A74122 /* ProfileTransactionsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsModuleBuilder.swift; sourceTree = "<group>"; };
+		2F6E431B25B596E400A74122 /* ProfileTransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsPresenter.swift; sourceTree = "<group>"; };
+		2F6E431C25B596E400A74122 /* ProfileTransactionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsRouter.swift; sourceTree = "<group>"; };
+		2F6E431D25B596E400A74122 /* ProfileTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsViewController.swift; sourceTree = "<group>"; };
+		2F6E431E25B596E400A74122 /* ProfileTransactionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsProtocols.swift; sourceTree = "<group>"; };
+		2F6E431F25B596E400A74122 /* ProfileTransactionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTransactionsInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -634,6 +646,7 @@
 		2F6E430B25B594E200A74122 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E431925B596C700A74122 /* Transactions */,
 				2F6E430C25B594F500A74122 /* Overview */,
 			);
 			path = Detail;
@@ -650,6 +663,19 @@
 				2F6E431225B5956A00A74122 /* ProfileOverviewInteractor.swift */,
 			);
 			path = Overview;
+			sourceTree = "<group>";
+		};
+		2F6E431925B596C700A74122 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E431A25B596E400A74122 /* ProfileTransactionsModuleBuilder.swift */,
+				2F6E431B25B596E400A74122 /* ProfileTransactionsPresenter.swift */,
+				2F6E431C25B596E400A74122 /* ProfileTransactionsRouter.swift */,
+				2F6E431D25B596E400A74122 /* ProfileTransactionsViewController.swift */,
+				2F6E431E25B596E400A74122 /* ProfileTransactionsProtocols.swift */,
+				2F6E431F25B596E400A74122 /* ProfileTransactionsInteractor.swift */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -966,14 +992,18 @@
 				2F6E42F425B589BD00A74122 /* ExchangesViewController.swift in Sources */,
 				2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */,
 				2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */,
+				2F6E432225B596E400A74122 /* ProfileTransactionsRouter.swift in Sources */,
 				2F00CEF7258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift in Sources */,
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
+				2F6E432325B596E400A74122 /* ProfileTransactionsViewController.swift in Sources */,
 				2F6E42F625B589BD00A74122 /* ExchangesInteractor.swift in Sources */,
 				2F6E430725B58C3300A74122 /* AssetsRouter.swift in Sources */,
 				2F6E42F325B589BD00A74122 /* ExchangesRouter.swift in Sources */,
+				2F6E432525B596E400A74122 /* ProfileTransactionsInteractor.swift in Sources */,
 				2F6E430925B58C3300A74122 /* AssetsProtocols.swift in Sources */,
 				2F6E42F125B589BD00A74122 /* ExchangesModuleBuilder.swift in Sources */,
+				2F6E432125B596E400A74122 /* ProfileTransactionsPresenter.swift in Sources */,
 				2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */,
 				2F6E42CB25B5730C00A74122 /* SearchExchangeProtocols.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
@@ -1013,6 +1043,7 @@
 				2F00CEE0258F57CA0066D8B1 /* UIApplication+Extensions.swift in Sources */,
 				2F00CEE6258F58F00066D8B1 /* Optional+Extensions.swift in Sources */,
 				2F6E42E825B588D400A74122 /* HomeProtocols.swift in Sources */,
+				2F6E432025B596E400A74122 /* ProfileTransactionsModuleBuilder.swift in Sources */,
 				2F6E42E625B588D400A74122 /* HomeRouter.swift in Sources */,
 				2F6E42DA25B5884B00A74122 /* RootViewController.swift in Sources */,
 				2F6E430A25B58C3300A74122 /* AssetsInteractor.swift in Sources */,
@@ -1024,6 +1055,7 @@
 				2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */,
 				2F6E42E525B588D400A74122 /* HomePresenter.swift in Sources */,
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
+				2F6E432425B596E400A74122 /* ProfileTransactionsProtocols.swift in Sources */,
 				2F00CEDA258F56840066D8B1 /* UICollectionView+Extensions.swift in Sources */,
 				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,
