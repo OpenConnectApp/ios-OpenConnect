@@ -21,6 +21,23 @@ class AddExchangeSwitchView: UIView {
 
     private var divider: UIView = .view(background: UIColor.warmBlue.withAlphaComponent(0.1))
 
+    private var onSwitchValueChangeCompletion: ((Bool) -> Void)?
+
+    var isSwitchOn: Bool {
+        get {
+            return switchBtn.isOn
+        }
+        set {
+            switchBtn.isOn = newValue
+        }
+    }
+
+    var isEnabled: Bool = true {
+        didSet {
+            updateUI()
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -38,6 +55,8 @@ class AddExchangeSwitchView: UIView {
 
     private func setupViews() {
         self.addAutoSubviews([titleLabel, switchBtn, divider])
+        updateUI()
+        switchBtn.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
     }
 
     private func themeViews() {
@@ -56,8 +75,21 @@ class AddExchangeSwitchView: UIView {
         divider.height(1)
     }
 
+    private func updateUI() {
+        titleLabel.textColor = isEnabled ? .silver : .silver40
+        switchBtn.isEnabled = isEnabled
+    }
+
     func configure(text: String, isOn: Bool) {
         titleLabel.text = text
         switchBtn.isOn = isOn
+    }
+
+    @objc private func switchValueChanged() {
+        onSwitchValueChangeCompletion?(switchBtn.isOn)
+    }
+
+    func onStateChanged(onChange: @escaping ((_ isSelected: Bool) -> Void)) {
+        onSwitchValueChangeCompletion = onChange
     }
 }

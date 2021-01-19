@@ -24,6 +24,8 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
 
     private var switchImportPastTransactions: AddExchangeSwitchView = AddExchangeSwitchView()
 
+    private var switchImportPastTransactions2: AddExchangeSwitchView = AddExchangeSwitchView()
+
     private var messageLabel: UILabel = .label(text: Strings.AddExchangeScreen.message, color: .silver20, font: .sectionSubTitle, numOfLines: 0, alignment: .center)
 
     private var additionalOptionSectionLabel: UILabel = .label(text: "Additional Options", color: .silver20, font: .bodyMedium, numOfLines: 1)
@@ -68,6 +70,19 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
 
         switchImportWithdrawals.configure(text: "Import withdrawals/deposits", isOn: true)
         switchImportPastTransactions.configure(text: "Import past transactions", isOn: false)
+        switchImportPastTransactions2.configure(text: "Import past transactions", isOn: false)
+
+        switchImportPastTransactions2.isEnabled = false
+        switchImportPastTransactions.onStateChanged { [weak self] (isOn) in
+            guard let self = self else {
+                return
+            }
+            if isOn {
+                self.confirmPastTransactions()
+            } else {
+                self.switchImportPastTransactions2.isEnabled = false
+            }
+        }
     }
     
     //Apply Theming for views here
@@ -87,7 +102,7 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
 
         self.view.addSubview(profileDetailSV)
 
-        let additionalOptionsSV: UIStackView = .stackView(subviews: [switchImportWithdrawals, switchImportPastTransactions], axis: .vertical, distribution: .fill, alignment: .fill, spacing: 0)
+        let additionalOptionsSV: UIStackView = .stackView(subviews: [switchImportWithdrawals, switchImportPastTransactions, switchImportPastTransactions2], axis: .vertical, distribution: .fill, alignment: .fill, spacing: 0)
 
         self.view.addSubview(additionalOptionsSV)
 
@@ -107,6 +122,20 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
         messageLabel.trailingToSuperview(offset: 34)
 
         addExchangeBtn.edgesToSuperview(excluding: .top, usingSafeArea: true)
+    }
+
+    private func confirmPastTransactions() {
+        let alert = OCBottomAlertController(title: "Import Past Transactions", message: "Please be aware that importing past transactions might heavily influence your current portfolio balances. Funds that are being used need to be accounted for.")
+
+        alert.addAction(AlertAction(title: "Cancel", style: .cancel, handler: { [weak self] (_) in
+            self?.switchImportPastTransactions.isSwitchOn = false
+        }))
+
+        alert.addAction(AlertAction(title: "Confirm", style: .default, handler: { [weak self] (_) in
+            self?.switchImportPastTransactions2.isEnabled = true
+        }))
+
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: AddExchangeViewInput
