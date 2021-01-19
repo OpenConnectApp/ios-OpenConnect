@@ -16,7 +16,7 @@ protocol AssetsViewInput: AnyObject {
 
 // MARK: Presenter
 protocol AssetsViewOutput: AnyObject {
-    func assetSelected(at: IndexPath)
+    func assetSelected(at: Exchange)
 }
 
 protocol AssetsModuleInput: AnyObject {
@@ -37,5 +37,5 @@ protocol AssetsInteractorInput: AnyObject {
 
 // MARK: Router
 protocol AssetsRouterInput: AnyObject {
-    func showAssetDetail()
+    func showAssetDetail(exchange: Exchange)
 }

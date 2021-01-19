@@ -23,7 +23,7 @@ class HomeExchangesHeaderTVCell: UITableViewCell, Reusable {
 
     private var growthDaysLabel: UILabel = .label(color: .silver40, font: UIFont(.montserrat(.medium), size: 10))
 
-    private var graphView: UIView = .view(background: .clear)
+    private var graphView: UIView = .view()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

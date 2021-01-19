@@ -52,9 +52,11 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()
+        self.presenter.viewDidLoad()
     }
     
     // MARK: Private Methods
@@ -139,4 +141,7 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
     }
     
     // MARK: AddExchangeViewInput
+    func setNavigationTitle(exchange: Exchange) {
+        setNavigation(barType: .exchange(exchange: exchange))
+    }
 }

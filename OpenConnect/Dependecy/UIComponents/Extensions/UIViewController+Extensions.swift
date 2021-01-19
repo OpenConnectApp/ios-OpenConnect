@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum UINavBar {
+    case openconnect
+    case title(text: String?)
+    case exchange(exchange: Exchange)
+}
+
 extension UIViewController {
 
     public func dismissKeyboard() {
@@ -43,12 +49,61 @@ extension UIViewController {
         removeFromParent()
     }
 
-    func removeBackButtonText() {
+    func removeNavBackButtonText() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     func resignKeyboardOnTouchBegan() {
         let gesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(gesture)
+    }
+
+    func setNavTitle(showbackBtn: Bool = true, showNavBar: Bool = true, title: String?) {
+        setNavigation(showbackBtn: showbackBtn, barType: .title(text: title))
+        self.navigationController?.setNavigationBarHidden(!showNavBar, animated: true)
+    }
+
+    func setNavigation(showbackBtn: Bool = true, barType: UINavBar) {
+        switch barType {
+        case .title(let text):
+            self.navigationItem.title = text
+        default:
+            let titleView = getNavBarTitleView(barType: barType)
+            self.navigationItem.titleView = titleView
+        }
+
+        self.navigationItem.setHidesBackButton(!showbackBtn, animated: true)
+        removeNavBackButtonText()
+    }
+
+    private func getNavBarTitleView(barType: UINavBar) -> UIView? {
+        switch barType {
+        case .openconnect:
+            return getNavView(title: "OpenConnect", image: Asset.appLogo.image)
+
+        case .exchange(let exchange):
+            return getNavView(title: exchange.title, image: exchange.image)
+
+        default:
+            return nil
+        }
+    }
+
+    private func getNavView(title: String, image: UIImage) -> UIView {
+        let titleLabel: UILabel = .label(text: title, color: .silver, font: .headingBig, numOfLines: 1, alignment: .left)
+        let icon: UIImageView = .imageView(image: image, contentMode: .scaleAspectFit)
+
+        let container: UIView = .view(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.navigationController?.navigationBar.frame.height ?? 44))
+        container.addAutoSubviews([titleLabel, icon])
+
+        icon.width(30)
+        icon.aspectRatio(1)
+        icon.edgesToSuperview(excluding: .trailing)
+
+        titleLabel.leadingToTrailing(of: icon, offset: 8)
+        titleLabel.trailingToSuperview(offset: 5)
+        titleLabel.centerYToSuperview()
+
+        return container
     }
 }

@@ -41,6 +41,7 @@ final class ProfileOverviewViewController: UIViewController, ProfileOverviewView
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()

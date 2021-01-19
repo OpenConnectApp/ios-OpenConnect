@@ -22,8 +22,8 @@ final class AssetsPresenter: AssetsViewOutput, AssetsModuleInput, AssetsInteract
     }
     
     // MARK: AssetsViewOutput methods
-    func assetSelected(at: IndexPath) {
-        self.router.showAssetDetail()
+    func assetSelected(at: Exchange) {
+        self.router.showAssetDetail(exchange: at)
     }
     
     // MARK: AssetsInteractorOutput methods

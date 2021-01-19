@@ -37,7 +37,8 @@ final class HomeViewController: TabmanViewController, HomeViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "OpenConnect"
+        setNavTitle(title: nil)
+        setNavigation(barType: .openconnect)
         setupViews()
         themeViews()
         setupConstraints()

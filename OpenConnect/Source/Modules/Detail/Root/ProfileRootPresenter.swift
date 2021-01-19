@@ -15,13 +15,19 @@ final class ProfileRootPresenter: ProfileRootViewOutput, ProfileRootModuleInput,
     weak var view: ProfileRootViewInput?
     var router: ProfileRootRouterInput!
     var interactor: ProfileRootInteractorInput!
+
+    private var selectedExchange: Exchange
     
     // MARK: Initialization
     
-    init() {
+    init(exchange: Exchange) {
+        selectedExchange = exchange
     }
     
     // MARK: ProfileRootViewOutput methods
+    func viewDidLoad() {
+        self.view?.setNavigationTitle(exchange: selectedExchange)
+    }
     
     // MARK: ProfileRootInteractorOutput methods
 }

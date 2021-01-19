@@ -15,13 +15,19 @@ final class AddExchangePresenter: AddExchangeViewOutput, AddExchangeModuleInput,
     weak var view: AddExchangeViewInput?
     var router: AddExchangeRouterInput!
     var interactor: AddExchangeInteractorInput!
+
+    private var selectedExchange: Exchange
     
     // MARK: Initialization
     
-    init() {
+    init(exchange: Exchange) {
+        self.selectedExchange = exchange
     }
     
     // MARK: AddExchangeViewOutput methods
+    func viewDidLoad() {
+        self.view?.setNavigationTitle(exchange: selectedExchange)
+    }
     
     // MARK: AddExchangeInteractorOutput methods
 }

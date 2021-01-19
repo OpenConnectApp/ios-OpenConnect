@@ -37,6 +37,7 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()
@@ -115,6 +116,6 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return
         }
-        self.presenter.exchangeSelected(at: indexPath)
+        self.presenter.exchangeSelected(at: exchanges[indexPath.row])
     }
 }

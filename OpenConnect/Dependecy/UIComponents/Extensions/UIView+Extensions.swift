@@ -12,7 +12,7 @@ extension UIView {
 
     public static func view(
         frame: CGRect = .zero,
-        background: UIColor = .white,
+        background: UIColor = .clear,
         radius: CGFloat = 0.0,
         alpha: CGFloat = 1.0,
         theme: ((UIView) -> Void)? = nil

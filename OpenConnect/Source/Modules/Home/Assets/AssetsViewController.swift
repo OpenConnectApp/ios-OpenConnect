@@ -41,6 +41,7 @@ final class AssetsViewController: UIViewController, AssetsViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()
@@ -119,6 +120,6 @@ extension AssetsViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return
         }
-        self.presenter.assetSelected(at: indexPath)
+        self.presenter.assetSelected(at: assets[indexPath.row])
     }
 }

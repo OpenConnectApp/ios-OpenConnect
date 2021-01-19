@@ -59,7 +59,7 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = Strings.NavigationTitle.selectExchange
+        setNavTitle(title: Strings.NavigationTitle.selectExchange)
         setupViews()
         themeViews()
         setupConstraints()
@@ -118,7 +118,7 @@ extension SearchExchangeViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.presenter.addNewExchange(at: indexPath)
+        self.presenter.addNewExchange(at: exchanges[indexPath.row])
     }
 }
 

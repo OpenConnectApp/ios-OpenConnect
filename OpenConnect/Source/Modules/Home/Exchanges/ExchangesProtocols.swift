@@ -16,7 +16,7 @@ protocol ExchangesViewInput: AnyObject {
 
 // MARK: Presenter
 protocol ExchangesViewOutput: AnyObject {
-    func exchangeSelected(at: IndexPath)
+    func exchangeSelected(at: Exchange)
 }
 
 protocol ExchangesModuleInput: AnyObject {
@@ -37,5 +37,5 @@ protocol ExchangesInteractorInput: AnyObject {
 
 // MARK: Router
 protocol ExchangesRouterInput: AnyObject {
-    func showExchangeDetail()
+    func showExchangeDetail(exchange: Exchange)
 }

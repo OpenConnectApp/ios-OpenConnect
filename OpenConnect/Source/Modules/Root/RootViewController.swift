@@ -26,6 +26,7 @@ final class RootViewController: UIViewController, RootViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: "OpenConnect")
         setupViews()
         themeViews()
         setupConstraints()

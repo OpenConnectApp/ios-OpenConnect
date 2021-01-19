@@ -11,12 +11,12 @@ import UIKit
 
 // MARK: View
 protocol ProfileRootViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func setNavigationTitle(exchange: Exchange)
 }
 
 // MARK: Presenter
 protocol ProfileRootViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func viewDidLoad()
 }
 
 protocol ProfileRootModuleInput: AnyObject {

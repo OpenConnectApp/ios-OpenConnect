@@ -20,8 +20,8 @@ final class SearchExchangeRouter: SearchExchangeRouterInput {
     }
     
     // MARK: SearchExchangeRouterInput methods
-    func showAddNewExchange() {
-        let vc = AddExchangeModuleBuilder.buildModule(dependency: (), payload: ())
+    func showAddNewExchange(exchange: Exchange) {
+        let vc = AddExchangeModuleBuilder.buildModule(dependency: (), payload: exchange)
         self.viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

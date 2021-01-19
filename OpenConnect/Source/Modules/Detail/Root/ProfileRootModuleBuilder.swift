@@ -12,11 +12,11 @@ import UIKit
 struct ProfileRootModuleBuilder: ModuleBuilder {
     
     // MARK: ProfileRootBuilder method
-    static func buildModule(dependency: (), payload: ()) -> ProfileRootViewController {
+    static func buildModule(dependency: (), payload: Exchange) -> ProfileRootViewController {
         let viewController = ProfileRootViewController()
         let router = ProfileRootRouter(viewController: viewController)
         let interactor = ProfileRootInteractor()
-        let presenter = ProfileRootPresenter()
+        let presenter = ProfileRootPresenter(exchange: payload)
         
         viewController.presenter = presenter
         interactor.presenter = presenter

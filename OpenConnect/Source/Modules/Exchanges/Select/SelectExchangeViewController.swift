@@ -51,7 +51,7 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = Strings.NavigationTitle.selectExchange
+        setNavTitle(title: Strings.NavigationTitle.selectExchange)
         setupViews()
         themeViews()
         setupConstraints()

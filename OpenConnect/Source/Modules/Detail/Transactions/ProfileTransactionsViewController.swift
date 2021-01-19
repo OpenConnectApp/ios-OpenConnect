@@ -36,6 +36,7 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()

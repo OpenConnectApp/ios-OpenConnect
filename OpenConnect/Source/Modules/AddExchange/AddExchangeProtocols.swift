@@ -11,12 +11,12 @@ import UIKit
 
 // MARK: View
 protocol AddExchangeViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func setNavigationTitle(exchange: Exchange)
 }
 
 // MARK: Presenter
 protocol AddExchangeViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func viewDidLoad()
 }
 
 protocol AddExchangeModuleInput: AnyObject {

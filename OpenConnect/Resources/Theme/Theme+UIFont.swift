@@ -56,6 +56,8 @@ public extension UIFont {
 
     static let title = UIFont(.montserrat(.bold), size: 28)
 
+    static let headingBig = UIFont(.montserrat(.semiBold), size: 16)
+
     static let heading = UIFont(.montserrat(.semiBold), size: 14)
 
     static let sectionBigTitle = UIFont(.montserrat(.medium), size: 18)

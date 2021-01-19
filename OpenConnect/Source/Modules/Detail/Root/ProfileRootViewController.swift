@@ -35,10 +35,11 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Bitcoin"
+        setNavTitle(title: nil)
         setupViews()
         themeViews()
         setupConstraints()
+        self.presenter.viewDidLoad()
     }
     
     // MARK: Private Methods
@@ -74,6 +75,9 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
     }
     
     // MARK: ProfileRootViewInput
+    func setNavigationTitle(exchange: Exchange) {
+        setNavigation(barType: .exchange(exchange: exchange))
+    }
 }
 
 extension ProfileRootViewController: PageboyViewControllerDataSource, TMBarDataSource {

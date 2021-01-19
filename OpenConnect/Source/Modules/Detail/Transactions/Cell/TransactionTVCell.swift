@@ -11,7 +11,7 @@ import UIKit
 
 class TransactionTVCell: UITableViewCell, Reusable {
 
-    private var containerView: UIView = .view(background: .clear)
+    private var containerView: UIView = .view()
 
     private var iconImageView: UIImageView = .imageView()
 
