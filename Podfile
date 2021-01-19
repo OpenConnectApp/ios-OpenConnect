@@ -11,6 +11,7 @@ target 'OpenConnect' do
   pod 'SwiftGen'
   pod 'TinyConstraints'
   pod 'Tabman', '~> 2.9'
+  pod 'Charts'
   
   # Pods for OpenConnect
 
