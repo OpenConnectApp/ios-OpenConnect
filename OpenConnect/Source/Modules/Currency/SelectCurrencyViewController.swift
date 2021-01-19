@@ -13,6 +13,27 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
 
     // MARK: Properties
     var presenter: SelectCurrencyViewOutput!
+
+    private var tableView: UITableView = .tableview()
+
+    private var currencys: [Currency] = [
+        Currency(title: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
+        Currency(title: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
+        Currency(title: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
+        Currency(title: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image),
+        Currency(title: "South Sudanese Pound", symbol: "SSP", image: Asset.icExhangeDeribit.image),
+        Currency(title: "Algerian Diner", symbol: "DZD", image: Asset.appLogo.image),
+        Currency(title: "Argentine Peso", symbol: "APS", image: Asset.appLogo.image),
+        Currency(title: "Indian Rupee", symbol: "INR", image: Asset.appLogo.image),
+        Currency(title: "Renminbi", symbol: "CNY", image: Asset.appLogo.image),
+        Currency(title: "Danish Kron", symbol: "DKK", image: Asset.appLogo.image),
+        Currency(title: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
+        Currency(title: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
+        Currency(title: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
+        Currency(title: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image)
+    ]
+
+    private lazy var closeBarBtn: UIBarButtonItem = .init(image: Asset.icNavClose.image, style: .plain, target: self, action: #selector(closeNavBtnTapped))
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -26,6 +47,7 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavTitle(title: Strings.NavigationTitle.selectCurrency)
         setupViews()
         themeViews()
         setupConstraints()
@@ -35,15 +57,75 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
     
     //Configure Views and subviews
     private func setupViews() {
+        self.view.addAutoSubviews([tableView])
+
+        tableView.register(CurrencyTVCell.self)
+        tableView.register(SectionSearchBarHeaderView.self)
+
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        self.navigationItem.rightBarButtonItem = closeBarBtn
     }
     
     //Apply Theming for views here
     private func themeViews() {
+        self.view.backgroundColor = .backgroundDark
+        tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
     }
     
     //Apply AutoLayout Constraints
-    private func setupConstraints() { 
+    private func setupConstraints() {
+        tableView.edgesToSuperview(usingSafeArea: true)
     }
-    
+
+    @objc private func closeNavBtnTapped() {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+
     // MARK: SelectCurrencyViewInput
+}
+
+extension SelectCurrencyViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
+        return currencys.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell: CurrencyTVCell = tableView.dequeueReusableCell(for: indexPath)
+            cell.configure(currency: currencys[indexPath.row], indexPath: indexPath, isSelected: true)
+            return cell
+        }
+        let cell: CurrencyTVCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.configure(currency: currencys[indexPath.row], indexPath: indexPath, isSelected: false)
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            return nil
+        }
+        let header: SectionSearchBarHeaderView = tableView.dequeueReusableHeaderFooterView()
+        header.configure(placeholder: "Search for currency", text: "")
+        return header
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        return UITableView.automaticDimension
+    }
 }

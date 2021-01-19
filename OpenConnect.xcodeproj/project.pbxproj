@@ -126,6 +126,9 @@
 		2F6E436225B6AE3A00A74122 /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435C25B6AE3A00A74122 /* SelectCurrencyViewController.swift */; };
 		2F6E436325B6AE3A00A74122 /* SelectCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435D25B6AE3A00A74122 /* SelectCurrencyProtocols.swift */; };
 		2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */; };
+		2F6E436725B6AE9A00A74122 /* CurrencyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E436625B6AE9A00A74122 /* CurrencyTVCell.swift */; };
+		2F6E436925B6AFE000A74122 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E436825B6AFE000A74122 /* Currency.swift */; };
+		2F6E436B25B6B4AF00A74122 /* SectionSearchBarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E436A25B6B4AF00A74122 /* SectionSearchBarHeaderView.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -275,6 +278,9 @@
 		2F6E435C25B6AE3A00A74122 /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
 		2F6E435D25B6AE3A00A74122 /* SelectCurrencyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyProtocols.swift; sourceTree = "<group>"; };
 		2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyInteractor.swift; sourceTree = "<group>"; };
+		2F6E436625B6AE9A00A74122 /* CurrencyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTVCell.swift; sourceTree = "<group>"; };
+		2F6E436825B6AFE000A74122 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2F6E436A25B6B4AF00A74122 /* SectionSearchBarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSearchBarHeaderView.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				2F00CF00258F5CCE0066D8B1 /* Exchange.swift */,
+				2F6E436825B6AFE000A74122 /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -777,6 +784,7 @@
 		2F6E435825B6AE2000A74122 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E436525B6AE8E00A74122 /* Cell */,
 				2F6E435925B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift */,
 				2F6E435A25B6AE3A00A74122 /* SelectCurrencyPresenter.swift */,
 				2F6E435B25B6AE3A00A74122 /* SelectCurrencyRouter.swift */,
@@ -785,6 +793,15 @@
 				2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		2F6E436525B6AE8E00A74122 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E436625B6AE9A00A74122 /* CurrencyTVCell.swift */,
+				2F6E436A25B6B4AF00A74122 /* SectionSearchBarHeaderView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -1104,6 +1121,7 @@
 				2F00CEEA258F598C0066D8B1 /* Utils+UIViewController+Extensions.swift in Sources */,
 				2F00CEC4258F2DEB0066D8B1 /* Strings.swift in Sources */,
 				2F6E432225B596E400A74122 /* ProfileTransactionsRouter.swift in Sources */,
+				2F6E436B25B6B4AF00A74122 /* SectionSearchBarHeaderView.swift in Sources */,
 				2F00CEF7258F5BCB0066D8B1 /* SelectExchangeModuleBuilder.swift in Sources */,
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
@@ -1136,6 +1154,7 @@
 				2F6E431825B5956A00A74122 /* ProfileOverviewInteractor.swift in Sources */,
 				2F00CEBB258F2C9C0066D8B1 /* ModuleBuilder.swift in Sources */,
 				2F6E42DC25B5884B00A74122 /* RootInteractor.swift in Sources */,
+				2F6E436725B6AE9A00A74122 /* CurrencyTVCell.swift in Sources */,
 				2F00CEE4258F58D40066D8B1 /* Collection+Extensions.swift in Sources */,
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
 				2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */,
@@ -1185,6 +1204,7 @@
 				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
 				2F6E433C25B5998500A74122 /* ProfileRootModuleBuilder.swift in Sources */,
 				2F6E432425B596E400A74122 /* ProfileTransactionsProtocols.swift in Sources */,
+				2F6E436925B6AFE000A74122 /* Currency.swift in Sources */,
 				2F00CEDA258F56840066D8B1 /* UICollectionView+Extensions.swift in Sources */,
 				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,

@@ -89,8 +89,9 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
     //Apply AutoLayout Constraints
     private func setupConstraints() {
         searchBar.edgesToSuperview(excluding: .bottom, insets: UIEdgeInsets(top: 24, left: 24, bottom: 0, right: 24))
+        searchBar.height(44)
 
-        tableView.edgesToSuperview(excluding: .top)
+        tableView.edgesToSuperview(excluding: .top, usingSafeArea: true)
         tableView.topToBottom(of: searchBar, offset: 12)
     }
     
