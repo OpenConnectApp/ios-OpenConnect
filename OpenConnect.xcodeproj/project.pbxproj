@@ -120,6 +120,12 @@
 		2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */; };
 		2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */; };
 		2F6E435725B5E09B00A74122 /* TransactionFilterCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435625B5E09B00A74122 /* TransactionFilterCVCell.swift */; };
+		2F6E435F25B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435925B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift */; };
+		2F6E436025B6AE3A00A74122 /* SelectCurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435A25B6AE3A00A74122 /* SelectCurrencyPresenter.swift */; };
+		2F6E436125B6AE3A00A74122 /* SelectCurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435B25B6AE3A00A74122 /* SelectCurrencyRouter.swift */; };
+		2F6E436225B6AE3A00A74122 /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435C25B6AE3A00A74122 /* SelectCurrencyViewController.swift */; };
+		2F6E436325B6AE3A00A74122 /* SelectCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435D25B6AE3A00A74122 /* SelectCurrencyProtocols.swift */; };
+		2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -263,6 +269,12 @@
 		2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeSwitchView.swift; sourceTree = "<group>"; };
 		2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		2F6E435625B5E09B00A74122 /* TransactionFilterCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFilterCVCell.swift; sourceTree = "<group>"; };
+		2F6E435925B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyModuleBuilder.swift; sourceTree = "<group>"; };
+		2F6E435A25B6AE3A00A74122 /* SelectCurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyPresenter.swift; sourceTree = "<group>"; };
+		2F6E435B25B6AE3A00A74122 /* SelectCurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyRouter.swift; sourceTree = "<group>"; };
+		2F6E435C25B6AE3A00A74122 /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
+		2F6E435D25B6AE3A00A74122 /* SelectCurrencyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyProtocols.swift; sourceTree = "<group>"; };
+		2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -436,6 +448,7 @@
 		2F00CEA5258F27190066D8B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2F6E435825B6AE2000A74122 /* Currency */,
 				2F6E434225B5A4D600A74122 /* AddExchange */,
 				2F6E430B25B594E200A74122 /* Detail */,
 				2F6E42DD25B588C100A74122 /* Home */,
@@ -759,6 +772,19 @@
 				2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2F6E435825B6AE2000A74122 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E435925B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift */,
+				2F6E435A25B6AE3A00A74122 /* SelectCurrencyPresenter.swift */,
+				2F6E435B25B6AE3A00A74122 /* SelectCurrencyRouter.swift */,
+				2F6E435C25B6AE3A00A74122 /* SelectCurrencyViewController.swift */,
+				2F6E435D25B6AE3A00A74122 /* SelectCurrencyProtocols.swift */,
+				2F6E435E25B6AE3A00A74122 /* SelectCurrencyInteractor.swift */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 		2F730B13896FCB55C09A3D8C /* Pods */ = {
@@ -1092,7 +1118,9 @@
 				2F6E433F25B5998500A74122 /* ProfileRootViewController.swift in Sources */,
 				2F6E432125B596E400A74122 /* ProfileTransactionsPresenter.swift in Sources */,
 				2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */,
+				2F6E435F25B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift in Sources */,
 				2F6E42CB25B5730C00A74122 /* SearchExchangeProtocols.swift in Sources */,
+				2F6E436025B6AE3A00A74122 /* SelectCurrencyPresenter.swift in Sources */,
 				2F6E434A25B5A4ED00A74122 /* AddExchangePresenter.swift in Sources */,
 				2F6E434E25B5A4ED00A74122 /* AddExchangeInteractor.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
@@ -1110,11 +1138,13 @@
 				2F6E42DC25B5884B00A74122 /* RootInteractor.swift in Sources */,
 				2F00CEE4258F58D40066D8B1 /* Collection+Extensions.swift in Sources */,
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
+				2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */,
 				2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */,
 				2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
 				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
+				2F6E436125B6AE3A00A74122 /* SelectCurrencyRouter.swift in Sources */,
 				2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */,
 				2F6E434925B5A4ED00A74122 /* AddExchangeModuleBuilder.swift in Sources */,
 				2F6E42FB25B58A8900A74122 /* SectionHeaderView.swift in Sources */,
@@ -1145,6 +1175,7 @@
 				2F6E430A25B58C3300A74122 /* AssetsInteractor.swift in Sources */,
 				2F00CECE258F555B0066D8B1 /* UIViewController+Extensions.swift in Sources */,
 				2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */,
+				2F6E436325B6AE3A00A74122 /* SelectCurrencyProtocols.swift in Sources */,
 				2F6E42FD25B58AC500A74122 /* ExchangesInfoTVCell.swift in Sources */,
 				2F6E432825B5976D00A74122 /* TransactionTVCell.swift in Sources */,
 				2F00CEE2258F58A00066D8B1 /* Theme+UIColor.swift in Sources */,
@@ -1160,6 +1191,7 @@
 				2F00CEFA258F5BCB0066D8B1 /* SelectExchangeViewController.swift in Sources */,
 				2F6E42C825B5730C00A74122 /* SearchExchangePresenter.swift in Sources */,
 				2F00CEBF258F2D360066D8B1 /* BaseViewInput.swift in Sources */,
+				2F6E436225B6AE3A00A74122 /* SelectCurrencyViewController.swift in Sources */,
 				2F00CEC7258F2E440066D8B1 /* Reusable+UICollectionView.swift in Sources */,
 				2F6E431725B5956A00A74122 /* ProfileOverviewProtocols.swift in Sources */,
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
