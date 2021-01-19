@@ -15,6 +15,14 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
     var presenter: ProfileTransactionsViewOutput!
 
     private var tableView: UITableView = .tableview()
+
+    private let filterCollectionView: UICollectionView = .collectionview(scrollDirection: .horizontal)
+
+    private let transactionFilters: [String] = [
+        "Buy", "Sell", "Deposit", "Withdrawal", "More", "Buy", "Sell", "Deposit", "Withdrawal", "More"
+    ]
+
+    private var filterSelectedIndex: Int = -1
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -37,7 +45,7 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
     
     //Configure Views and subviews
     private func setupViews() {
-        self.view.addAutoSubviews([tableView])
+        self.view.addAutoSubviews([filterCollectionView, tableView])
 
         tableView.register(TransactionTVCell.self)
 
@@ -45,6 +53,17 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
 
         tableView.delegate = self
         tableView.dataSource = self
+
+        filterCollectionView.register(TransactionFilterCVCell.self)
+
+        if let layout = filterCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.estimatedItemSize = CGSize(width: 52, height: 32)
+            layout.itemSize = UICollectionViewFlowLayout.automaticSize
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        }
+
+        filterCollectionView.delegate = self
+        filterCollectionView.dataSource = self
     }
     
     //Apply Theming for views here
@@ -57,8 +76,16 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
     }
     
     //Apply AutoLayout Constraints
-    private func setupConstraints() { 
-        tableView.edgesToSuperview(usingSafeArea: true)
+    private func setupConstraints() {
+        filterCollectionView.edgesToSuperview(
+            excluding: .bottom,
+            insets: UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0),
+            usingSafeArea: true
+        )
+        filterCollectionView.height(40)
+
+        tableView.topToBottom(of: filterCollectionView, offset: 4)
+        tableView.edgesToSuperview(excluding: .top, usingSafeArea: true)
     }
     
     // MARK: ProfileTransactionsViewInput
@@ -78,5 +105,30 @@ extension ProfileTransactionsViewController: UITableViewDelegate, UITableViewDat
         let cell: TransactionTVCell = tableView.dequeueReusableCell(for: indexPath)
         cell.configure(indexPath: indexPath)
         return cell
+    }
+}
+
+extension ProfileTransactionsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return transactionFilters.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: TransactionFilterCVCell = collectionView.dequeueReusableCell(for: indexPath)
+        let item = transactionFilters[indexPath.row]
+        cell.configure(title: item, indexPath: indexPath, isSelected: indexPath.row == filterSelectedIndex)
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        filterSelectedIndex = indexPath.row
+        let offset = collectionView.contentOffset
+        collectionView.reloadData()
+        collectionView.contentOffset = offset
     }
 }

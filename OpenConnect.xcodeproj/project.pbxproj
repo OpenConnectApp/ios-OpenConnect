@@ -119,6 +119,7 @@
 		2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435025B5BA4600A74122 /* AddExchangeTextFieldView.swift */; };
 		2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */; };
 		2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */; };
+		2F6E435725B5E09B00A74122 /* TransactionFilterCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E435625B5E09B00A74122 /* TransactionFilterCVCell.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -261,6 +262,7 @@
 		2F6E435025B5BA4600A74122 /* AddExchangeTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeTextFieldView.swift; sourceTree = "<group>"; };
 		2F6E435225B5BA6700A74122 /* AddExchangeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchangeSwitchView.swift; sourceTree = "<group>"; };
 		2F6E435425B5BA8A00A74122 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		2F6E435625B5E09B00A74122 /* TransactionFilterCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFilterCVCell.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -718,6 +720,7 @@
 			isa = PBXGroup;
 			children = (
 				2F6E432725B5976D00A74122 /* TransactionTVCell.swift */,
+				2F6E435625B5E09B00A74122 /* TransactionFilterCVCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1131,6 +1134,7 @@
 				2F6E42E925B588D400A74122 /* HomeInteractor.swift in Sources */,
 				2F6E431625B5956A00A74122 /* ProfileOverviewViewController.swift in Sources */,
 				2F6E430825B58C3300A74122 /* AssetsViewController.swift in Sources */,
+				2F6E435725B5E09B00A74122 /* TransactionFilterCVCell.swift in Sources */,
 				2F00CED4258F56270066D8B1 /* UIStackView+Extensions.swift in Sources */,
 				2F00CEE0258F57CA0066D8B1 /* UIApplication+Extensions.swift in Sources */,
 				2F00CEE6258F58F00066D8B1 /* Optional+Extensions.swift in Sources */,
