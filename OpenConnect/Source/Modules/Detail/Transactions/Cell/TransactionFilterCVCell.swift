@@ -11,6 +11,20 @@ import UIKit
 
 class TransactionFilterCVCell: UICollectionViewCell, Reusable {
 
+    var selectedLabelColor: UIColor = .warmBlue
+
+    var labelColor: UIColor = .silver40
+
+    var selectedLabelFont: UIFont = .sectionSubTitle
+
+    var labelFont: UIFont = .sectionSubTitle
+
+    var selectedBorderColor: UIColor = .warmBlue
+
+    var labelBgColor: UIColor = .darkGreyBlue
+
+    var selectedLabelBgColor: UIColor = .darkGreyBlue
+
     private var bgView: UIView = .view(background: .darkGreyBlue)
 
     private var titleLabel: UILabel = .label(color: .silver40, font: .sectionSubTitle, numOfLines: 1)
@@ -49,7 +63,9 @@ class TransactionFilterCVCell: UICollectionViewCell, Reusable {
 
     func configure(title: String, indexPath: IndexPath, isSelected: Bool) {
         titleLabel.text = title
-        titleLabel.textColor = isSelected ? .warmBlue : .silver40
-        bgView.layer.borderColor = isSelected ? UIColor.warmBlue.cgColor : UIColor.clear.cgColor
+        titleLabel.textColor = isSelected ? selectedLabelColor : labelColor
+        titleLabel.font = isSelected ? selectedLabelFont : labelFont
+        bgView.backgroundColor = isSelected ? selectedLabelBgColor : labelBgColor
+        bgView.layer.borderColor = isSelected ? selectedBorderColor.cgColor : UIColor.clear.cgColor
     }
 }
