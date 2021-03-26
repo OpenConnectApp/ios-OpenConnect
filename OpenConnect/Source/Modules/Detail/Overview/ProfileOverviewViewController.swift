@@ -92,7 +92,7 @@ extension ProfileOverviewViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell: HomeExchangesHeaderTVCell = tableView.dequeueReusableCell(for: indexPath)
-            cell.configure()
+            cell.configure(chartType: .line)
             return cell
         }
         let cell: ExchangesInfoTVCell = tableView.dequeueReusableCell(for: indexPath)
@@ -107,5 +107,12 @@ extension ProfileOverviewViewController: UITableViewDelegate, UITableViewDataSou
         let header: SectionHeaderView = tableView.dequeueReusableHeaderFooterView()
         header.configure(title: "Assets Overview")
         return header
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        return UITableView.automaticDimension
     }
 }

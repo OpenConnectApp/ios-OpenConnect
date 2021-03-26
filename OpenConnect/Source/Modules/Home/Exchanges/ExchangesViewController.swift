@@ -88,7 +88,7 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell: HomeExchangesHeaderTVCell = tableView.dequeueReusableCell(for: indexPath)
-            cell.configure()
+            cell.configure(chartType: .pie)
             return cell
         }
         let cell: ExchangesInfoTVCell = tableView.dequeueReusableCell(for: indexPath)

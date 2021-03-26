@@ -74,13 +74,30 @@ class HomeExchangesHeaderTVCell: UITableViewCell, Reusable {
 
         graphView.edgesToSuperview(excluding: .top)
         graphView.topToBottom(of: balLabel, offset: 20)
-        graphView.aspectRatio(1)
     }
 
-    func configure() {
+    func configure(chartType: ChartType) {
         avalBalLabel.text = "Available Balance"
         balLabel.text = "INR 16.403cr"
         growthLabel.text = "2.54%"
         growthDaysLabel.text = "in 30 days"
+
+        graphView.subviews.forEach { (view) in
+            view.removeFromSuperview()
+        }
+
+        switch chartType {
+        case .pie:
+            let pieView = OCPieChartView()
+            graphView.addAutoSubview(pieView)
+            pieView.edgesToSuperview()
+            pieView.configure()
+
+        case .line:
+            let lineView = OCLineChartView()
+            graphView.addAutoSubview(lineView)
+            lineView.edgesToSuperview()
+            lineView.configure()
+        }
     }
 }
