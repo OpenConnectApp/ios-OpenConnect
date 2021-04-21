@@ -10,5 +10,10 @@ import UIKit
 
 struct Exchange {
     var title: String
-    var image: UIImage
+    var image: UIImage?
+
+    init(data: PublicDataService_ExchangeData) {
+        title = data.name
+        image = nil
+    }
 }

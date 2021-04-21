@@ -89,7 +89,7 @@ extension UIViewController {
         }
     }
 
-    private func getNavView(title: String, image: UIImage) -> UIView {
+    private func getNavView(title: String, image: UIImage?) -> UIView {
         let titleLabel: UILabel = .label(text: title, color: .silver, font: .headingBig, numOfLines: 1, alignment: .left)
         let icon: UIImageView = .imageView(image: image, contentMode: .scaleAspectFit)
 

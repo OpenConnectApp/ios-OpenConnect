@@ -131,6 +131,10 @@
 		2F6E437225B703A600A74122 /* OCLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437125B703A600A74122 /* OCLineChartView.swift */; };
 		2F6E437425B703BF00A74122 /* OCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437325B703BF00A74122 /* OCPieChartView.swift */; };
 		2F6E437725B721AC00A74122 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437625B721AC00A74122 /* ChartType.swift */; };
+		2F7D7EC52619DE9F0013769C /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D7EC42619DE9F0013769C /* AppDataService.swift */; };
+		2FACEA5F2619503F00783787 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA5E2619503F00783787 /* Dependency.swift */; };
+		2FACEA612619505600783787 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA602619505600783787 /* DependencyContainer.swift */; };
+		2FACEA632619508700783787 /* StartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA622619508700783787 /* StartupService.swift */; };
 		2FACEA6B2619759400783787 /* GRPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6A2619759400783787 /* GRPCManager.swift */; };
 		2FACEA6D261975AC00783787 /* GRPCEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */; };
 		2FEAB8DD26109BD7006E6E36 /* auth_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */; };
@@ -293,6 +297,10 @@
 		2F6E437125B703A600A74122 /* OCLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLineChartView.swift; sourceTree = "<group>"; };
 		2F6E437325B703BF00A74122 /* OCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPieChartView.swift; sourceTree = "<group>"; };
 		2F6E437625B721AC00A74122 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		2F7D7EC42619DE9F0013769C /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		2FACEA5E2619503F00783787 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		2FACEA602619505600783787 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		2FACEA622619508700783787 /* StartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupService.swift; sourceTree = "<group>"; };
 		2FACEA6A2619759400783787 /* GRPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCManager.swift; sourceTree = "<group>"; };
 		2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCEndPoint.swift; sourceTree = "<group>"; };
 		2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.pb.swift; sourceTree = "<group>"; };
@@ -435,6 +443,8 @@
 				2F00CEBC258F2D230066D8B1 /* UIComponents */,
 				2F00CE9D258F26D50066D8B1 /* Core */,
 				2F00CEB5258F29E20066D8B1 /* Utils */,
+				2FACEA5E2619503F00783787 /* Dependency.swift */,
+				2FACEA602619505600783787 /* DependencyContainer.swift */,
 			);
 			path = Dependecy;
 			sourceTree = "<group>";
@@ -450,6 +460,8 @@
 		2F00CEA0258F26F40066D8B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2FACEA622619508700783787 /* StartupService.swift */,
+				2F7D7EC42619DE9F0013769C /* AppDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1199,6 +1211,7 @@
 				2F6E436025B6AE3A00A74122 /* SelectCurrencyPresenter.swift in Sources */,
 				2F6E434A25B5A4ED00A74122 /* AddExchangePresenter.swift in Sources */,
 				2F6E434E25B5A4ED00A74122 /* AddExchangeInteractor.swift in Sources */,
+				2F7D7EC52619DE9F0013769C /* AppDataService.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
@@ -1239,6 +1252,7 @@
 				2F6E42F925B58A5900A74122 /* HomeExchangesHeaderTVCell.swift in Sources */,
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
 				2F6E431425B5956A00A74122 /* ProfileOverviewPresenter.swift in Sources */,
+				2FACEA632619508700783787 /* StartupService.swift in Sources */,
 				2F6E434025B5998500A74122 /* ProfileRootProtocols.swift in Sources */,
 				2F6E430525B58C3300A74122 /* AssetsModuleBuilder.swift in Sources */,
 				2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */,
@@ -1255,8 +1269,10 @@
 				2F6E42E625B588D400A74122 /* HomeRouter.swift in Sources */,
 				2F6E42DA25B5884B00A74122 /* RootViewController.swift in Sources */,
 				2F6E430A25B58C3300A74122 /* AssetsInteractor.swift in Sources */,
+				2FACEA612619505600783787 /* DependencyContainer.swift in Sources */,
 				2F00CECE258F555B0066D8B1 /* UIViewController+Extensions.swift in Sources */,
 				2F00CEFB258F5BCB0066D8B1 /* SelectExchangeProtocols.swift in Sources */,
+				2FACEA5F2619503F00783787 /* Dependency.swift in Sources */,
 				2F6E436325B6AE3A00A74122 /* SelectCurrencyProtocols.swift in Sources */,
 				2F6E42FD25B58AC500A74122 /* ExchangesInfoTVCell.swift in Sources */,
 				2F6E432825B5976D00A74122 /* TransactionTVCell.swift in Sources */,

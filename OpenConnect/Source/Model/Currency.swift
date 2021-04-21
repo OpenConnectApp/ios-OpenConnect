@@ -12,5 +12,11 @@ import UIKit
 struct Currency {
     var title: String
     var symbol: String
-    var image: UIImage
+    var image: UIImage?
+
+    init(data: PublicDataService_CurrencyData) {
+        title = data.name
+        symbol = ""
+        image = nil
+    }
 }
