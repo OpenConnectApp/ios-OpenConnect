@@ -22,6 +22,25 @@ final class ProfileTransactionsPresenter: ProfileTransactionsViewOutput, Profile
     }
     
     // MARK: ProfileTransactionsViewOutput methods
+    func viewDidLoad() {
+        getTransactions()
+    }
+
+    func retryLoadTransactions() {
+        getTransactions()
+    }
+
+    private func getTransactions() {
+        self.view?.showSpinner()
+        interactor.loadTransactions()
+    }
     
     // MARK: ProfileTransactionsInteractorOutput methods
+    func loadTransactionsSuccess() {
+        self.view?.hideSpinner()
+    }
+
+    func loadTransactionsError(_ error: Error) {
+        self.view?.hideSpinner()
+    }
 }

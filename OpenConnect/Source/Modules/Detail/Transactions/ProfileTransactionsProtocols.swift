@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 
 // MARK: View
-protocol ProfileTransactionsViewInput: AnyObject {
+protocol ProfileTransactionsViewInput: BaseViewInput {
     // TO-DO: Declare ViewInput methods
 }
 
 // MARK: Presenter
 protocol ProfileTransactionsViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func viewDidLoad()
+    func retryLoadTransactions()
 }
 
 protocol ProfileTransactionsModuleInput: AnyObject {
@@ -27,12 +28,13 @@ protocol ProfileTransactionsModuleInput: AnyObject {
 }
 
 protocol ProfileTransactionsInteractorOutput: AnyObject {
-    // TO-DO: Declare interactor output methods
+    func loadTransactionsSuccess()
+    func loadTransactionsError(_ error: Error)
 }
 
 // MARK: Interactor
 protocol ProfileTransactionsInteractorInput: AnyObject {
-    // TO-DO: Declare interactor methods
+    func loadTransactions()
 }
 
 // MARK: Router

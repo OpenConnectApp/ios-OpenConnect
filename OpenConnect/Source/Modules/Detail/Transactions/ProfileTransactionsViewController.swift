@@ -40,6 +40,7 @@ final class ProfileTransactionsViewController: UIViewController, ProfileTransact
         setupViews()
         themeViews()
         setupConstraints()
+        presenter.viewDidLoad()
     }
     
     // MARK: Private Methods

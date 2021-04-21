@@ -12,10 +12,10 @@ import UIKit
 struct ProfileTransactionsModuleBuilder: ModuleBuilder {
     
     // MARK: ProfileTransactionsBuilder method
-    static func buildModule(dependency: (), payload: ()) -> ProfileTransactionsViewController {
+    static func buildModule(dependency: Dependency, payload: ()) -> ProfileTransactionsViewController {
         let viewController = ProfileTransactionsViewController()
         let router = ProfileTransactionsRouter(viewController: viewController)
-        let interactor = ProfileTransactionsInteractor()
+        let interactor = ProfileTransactionsInteractor(grpcService: dependency.grpcService)
         let presenter = ProfileTransactionsPresenter()
         
         viewController.presenter = presenter

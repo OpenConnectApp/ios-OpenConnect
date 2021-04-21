@@ -18,7 +18,7 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
 
     private var tabViewControllers: [UIViewController] = [
         ProfileOverviewModuleBuilder.buildModule(dependency: (), payload: ()),
-        ProfileTransactionsModuleBuilder.buildModule(dependency: (), payload: ())
+        ProfileTransactionsModuleBuilder.buildModule(dependency: DependencyContainer.shared, payload: ())
     ]
 
     private var tabTitles: [String] = ["Overview", "Transactions"]
