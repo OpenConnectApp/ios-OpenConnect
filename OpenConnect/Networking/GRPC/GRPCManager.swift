@@ -59,7 +59,7 @@ class GRPCManager {
         case .exchangeStatus:
             exchangeStatus()
         case .transactions:
-            transactions()
+            transactions(completion: completion)
 
         case .exchanges:
             exchanges(completion: completion)
@@ -153,8 +153,20 @@ extension GRPCManager {
 
     }
 
-    private func transactions() {
-
+    private func transactions<T>(completion: @escaping (Result<T, Error>) -> Void) {
+        let request: PrivateDataService_GetTransactionsRequest = .with { (request) in
+        }
+        let call = privateClient.getTransactions(request)
+        do {
+            let transactions = try call.response.wait()
+            dispatchOnMainQueue {
+                completion(.success(transactions as! T))
+            }
+        } catch {
+            dispatchOnMainQueue {
+                completion(.failure(error))
+            }
+        }
     }
 }
 
