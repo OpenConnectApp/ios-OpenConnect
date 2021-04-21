@@ -131,6 +131,12 @@
 		2F6E437225B703A600A74122 /* OCLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437125B703A600A74122 /* OCLineChartView.swift */; };
 		2F6E437425B703BF00A74122 /* OCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437325B703BF00A74122 /* OCPieChartView.swift */; };
 		2F6E437725B721AC00A74122 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437625B721AC00A74122 /* ChartType.swift */; };
+		2FEAB8DD26109BD7006E6E36 /* auth_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */; };
+		2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */; };
+		2FEAB8DF26109BD7006E6E36 /* auth_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */; };
+		2FEAB8E026109BD7006E6E36 /* public_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */; };
+		2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */; };
+		2FEAB8E226109BD7006E6E36 /* private_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -285,6 +291,12 @@
 		2F6E437125B703A600A74122 /* OCLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLineChartView.swift; sourceTree = "<group>"; };
 		2F6E437325B703BF00A74122 /* OCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPieChartView.swift; sourceTree = "<group>"; };
 		2F6E437625B721AC00A74122 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.pb.swift; sourceTree = "<group>"; };
+		2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.pb.swift; sourceTree = "<group>"; };
+		2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.grpc.swift; sourceTree = "<group>"; };
+		2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.grpc.swift; sourceTree = "<group>"; };
+		2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.pb.swift; sourceTree = "<group>"; };
+		2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.grpc.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -426,6 +438,7 @@
 		2F00CE9F258F26EC0066D8B1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2FACEA672619756B00783787 /* GRPC */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -831,6 +844,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2FACEA672619756B00783787 /* GRPC */ = {
+			isa = PBXGroup;
+			children = (
+				2FACEA692619757700783787 /* Proto */,
+			);
+			path = GRPC;
+			sourceTree = "<group>";
+		};
+		2FACEA692619757700783787 /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */,
+				2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */,
+				2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */,
+				2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */,
+				2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */,
+				2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
 		D2C241BB24191C8091686A65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1160,7 @@
 				2F6E431325B5956A00A74122 /* ProfileOverviewModuleBuilder.swift in Sources */,
 				2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */,
 				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
+				2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */,
 				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
 				2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */,
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
@@ -1140,6 +1175,7 @@
 				2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */,
 				2F00CE98258E32890066D8B1 /* UIImage+Assets.swift in Sources */,
 				2F6E432325B596E400A74122 /* ProfileTransactionsViewController.swift in Sources */,
+				2FEAB8DF26109BD7006E6E36 /* auth_service.grpc.swift in Sources */,
 				2F6E42F625B589BD00A74122 /* ExchangesInteractor.swift in Sources */,
 				2F6E430725B58C3300A74122 /* AssetsRouter.swift in Sources */,
 				2F6E42F325B589BD00A74122 /* ExchangesRouter.swift in Sources */,
@@ -1153,10 +1189,12 @@
 				2F6E42F525B589BD00A74122 /* ExchangesProtocols.swift in Sources */,
 				2F6E435F25B6AE3A00A74122 /* SelectCurrencyModuleBuilder.swift in Sources */,
 				2F6E42CB25B5730C00A74122 /* SearchExchangeProtocols.swift in Sources */,
+				2FEAB8E226109BD7006E6E36 /* private_service.grpc.swift in Sources */,
 				2F6E436025B6AE3A00A74122 /* SelectCurrencyPresenter.swift in Sources */,
 				2F6E434A25B5A4ED00A74122 /* AddExchangePresenter.swift in Sources */,
 				2F6E434E25B5A4ED00A74122 /* AddExchangeInteractor.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
+				2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
 				2F6E42E425B588D400A74122 /* HomeModuleBuilder.swift in Sources */,
 				2F6E433D25B5998500A74122 /* ProfileRootPresenter.swift in Sources */,
@@ -1177,6 +1215,7 @@
 				2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
 				2F6E437725B721AC00A74122 /* ChartType.swift in Sources */,
+				2FEAB8DD26109BD7006E6E36 /* auth_service.pb.swift in Sources */,
 				2F00CECB258F2E900066D8B1 /* Reusable.swift in Sources */,
 				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
 				2F6E436125B6AE3A00A74122 /* SelectCurrencyRouter.swift in Sources */,
@@ -1233,6 +1272,7 @@
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
 				2F00CEB8258F29FB0066D8B1 /* UIFont+Extensions.swift in Sources */,
 				2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */,
+				2FEAB8E026109BD7006E6E36 /* public_service.grpc.swift in Sources */,
 				2F6E42D825B5884B00A74122 /* RootPresenter.swift in Sources */,
 				2F6E434B25B5A4ED00A74122 /* AddExchangeRouter.swift in Sources */,
 			);
