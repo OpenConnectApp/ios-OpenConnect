@@ -50,8 +50,8 @@ class GRPCManager {
         case .verifyAccount:
             verifyAccount()
 
-        case .connectExchange:
-            connectExchange()
+        case .connectExchange(let exchange):
+            connectExchange(exchange: exchange, completion: completion)
         case .disconnectExchange:
             disconnectExchange()
         case .connectedExchanges:
@@ -121,8 +121,24 @@ extension GRPCManager {
 
 extension GRPCManager {
 
-    private func connectExchange() {
-
+    private func connectExchange<T>(exchange: AddExchange, completion: @escaping (Result<T, Error>) -> Void) {
+        let request: PrivateDataService_ConnectExchangeRequest = .with { (request) in
+            request.apiKey = exchange.apiKey
+            request.apiSecret = exchange.apiSecret
+            request.portfolioName = exchange.profileName
+            request.importTransactions = exchange.importPastTransactions
+        }
+        let call = privateClient.connectExchange(request)
+        do {
+            let exchange = try call.response.wait()
+            dispatchOnMainQueue {
+                completion(.success(exchange as! T))
+            }
+        } catch {
+            dispatchOnMainQueue {
+                completion(.failure(error))
+            }
+        }
     }
 
     private func disconnectExchange() {

@@ -21,7 +21,7 @@ final class AddExchangeInteractor: AddExchangeInteractorInput {
     
     // MARK: AddExchangeInteractorInput methods
     func addExchange(exchange: AddExchange) {
-        grpcService.execute(type: .connectExchange, objectType: PrivateDataService_ConnectExchangeResponse.self) { [weak self] (result) in
+        grpcService.execute(type: .connectExchange(exchange: exchange), objectType: PrivateDataService_ConnectExchangeResponse.self) { [weak self] (result) in
             guard let self = self else {
                 return
             }

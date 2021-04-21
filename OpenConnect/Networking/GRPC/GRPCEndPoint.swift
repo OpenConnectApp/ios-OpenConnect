@@ -7,14 +7,14 @@
 
 import Foundation
 
-public enum GRPCEndPoint {
+enum GRPCEndPoint {
     // Auth
     case login
     case register
     case verifyAccount
 
     // Private
-    case connectExchange
+    case connectExchange(exchange: AddExchange)
     case disconnectExchange
     case exchangeStatus
     case connectedExchanges
