@@ -132,6 +132,7 @@
 		2F6E437425B703BF00A74122 /* OCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437325B703BF00A74122 /* OCPieChartView.swift */; };
 		2F6E437725B721AC00A74122 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437625B721AC00A74122 /* ChartType.swift */; };
 		2F7D7EC52619DE9F0013769C /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D7EC42619DE9F0013769C /* AppDataService.swift */; };
+		2F7D7EC72619ED510013769C /* AddExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D7EC62619ED510013769C /* AddExchange.swift */; };
 		2FACEA5F2619503F00783787 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA5E2619503F00783787 /* Dependency.swift */; };
 		2FACEA612619505600783787 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA602619505600783787 /* DependencyContainer.swift */; };
 		2FACEA632619508700783787 /* StartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA622619508700783787 /* StartupService.swift */; };
@@ -298,6 +299,7 @@
 		2F6E437325B703BF00A74122 /* OCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPieChartView.swift; sourceTree = "<group>"; };
 		2F6E437625B721AC00A74122 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
 		2F7D7EC42619DE9F0013769C /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		2F7D7EC62619ED510013769C /* AddExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchange.swift; sourceTree = "<group>"; };
 		2FACEA5E2619503F00783787 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		2FACEA602619505600783787 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		2FACEA622619508700783787 /* StartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupService.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 			children = (
 				2F00CF00258F5CCE0066D8B1 /* Exchange.swift */,
 				2F6E436825B6AFE000A74122 /* Currency.swift */,
+				2F7D7EC62619ED510013769C /* AddExchange.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1181,6 +1184,7 @@
 				2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */,
 				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
 				2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */,
+				2F7D7EC72619ED510013769C /* AddExchange.swift in Sources */,
 				2F00CEB4258F29000066D8B1 /* Theme+UIFont.swift in Sources */,
 				2F6E42D725B5884B00A74122 /* RootModuleBuilder.swift in Sources */,
 				2F6E433E25B5998500A74122 /* ProfileRootRouter.swift in Sources */,

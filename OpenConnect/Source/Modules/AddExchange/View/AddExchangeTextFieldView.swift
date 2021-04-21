@@ -26,6 +26,15 @@ class AddExchangeTextFieldView: UIView {
 
     private var divider: UIView = .view(background: UIColor.warmBlue.withAlphaComponent(0.1))
 
+    var textValue: String {
+        set {
+            textfield.text = newValue
+        }
+        get {
+            return textfield.text ?? ""
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()

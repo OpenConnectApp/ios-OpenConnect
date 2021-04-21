@@ -28,6 +28,34 @@ final class AddExchangePresenter: AddExchangeViewOutput, AddExchangeModuleInput,
     func viewDidLoad() {
         self.view?.setNavigationTitle(exchange: selectedExchange)
     }
+
+    func addExchangePortfolio(exchange: AddExchange) {
+        guard !exchange.profileName.isEmpty else {
+            self.view?.showSnackbar(with: "Profile Name cannot be empty")
+            return
+        }
+        guard !exchange.profileName.isEmpty else {
+            self.view?.showSnackbar(with: "API Key cannot be empty")
+            return
+        }
+        guard !exchange.profileName.isEmpty else {
+            self.view?.showSnackbar(with: "API secret cannot be empty")
+            return
+        }
+        addExchange(exchange: exchange)
+    }
+
+    private func addExchange(exchange: AddExchange) {
+        self.view?.showSpinner()
+        self.interactor.addExchange(exchange: exchange)
+    }
     
     // MARK: AddExchangeInteractorOutput methods
+    func addExchangeSuccess() {
+        self.view?.hideSpinner()
+    }
+
+    func addExchangeError(error: Error) {
+        self.view?.hideSpinner()
+    }
 }

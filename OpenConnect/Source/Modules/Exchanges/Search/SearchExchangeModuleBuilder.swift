@@ -12,9 +12,9 @@ import UIKit
 struct SearchExchangeModuleBuilder: ModuleBuilder {
     
     // MARK: SearchExchangeBuilder method
-    static func buildModule(dependency: (), payload: ()) -> SearchExchangeViewController {
+    static func buildModule(dependency: Dependency, payload: ()) -> SearchExchangeViewController {
         let viewController = SearchExchangeViewController()
-        let router = SearchExchangeRouter(viewController: viewController)
+        let router = SearchExchangeRouter(viewController: viewController, dependency: dependency)
         let interactor = SearchExchangeInteractor()
         let presenter = SearchExchangePresenter()
         

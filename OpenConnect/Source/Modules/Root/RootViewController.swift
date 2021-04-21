@@ -114,7 +114,7 @@ class SwitchVC: UIViewController {
     }
 
     private func presentSearchExchange() {
-        let vc = SearchExchangeModuleBuilder.buildModule(dependency: (), payload: ())
+        let vc = SearchExchangeModuleBuilder.buildModule(dependency: DependencyContainer.shared, payload: ())
         let nc = UINavigationController(rootViewController: vc)
         nc.modalPresentationStyle = .overFullScreen
         self.present(nc, animated: true, completion: nil)

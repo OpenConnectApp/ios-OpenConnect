@@ -13,15 +13,17 @@ final class SearchExchangeRouter: SearchExchangeRouterInput {
 
     // MARK: Properties
     private weak var viewController: SearchExchangeViewController?
+    private var dependency: Dependency
     
     // MARK: Initialiser
-    init(viewController: SearchExchangeViewController) {
+    init(viewController: SearchExchangeViewController, dependency: Dependency) {
         self.viewController = viewController
+        self.dependency = dependency
     }
     
     // MARK: SearchExchangeRouterInput methods
     func showAddNewExchange(exchange: Exchange) {
-        let vc = AddExchangeModuleBuilder.buildModule(dependency: (), payload: exchange)
+        let vc = AddExchangeModuleBuilder.buildModule(dependency: dependency, payload: exchange)
         self.viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

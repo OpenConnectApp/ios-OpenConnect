@@ -85,6 +85,23 @@ final class AddExchangeViewController: UIViewController, AddExchangeViewInput {
                 self.switchImportPastTransactions2.isEnabled = false
             }
         }
+
+        addExchangeBtn.addTarget(self, action: #selector(addExchangeBtnTapped), for: .touchUpInside)
+    }
+
+    @objc private func addExchangeBtnTapped() {
+        let portfolioName = tfProfileName.textValue
+        let apiKey = tfAPIKey.textValue
+        let apiSecret = tfAPISecret.textValue
+        let importDeposits = switchImportWithdrawals.isSwitchOn
+        let importPastTransactions = switchImportPastTransactions.isSwitchOn
+
+        let addExchange = AddExchange(
+            profileName: portfolioName, apiKey: apiKey, apiSecret: apiSecret,
+            importDeposits: importDeposits, importPastTransactions: importPastTransactions
+        )
+
+        self.presenter.addExchangePortfolio(exchange: addExchange)
     }
     
     //Apply Theming for views here

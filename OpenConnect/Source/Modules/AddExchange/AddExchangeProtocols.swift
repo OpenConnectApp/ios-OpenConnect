@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 
 // MARK: View
-protocol AddExchangeViewInput: AnyObject {
+protocol AddExchangeViewInput: BaseViewInput {
     func setNavigationTitle(exchange: Exchange)
 }
 
 // MARK: Presenter
 protocol AddExchangeViewOutput: AnyObject {
     func viewDidLoad()
+    func addExchangePortfolio(exchange: AddExchange)
 }
 
 protocol AddExchangeModuleInput: AnyObject {
@@ -27,12 +28,13 @@ protocol AddExchangeModuleInput: AnyObject {
 }
 
 protocol AddExchangeInteractorOutput: AnyObject {
-    // TO-DO: Declare interactor output methods
+    func addExchangeSuccess()
+    func addExchangeError(error: Error)
 }
 
 // MARK: Interactor
 protocol AddExchangeInteractorInput: AnyObject {
-    // TO-DO: Declare interactor methods
+    func addExchange(exchange: AddExchange)
 }
 
 // MARK: Router

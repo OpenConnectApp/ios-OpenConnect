@@ -12,10 +12,10 @@ import UIKit
 struct AddExchangeModuleBuilder: ModuleBuilder {
     
     // MARK: AddExchangeBuilder method
-    static func buildModule(dependency: (), payload: Exchange) -> AddExchangeViewController {
+    static func buildModule(dependency: Dependency, payload: Exchange) -> AddExchangeViewController {
         let viewController = AddExchangeViewController()
         let router = AddExchangeRouter(viewController: viewController)
-        let interactor = AddExchangeInteractor()
+        let interactor = AddExchangeInteractor(grpcService: dependency.grpcService)
         let presenter = AddExchangePresenter(exchange: payload)
         
         viewController.presenter = presenter
