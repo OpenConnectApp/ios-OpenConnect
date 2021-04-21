@@ -66,7 +66,7 @@ class CurrencyTVCell: UITableViewCell, Reusable {
     }
 
     func configure(currency: Currency, indexPath: IndexPath, isSelected: Bool = false) {
-        titleLabel.text = currency.title
+        titleLabel.text = currency.name
         iconImageView.image = currency.image
         tickIcon.isHidden = !isSelected
         symbolLabel.text = currency.symbol

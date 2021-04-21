@@ -17,20 +17,20 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
     private var tableView: UITableView = .tableview()
 
     private var currencys: [Currency] = [
-        Currency(title: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
-        Currency(title: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
-        Currency(title: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
-        Currency(title: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image),
-        Currency(title: "South Sudanese Pound", symbol: "SSP", image: Asset.icExhangeDeribit.image),
-        Currency(title: "Algerian Diner", symbol: "DZD", image: Asset.appLogo.image),
-        Currency(title: "Argentine Peso", symbol: "APS", image: Asset.appLogo.image),
-        Currency(title: "Indian Rupee", symbol: "INR", image: Asset.appLogo.image),
-        Currency(title: "Renminbi", symbol: "CNY", image: Asset.appLogo.image),
-        Currency(title: "Danish Kron", symbol: "DKK", image: Asset.appLogo.image),
-        Currency(title: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
-        Currency(title: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
-        Currency(title: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
-        Currency(title: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image)
+        Currency(name: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
+        Currency(name: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
+        Currency(name: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
+        Currency(name: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image),
+        Currency(name: "South Sudanese Pound", symbol: "SSP", image: Asset.icExhangeDeribit.image),
+        Currency(name: "Algerian Diner", symbol: "DZD", image: Asset.appLogo.image),
+        Currency(name: "Argentine Peso", symbol: "APS", image: Asset.appLogo.image),
+        Currency(name: "Indian Rupee", symbol: "INR", image: Asset.appLogo.image),
+        Currency(name: "Renminbi", symbol: "CNY", image: Asset.appLogo.image),
+        Currency(name: "Danish Kron", symbol: "DKK", image: Asset.appLogo.image),
+        Currency(name: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
+        Currency(name: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
+        Currency(name: "Albanian Lek", symbol: "ALL", image: Asset.icExchangeBinance.image),
+        Currency(name: "Guatemalan Quetzel", symbol: "GLZ", image: Asset.icExchangeDelta.image)
     ]
 
     private lazy var closeBarBtn: UIBarButtonItem = .init(image: Asset.icNavClose.image, style: .plain, target: self, action: #selector(closeNavBtnTapped))

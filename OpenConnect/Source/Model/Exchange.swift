@@ -9,11 +9,20 @@
 import UIKit
 
 struct Exchange {
+    var id: String = "-1"
     var title: String
     var image: UIImage?
+    var enabled: Bool = false
+
+    init(title: String, image: UIImage) {
+        self.title = title
+        self.image = image
+    }
 
     init(data: PublicDataService_ExchangeData) {
+        id = data.exchangeID
         title = data.name
+        enabled = data.enabled
         image = nil
     }
 }
