@@ -10,7 +10,6 @@
 		2D6D9F902930B8CA436D09CD /* Pods_OpenConnect_OpenConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */; };
 		2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE61258E25020066D8B1 /* AppDelegate.swift */; };
 		2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE63258E25020066D8B1 /* SceneDelegate.swift */; };
-		2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE65258E25020066D8B1 /* ViewController.swift */; };
 		2F00CE6C258E25020066D8B1 /* OpenConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CE6A258E25020066D8B1 /* OpenConnect.xcdatamodeld */; };
 		2F00CE6E258E25030066D8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6D258E25030066D8B1 /* Assets.xcassets */; };
 		2F00CE71258E25030066D8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00CE6F258E25030066D8B1 /* LaunchScreen.storyboard */; };
@@ -160,7 +159,6 @@
 		2F00CE5E258E25020066D8B1 /* OpenConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F00CE61258E25020066D8B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F00CE63258E25020066D8B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F00CE65258E25020066D8B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F00CE6B258E25020066D8B1 /* OpenConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenConnect.xcdatamodel; sourceTree = "<group>"; };
 		2F00CE6D258E25030066D8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F00CE70258E25030066D8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -467,7 +465,6 @@
 				2F6E42DD25B588C100A74122 /* Home */,
 				2F6E42D025B5883F00A74122 /* Root */,
 				2F00CEEF258F5AF20066D8B1 /* Exchanges */,
-				2F00CE65258E25020066D8B1 /* ViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1220,7 +1217,6 @@
 				2F6E42DB25B5884B00A74122 /* RootProtocols.swift in Sources */,
 				2F00CEF9258F5BCB0066D8B1 /* SelectExchangeRouter.swift in Sources */,
 				2F6E42E525B588D400A74122 /* HomePresenter.swift in Sources */,
-				2F00CE66258E25020066D8B1 /* ViewController.swift in Sources */,
 				2F6E433C25B5998500A74122 /* ProfileRootModuleBuilder.swift in Sources */,
 				2F6E432425B596E400A74122 /* ProfileTransactionsProtocols.swift in Sources */,
 				2F6E436925B6AFE000A74122 /* Currency.swift in Sources */,

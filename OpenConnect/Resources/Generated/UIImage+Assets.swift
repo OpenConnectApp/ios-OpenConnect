@@ -35,6 +35,11 @@ internal enum Asset {
   internal static let icUpRound = ImageAsset(name: "ic_up_round")
   internal static let icNavClose = ImageAsset(name: "ic_nav_close")
   internal static let icNavHamburger = ImageAsset(name: "ic_nav_hamburger")
+  internal static let icTabHome = ImageAsset(name: "ic_tab_home")
+  internal static let icTabHomeSelected = ImageAsset(name: "ic_tab_home_selected")
+  internal static let icTabSetting = ImageAsset(name: "ic_tab_setting")
+  internal static let icTabSettingSelected = ImageAsset(name: "ic_tab_setting_selected")
+  internal static let icTabSwitch = ImageAsset(name: "ic_tab_switch")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
