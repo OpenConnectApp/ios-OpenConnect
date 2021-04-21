@@ -15,6 +15,7 @@ public enum Constants {
         public static let termsAndConditionsUrl = ""
         public static let faqUrl = ""
         public static let appLinkScheme = "openconnect://"
+        public static let host = ""
     }
 
     public enum Timer {

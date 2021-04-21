@@ -131,6 +131,8 @@
 		2F6E437225B703A600A74122 /* OCLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437125B703A600A74122 /* OCLineChartView.swift */; };
 		2F6E437425B703BF00A74122 /* OCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437325B703BF00A74122 /* OCPieChartView.swift */; };
 		2F6E437725B721AC00A74122 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437625B721AC00A74122 /* ChartType.swift */; };
+		2FACEA6B2619759400783787 /* GRPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6A2619759400783787 /* GRPCManager.swift */; };
+		2FACEA6D261975AC00783787 /* GRPCEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */; };
 		2FEAB8DD26109BD7006E6E36 /* auth_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */; };
 		2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */; };
 		2FEAB8DF26109BD7006E6E36 /* auth_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */; };
@@ -291,6 +293,8 @@
 		2F6E437125B703A600A74122 /* OCLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLineChartView.swift; sourceTree = "<group>"; };
 		2F6E437325B703BF00A74122 /* OCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPieChartView.swift; sourceTree = "<group>"; };
 		2F6E437625B721AC00A74122 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		2FACEA6A2619759400783787 /* GRPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCManager.swift; sourceTree = "<group>"; };
+		2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCEndPoint.swift; sourceTree = "<group>"; };
 		2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.pb.swift; sourceTree = "<group>"; };
 		2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.pb.swift; sourceTree = "<group>"; };
 		2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.grpc.swift; sourceTree = "<group>"; };
@@ -848,6 +852,8 @@
 			isa = PBXGroup;
 			children = (
 				2FACEA692619757700783787 /* Proto */,
+				2FACEA6A2619759400783787 /* GRPCManager.swift */,
+				2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */,
 			);
 			path = GRPC;
 			sourceTree = "<group>";
@@ -1204,6 +1210,7 @@
 				2F6E434125B5998500A74122 /* ProfileRootInteractor.swift in Sources */,
 				2F6E42C925B5730C00A74122 /* SearchExchangeRouter.swift in Sources */,
 				2F00CEEE258F59CF0066D8B1 /* Utils+UIApplication+Extensions.swift in Sources */,
+				2FACEA6D261975AC00783787 /* GRPCEndPoint.swift in Sources */,
 				2F6E431825B5956A00A74122 /* ProfileOverviewInteractor.swift in Sources */,
 				2F00CEBB258F2C9C0066D8B1 /* ModuleBuilder.swift in Sources */,
 				2F6E42DC25B5884B00A74122 /* RootInteractor.swift in Sources */,
@@ -1212,6 +1219,7 @@
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
 				2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */,
 				2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */,
+				2FACEA6B2619759400783787 /* GRPCManager.swift in Sources */,
 				2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
 				2F6E437725B721AC00A74122 /* ChartType.swift in Sources */,
