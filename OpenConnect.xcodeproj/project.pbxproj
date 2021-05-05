@@ -56,6 +56,8 @@
 		2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CEFE258F5CB10066D8B1 /* SelectExchangeTVCell.swift */; };
 		2F00CF01258F5CCE0066D8B1 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CF00258F5CCE0066D8B1 /* Exchange.swift */; };
 		2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CF02258F9B7A0066D8B1 /* Theme.swift */; };
+		2F19A45F2642BC2300AF27F4 /* public_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45D2642BC2200AF27F4 /* public_service.pb.swift */; };
+		2F19A4602642BC2300AF27F4 /* public_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45E2642BC2300AF27F4 /* public_service.grpc.swift */; };
 		2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C125B5730C00A74122 /* SearchExchangeModuleBuilder.swift */; };
 		2F6E42C825B5730C00A74122 /* SearchExchangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C225B5730C00A74122 /* SearchExchangePresenter.swift */; };
 		2F6E42C925B5730C00A74122 /* SearchExchangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C325B5730C00A74122 /* SearchExchangeRouter.swift */; };
@@ -139,9 +141,7 @@
 		2FACEA6B2619759400783787 /* GRPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6A2619759400783787 /* GRPCManager.swift */; };
 		2FACEA6D261975AC00783787 /* GRPCEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */; };
 		2FEAB8DD26109BD7006E6E36 /* auth_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */; };
-		2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */; };
 		2FEAB8DF26109BD7006E6E36 /* auth_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */; };
-		2FEAB8E026109BD7006E6E36 /* public_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */; };
 		2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */; };
 		2FEAB8E226109BD7006E6E36 /* private_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
@@ -223,6 +223,8 @@
 		2F00CEFE258F5CB10066D8B1 /* SelectExchangeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExchangeTVCell.swift; sourceTree = "<group>"; };
 		2F00CF00258F5CCE0066D8B1 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
 		2F00CF02258F9B7A0066D8B1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2F19A45D2642BC2200AF27F4 /* public_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.pb.swift; sourceTree = "<group>"; };
+		2F19A45E2642BC2300AF27F4 /* public_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.grpc.swift; sourceTree = "<group>"; };
 		2F6E42C125B5730C00A74122 /* SearchExchangeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangeModuleBuilder.swift; sourceTree = "<group>"; };
 		2F6E42C225B5730C00A74122 /* SearchExchangePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangePresenter.swift; sourceTree = "<group>"; };
 		2F6E42C325B5730C00A74122 /* SearchExchangeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangeRouter.swift; sourceTree = "<group>"; };
@@ -306,9 +308,7 @@
 		2FACEA6A2619759400783787 /* GRPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCManager.swift; sourceTree = "<group>"; };
 		2FACEA6C261975AC00783787 /* GRPCEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCEndPoint.swift; sourceTree = "<group>"; };
 		2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.pb.swift; sourceTree = "<group>"; };
-		2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.pb.swift; sourceTree = "<group>"; };
 		2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.grpc.swift; sourceTree = "<group>"; };
-		2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.grpc.swift; sourceTree = "<group>"; };
 		2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.pb.swift; sourceTree = "<group>"; };
 		2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.grpc.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -876,12 +876,12 @@
 		2FACEA692619757700783787 /* Proto */ = {
 			isa = PBXGroup;
 			children = (
+				2F19A45E2642BC2300AF27F4 /* public_service.grpc.swift */,
+				2F19A45D2642BC2200AF27F4 /* public_service.pb.swift */,
 				2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */,
 				2FEAB8D726109BD6006E6E36 /* auth_service.pb.swift */,
 				2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */,
 				2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */,
-				2FEAB8DA26109BD6006E6E36 /* public_service.grpc.swift */,
-				2FEAB8D826109BD6006E6E36 /* public_service.pb.swift */,
 			);
 			path = Proto;
 			sourceTree = "<group>";
@@ -1181,7 +1181,6 @@
 				2F6E431325B5956A00A74122 /* ProfileOverviewModuleBuilder.swift in Sources */,
 				2F6E435525B5BA8A00A74122 /* UITextField+Extensions.swift in Sources */,
 				2F00CEFC258F5BCB0066D8B1 /* SelectExchangeInteractor.swift in Sources */,
-				2FEAB8DE26109BD7006E6E36 /* public_service.pb.swift in Sources */,
 				2F6E42E725B588D400A74122 /* HomeViewController.swift in Sources */,
 				2F6E42F225B589BD00A74122 /* ExchangesPresenter.swift in Sources */,
 				2F7D7EC72619ED510013769C /* AddExchange.swift in Sources */,
@@ -1215,6 +1214,7 @@
 				2F6E436025B6AE3A00A74122 /* SelectCurrencyPresenter.swift in Sources */,
 				2F6E434A25B5A4ED00A74122 /* AddExchangePresenter.swift in Sources */,
 				2F6E434E25B5A4ED00A74122 /* AddExchangeInteractor.swift in Sources */,
+				2F19A45F2642BC2300AF27F4 /* public_service.pb.swift in Sources */,
 				2F7D7EC52619DE9F0013769C /* AppDataService.swift in Sources */,
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */,
@@ -1236,6 +1236,7 @@
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
 				2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */,
 				2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */,
+				2F19A4602642BC2300AF27F4 /* public_service.grpc.swift in Sources */,
 				2FACEA6B2619759400783787 /* GRPCManager.swift in Sources */,
 				2F6E434D25B5A4ED00A74122 /* AddExchangeProtocols.swift in Sources */,
 				2F00CED0258F55BC0066D8B1 /* UIView+Extensions.swift in Sources */,
@@ -1300,7 +1301,6 @@
 				2F00CE64258E25020066D8B1 /* SceneDelegate.swift in Sources */,
 				2F00CEB8258F29FB0066D8B1 /* UIFont+Extensions.swift in Sources */,
 				2F6E435325B5BA6700A74122 /* AddExchangeSwitchView.swift in Sources */,
-				2FEAB8E026109BD7006E6E36 /* public_service.grpc.swift in Sources */,
 				2F6E42D825B5884B00A74122 /* RootPresenter.swift in Sources */,
 				2F6E434B25B5A4ED00A74122 /* AddExchangeRouter.swift in Sources */,
 			);

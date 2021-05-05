@@ -23,7 +23,7 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
 public enum PublicDataService_ListExchangesRequestSortByFields: SwiftProtobuf.Enum {
   public typealias RawValue = Int
   case exchangeID // = 0
-  case name // = 1
+  case exchangeName // = 1
   case UNRECOGNIZED(Int)
 
   public init() {
@@ -33,7 +33,7 @@ public enum PublicDataService_ListExchangesRequestSortByFields: SwiftProtobuf.En
   public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .exchangeID
-    case 1: self = .name
+    case 1: self = .exchangeName
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
@@ -41,7 +41,7 @@ public enum PublicDataService_ListExchangesRequestSortByFields: SwiftProtobuf.En
   public var rawValue: Int {
     switch self {
     case .exchangeID: return 0
-    case .name: return 1
+    case .exchangeName: return 1
     case .UNRECOGNIZED(let i): return i
     }
   }
@@ -54,7 +54,7 @@ extension PublicDataService_ListExchangesRequestSortByFields: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static var allCases: [PublicDataService_ListExchangesRequestSortByFields] = [
     .exchangeID,
-    .name,
+    .exchangeName,
   ]
 }
 
@@ -221,6 +221,8 @@ public struct PublicDataService_ExchangeData {
 
   public var name: String = String()
 
+  public var iconURL: String = String()
+
   public var enabled: Bool = false
 
   public var unknownFields = SwiftProtobuf.UnknownStorage()
@@ -283,6 +285,8 @@ public struct PublicDataService_CurrencyData {
 
   public var value: Float = 0
 
+  public var iconURL: String = String()
+
   public var enabled: Bool = false
 
   public var unknownFields = SwiftProtobuf.UnknownStorage()
@@ -313,7 +317,7 @@ fileprivate let _protobuf_package = "public_data_service"
 extension PublicDataService_ListExchangesRequestSortByFields: SwiftProtobuf._ProtoNameProviding {
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "exchange_id"),
-    1: .same(proto: "name"),
+    1: .same(proto: "exchange_name"),
   ]
 }
 
@@ -402,7 +406,8 @@ extension PublicDataService_ExchangeData: SwiftProtobuf.Message, SwiftProtobuf._
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "exchange_id"),
     2: .same(proto: "name"),
-    3: .same(proto: "enabled"),
+    3: .standard(proto: "icon_url"),
+    4: .same(proto: "enabled"),
   ]
 
   public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -413,7 +418,8 @@ extension PublicDataService_ExchangeData: SwiftProtobuf.Message, SwiftProtobuf._
       switch fieldNumber {
       case 1: try { try decoder.decodeSingularStringField(value: &self.exchangeID) }()
       case 2: try { try decoder.decodeSingularStringField(value: &self.name) }()
-      case 3: try { try decoder.decodeSingularBoolField(value: &self.enabled) }()
+      case 3: try { try decoder.decodeSingularStringField(value: &self.iconURL) }()
+      case 4: try { try decoder.decodeSingularBoolField(value: &self.enabled) }()
       default: break
       }
     }
@@ -426,8 +432,11 @@ extension PublicDataService_ExchangeData: SwiftProtobuf.Message, SwiftProtobuf._
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 2)
     }
+    if !self.iconURL.isEmpty {
+      try visitor.visitSingularStringField(value: self.iconURL, fieldNumber: 3)
+    }
     if self.enabled != false {
-      try visitor.visitSingularBoolField(value: self.enabled, fieldNumber: 3)
+      try visitor.visitSingularBoolField(value: self.enabled, fieldNumber: 4)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -435,6 +444,7 @@ extension PublicDataService_ExchangeData: SwiftProtobuf.Message, SwiftProtobuf._
   public static func ==(lhs: PublicDataService_ExchangeData, rhs: PublicDataService_ExchangeData) -> Bool {
     if lhs.exchangeID != rhs.exchangeID {return false}
     if lhs.name != rhs.name {return false}
+    if lhs.iconURL != rhs.iconURL {return false}
     if lhs.enabled != rhs.enabled {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -566,7 +576,8 @@ extension PublicDataService_CurrencyData: SwiftProtobuf.Message, SwiftProtobuf._
     2: .same(proto: "name"),
     3: .standard(proto: "base_currency"),
     4: .same(proto: "value"),
-    5: .same(proto: "enabled"),
+    5: .standard(proto: "icon_url"),
+    6: .same(proto: "enabled"),
   ]
 
   public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -579,7 +590,8 @@ extension PublicDataService_CurrencyData: SwiftProtobuf.Message, SwiftProtobuf._
       case 2: try { try decoder.decodeSingularStringField(value: &self.name) }()
       case 3: try { try decoder.decodeSingularStringField(value: &self.baseCurrency) }()
       case 4: try { try decoder.decodeSingularFloatField(value: &self.value) }()
-      case 5: try { try decoder.decodeSingularBoolField(value: &self.enabled) }()
+      case 5: try { try decoder.decodeSingularStringField(value: &self.iconURL) }()
+      case 6: try { try decoder.decodeSingularBoolField(value: &self.enabled) }()
       default: break
       }
     }
@@ -598,8 +610,11 @@ extension PublicDataService_CurrencyData: SwiftProtobuf.Message, SwiftProtobuf._
     if self.value != 0 {
       try visitor.visitSingularFloatField(value: self.value, fieldNumber: 4)
     }
+    if !self.iconURL.isEmpty {
+      try visitor.visitSingularStringField(value: self.iconURL, fieldNumber: 5)
+    }
     if self.enabled != false {
-      try visitor.visitSingularBoolField(value: self.enabled, fieldNumber: 5)
+      try visitor.visitSingularBoolField(value: self.enabled, fieldNumber: 6)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -609,6 +624,7 @@ extension PublicDataService_CurrencyData: SwiftProtobuf.Message, SwiftProtobuf._
     if lhs.name != rhs.name {return false}
     if lhs.baseCurrency != rhs.baseCurrency {return false}
     if lhs.value != rhs.value {return false}
+    if lhs.iconURL != rhs.iconURL {return false}
     if lhs.enabled != rhs.enabled {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true

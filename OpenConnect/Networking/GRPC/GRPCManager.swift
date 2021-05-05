@@ -14,8 +14,8 @@ class GRPCManager {
     static var shared: GRPCManager = GRPCManager()
 
     private lazy var channel = ClientConnection
-        .secure(group: PlatformSupport.makeEventLoopGroup(loopCount: 1))
-        .connect(host: Constants.Config.host, port: 1008)
+        .insecure(group: PlatformSupport.makeEventLoopGroup(loopCount: 1))
+        .connect(host: Constants.Config.host, port: Constants.Config.port)
 
     private lazy var authClient = Auth_AuthServiceClient(
         channel: channel,
@@ -174,7 +174,8 @@ extension GRPCManager {
 
     private func exchanges<T>(completion: @escaping (Result<T, Error>) -> Void) {
         let request: PublicDataService_ListExchangesRequest = .with { (request) in
-            request.sortBy = .name
+            request.sortBy = .exchangeID
+            request.enabled = true
         }
         let call = publicClient.listExchanges(request)
         do {
@@ -192,6 +193,7 @@ extension GRPCManager {
     private func currencies<T>(completion: @escaping (Result<T, Error>) -> Void) {
         let request: PublicDataService_ListCurrenciesRequest = .with { (request) in
             request.sortBy = .name
+            request.enabled = true
         }
         let call = publicClient.listCurrencies(request)
         do {
