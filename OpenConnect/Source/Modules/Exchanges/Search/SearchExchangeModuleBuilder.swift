@@ -16,7 +16,7 @@ struct SearchExchangeModuleBuilder: ModuleBuilder {
         let viewController = SearchExchangeViewController()
         let router = SearchExchangeRouter(viewController: viewController, dependency: dependency)
         let interactor = SearchExchangeInteractor()
-        let presenter = SearchExchangePresenter()
+        let presenter = SearchExchangePresenter(dataService: dependency.appDataService)
         
         viewController.presenter = presenter
         interactor.presenter = presenter

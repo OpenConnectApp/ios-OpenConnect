@@ -16,6 +16,8 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
 
     private var tableView: UITableView = .tableview()
 
+    private var viewModel: SearchExchangeViewModel?
+
     private var searchBar: UISearchBar = {
         let sb = UISearchBar()
         sb.placeholder = "Search for exchange"
@@ -30,20 +32,6 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
         sb.searchTextField.backgroundColor = .background
         return sb
     }()
-
-    private var exchanges: [Exchange] = [
-        Exchange(title: "CoinDCX", image: Asset.icExchangeCoindcx.image),
-        Exchange(title: "Binance", image: Asset.icExchangeBinance.image),
-        Exchange(title: "Delta.Exchange", image: Asset.icExchangeDelta.image),
-        Exchange(title: "Deribit", image: Asset.icExhangeDeribit.image),
-        Exchange(title: "Kraken", image: Asset.appLogo.image),
-        Exchange(title: "Bitfinex", image: Asset.appLogo.image),
-        Exchange(title: "CEX.io", image: Asset.appLogo.image),
-        Exchange(title: "Coinbase", image: Asset.appLogo.image),
-        Exchange(title: "Kucoin", image: Asset.appLogo.image),
-        Exchange(title: "BitMex", image: Asset.appLogo.image),
-        Exchange(title: "BitBNS", image: Asset.appLogo.image)
-    ]
 
     private lazy var closeBarBtn: UIBarButtonItem = .init(image: Asset.icNavClose.image, style: .plain, target: self, action: #selector(closeNavBtnTapped))
     
@@ -63,6 +51,7 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
         setupViews()
         themeViews()
         setupConstraints()
+        self.presenter.viewDidLoad()
     }
     
     // MARK: Private Methods
@@ -100,6 +89,10 @@ final class SearchExchangeViewController: UIViewController, SearchExchangeViewIn
     }
     
     // MARK: SearchExchangeViewInput
+    func showExchanges(viewModel: SearchExchangeViewModel) {
+        self.viewModel = viewModel
+        self.tableView.reloadData()
+    }
 }
 
 extension SearchExchangeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -109,17 +102,24 @@ extension SearchExchangeViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exchanges.count
+        guard let model = self.viewModel else {
+            return 0
+        }
+        return model.exchanges.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let model = self.viewModel else {
+            fatalError("ViewModel Not Configured")
+        }
+
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath)
+        cell.configure(exchange: model.exchanges[indexPath.row], indexPath: indexPath)
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.presenter.addNewExchange(at: exchanges[indexPath.row])
+        self.presenter.exchangeSelected(at: indexPath)
     }
 }
 

@@ -11,12 +11,13 @@ import UIKit
 
 // MARK: View
 protocol SearchExchangeViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func showExchanges(viewModel: SearchExchangeViewModel)
 }
 
 // MARK: Presenter
 protocol SearchExchangeViewOutput: AnyObject {
-    func addNewExchange(at: Exchange)
+    func viewDidLoad() 
+    func exchangeSelected(at: IndexPath)
 }
 
 protocol SearchExchangeModuleInput: AnyObject {
@@ -38,4 +39,14 @@ protocol SearchExchangeInteractorInput: AnyObject {
 // MARK: Router
 protocol SearchExchangeRouterInput: AnyObject {
     func showAddNewExchange(exchange: Exchange)
+}
+
+struct SearchExchangeViewModel {
+
+    private(set) var exchanges: [Exchange] = []
+
+    mutating func update(exchanges: [Exchange]) {
+        self.exchanges.removeAll()
+        self.exchanges.append(contentsOf: exchanges)
+    }
 }

@@ -41,3 +41,14 @@ extension UIImageView {
         self.useAutolayout()
     }
 }
+
+extension UIImageView {
+
+    public func setImage(with imageUrl: String?) {
+        guard let _path = imageUrl, let url = URL(string: _path) else {
+            self.image = nil
+            return
+        }
+        self.kf.setImage(with: url)
+    }
+}

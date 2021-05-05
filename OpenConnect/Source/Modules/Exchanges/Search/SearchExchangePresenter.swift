@@ -15,15 +15,25 @@ final class SearchExchangePresenter: SearchExchangeViewOutput, SearchExchangeMod
     weak var view: SearchExchangeViewInput?
     var router: SearchExchangeRouterInput!
     var interactor: SearchExchangeInteractorInput!
+
+    private var dataService: AppDataService
+    private var viewModel: SearchExchangeViewModel
     
     // MARK: Initialization
     
-    init() {
+    init(dataService: AppDataService) {
+        self.dataService = dataService
+        self.viewModel = SearchExchangeViewModel()
     }
     
     // MARK: SearchExchangeViewOutput methods
-    func addNewExchange(at: Exchange) {
-        self.router.showAddNewExchange(exchange: at)
+    func viewDidLoad() {
+        self.viewModel.update(exchanges: self.dataService.exchanges)
+        self.view?.showExchanges(viewModel: self.viewModel)
+    }
+
+    func exchangeSelected(at: IndexPath) {
+        self.router.showAddNewExchange(exchange: viewModel.exchanges[at.row])
     }
     
     // MARK: SearchExchangeInteractorOutput methods

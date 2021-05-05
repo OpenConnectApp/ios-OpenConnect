@@ -61,7 +61,7 @@ class SelectExchangeTVCell: UITableViewCell, Reusable {
 
     func configure(exchange: Exchange, indexPath: IndexPath, isSelected: Bool = false) {
         titleLabel.text = exchange.title
-        iconImageView.image = exchange.image
+        iconImageView.setImage(with: exchange.imageUrl)
         tickIcon.isHidden = !isSelected
     }
 }

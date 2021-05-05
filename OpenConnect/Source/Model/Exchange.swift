@@ -13,6 +13,7 @@ struct Exchange {
     var title: String
     var image: UIImage?
     var enabled: Bool = false
+    var imageUrl: String?
 
     init(title: String, image: UIImage) {
         self.title = title
@@ -24,5 +25,6 @@ struct Exchange {
         title = data.name
         enabled = data.enabled
         image = nil
+        imageUrl = data.iconURL
     }
 }
