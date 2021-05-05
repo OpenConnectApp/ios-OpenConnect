@@ -13,6 +13,7 @@ target 'OpenConnect' do
   pod 'Tabman', '~> 2.9'
   pod 'Charts'
   pod 'gRPC-Swift', '~> 1.0.0'
+  pod 'Kingfisher'
   
   # Pods for OpenConnect
 

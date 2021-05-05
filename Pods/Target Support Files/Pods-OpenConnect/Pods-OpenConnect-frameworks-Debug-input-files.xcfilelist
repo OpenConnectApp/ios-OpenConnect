@@ -8,6 +8,7 @@ ${BUILT_PRODUCTS_DIR}/CNIOHTTPParser/CNIOHTTPParser.framework
 ${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework
 ${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework
 ${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/Logging/Logging.framework
 ${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework
 ${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework

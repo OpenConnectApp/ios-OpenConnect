@@ -20,6 +20,7 @@ PODS:
     - SwiftNIOSSL (< 3.0.0, >= 2.8.0)
     - SwiftNIOTransportServices (< 2.0.0, >= 1.6.0)
     - SwiftProtobuf (< 2.0.0, >= 1.9.0)
+  - Kingfisher (6.3.0)
   - Logging (1.4.0)
   - Pageboy (3.6.2)
   - SwiftGen (6.4.0)
@@ -70,6 +71,7 @@ PODS:
 DEPENDENCIES:
   - Charts
   - gRPC-Swift (~> 1.0.0)
+  - Kingfisher
   - SwiftGen
   - SwiftLint
   - Tabman (~> 2.9)
@@ -87,6 +89,7 @@ SPEC REPOS:
     - CNIOLinux
     - CNIOWindows
     - gRPC-Swift
+    - Kingfisher
     - Logging
     - Pageboy
     - SwiftGen
@@ -116,6 +119,7 @@ SPEC CHECKSUMS:
   CNIOLinux: 5fd92122d58b04508074371d95a1f874310fe8e3
   CNIOWindows: 0af55cf84c3811318aee91888737e0b124552029
   gRPC-Swift: 77154009a019e97f8c4bd8f2bb75fe9726801157
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
@@ -134,6 +138,6 @@ SPEC CHECKSUMS:
   Tabman: 085d89c65be9e883629bdaf5b1453a6397e57846
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: facdc7bcd1f554eb7a09d875a1187afb0aa3782f
+PODFILE CHECKSUM: dd3d9b87a53f66edb6322cfdb4b21f787b252457
 
 COCOAPODS: 1.10.0
