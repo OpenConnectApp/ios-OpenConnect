@@ -82,7 +82,7 @@ extension UIViewController {
             return getNavView(title: "OpenConnect", image: Asset.appLogo.image)
 
         case .exchange(let exchange):
-            return getNavView(title: exchange.title, image: exchange.image)
+            return getNavView(title: exchange.title, imageUrl: exchange.imageUrl)
 
         default:
             return nil
@@ -90,12 +90,52 @@ extension UIViewController {
     }
 
     private func getNavView(title: String, image: UIImage?) -> UIView {
-        let titleLabel: UILabel = .label(text: title, color: .silver, font: .headingBig, numOfLines: 1, alignment: .left)
-        let icon: UIImageView = .imageView(image: image, contentMode: .scaleAspectFit)
+        let navView: NavigationTitleView = getNavigationView()
+        navView.configure(title: title, image: image)
+        return navView
+    }
 
-        let container: UIView = .view(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.navigationController?.navigationBar.frame.height ?? 44))
-        container.addAutoSubviews([titleLabel, icon])
+    private func getNavView(title: String, imageUrl: String?) -> UIView {
+        let navView: NavigationTitleView = getNavigationView()
+        navView.configure(title: title, imageUrl: imageUrl)
+        return navView
+    }
 
+    private func getNavigationView() -> NavigationTitleView {
+        let navView: NavigationTitleView = NavigationTitleView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.navigationController?.navigationBar.frame.height ?? 44))
+        return navView
+    }
+}
+
+private class NavigationTitleView: UIView {
+
+    let titleLabel: UILabel = .label(color: .silver, font: .headingBig, numOfLines: 1, alignment: .left)
+    let icon: UIImageView = .imageView(contentMode: .scaleAspectFit)
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    private func setup() {
+        setupViews()
+        themeViews()
+        setupConstraints()
+    }
+
+    private func setupViews() {
+        self.addAutoSubviews([titleLabel, icon])
+    }
+
+    private func themeViews() {
+        self.backgroundColor = .clear
+    }
+
+    private func setupConstraints() {
         icon.width(30)
         icon.aspectRatio(1)
         icon.edgesToSuperview(excluding: .trailing)
@@ -103,7 +143,15 @@ extension UIViewController {
         titleLabel.leadingToTrailing(of: icon, offset: 8)
         titleLabel.trailingToSuperview(offset: 5)
         titleLabel.centerYToSuperview()
+    }
 
-        return container
+    func configure(title: String, imageUrl: String?) {
+        titleLabel.text = title
+        icon.kf.setImage(with: URL(string: imageUrl ?? ""))
+    }
+
+    func configure(title: String, image: UIImage?) {
+        titleLabel.text = title
+        icon.image = image
     }
 }
