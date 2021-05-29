@@ -11,12 +11,13 @@ import UIKit
 
 // MARK: View
 protocol SelectCurrencyViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func showCurrencies(viewModel: SelectCurrencyViewModel)
 }
 
 // MARK: Presenter
 protocol SelectCurrencyViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func viewDidLoad()
+    func currencySelected(at: IndexPath)
 }
 
 protocol SelectCurrencyModuleInput: AnyObject {
@@ -38,4 +39,14 @@ protocol SelectCurrencyInteractorInput: AnyObject {
 // MARK: Router
 protocol SelectCurrencyRouterInput: AnyObject {
     // TO-DO: Declare router methods
+}
+
+struct SelectCurrencyViewModel {
+
+    private(set) var currencies: [Currency] = []
+
+    mutating func update(currencies: [Currency]) {
+        self.currencies.removeAll()
+        self.currencies.append(contentsOf: currencies)
+    }
 }

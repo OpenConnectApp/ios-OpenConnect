@@ -15,13 +15,25 @@ final class SelectCurrencyPresenter: SelectCurrencyViewOutput, SelectCurrencyMod
     weak var view: SelectCurrencyViewInput?
     var router: SelectCurrencyRouterInput!
     var interactor: SelectCurrencyInteractorInput!
+
+    private var dataService: AppDataService
+    private var viewModel: SelectCurrencyViewModel
     
     // MARK: Initialization
     
-    init() {
+    init(dataService: AppDataService) {
+        self.dataService = dataService
+        self.viewModel = SelectCurrencyViewModel()
     }
     
     // MARK: SelectCurrencyViewOutput methods
     
     // MARK: SelectCurrencyInteractorOutput methods
+    func viewDidLoad() {
+        self.viewModel.update(currencies: self.dataService.currencies)
+        self.view?.showCurrencies(viewModel: self.viewModel)
+    }
+
+    func currencySelected(at: IndexPath) {
+    }
 }

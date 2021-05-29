@@ -16,6 +16,8 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
 
     private var tableView: UITableView = .tableview()
 
+    private var viewModel: SelectCurrencyViewModel?
+
     private var currencys: [Currency] = [
         Currency(name: "United States Dollar", symbol: "USD", image: Asset.appLogo.image),
         Currency(name: "Euro", symbol: "EUR", image: Asset.icExchangeCoindcx.image),
@@ -84,6 +86,10 @@ final class SelectCurrencyViewController: UIViewController, SelectCurrencyViewIn
     }
 
     // MARK: SelectCurrencyViewInput
+    func showCurrencies(viewModel: SelectCurrencyViewModel) {
+        self.viewModel = viewModel
+        self.tableView.reloadData()
+    }
 }
 
 extension SelectCurrencyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -111,6 +117,7 @@ extension SelectCurrencyViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.currencySelected(at: indexPath)
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

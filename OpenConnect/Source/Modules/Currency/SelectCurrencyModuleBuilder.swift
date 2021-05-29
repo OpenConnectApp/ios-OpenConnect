@@ -12,11 +12,11 @@ import UIKit
 struct SelectCurrencyModuleBuilder: ModuleBuilder {
     
     // MARK: SelectCurrencyBuilder method
-    static func buildModule(dependency: (), payload: ()) -> SelectCurrencyViewController {
+    static func buildModule(dependency: Dependency, payload: ()) -> SelectCurrencyViewController {
         let viewController = SelectCurrencyViewController()
         let router = SelectCurrencyRouter(viewController: viewController)
         let interactor = SelectCurrencyInteractor()
-        let presenter = SelectCurrencyPresenter()
+        let presenter = SelectCurrencyPresenter(dataService: dependency.appDataService)
         
         viewController.presenter = presenter
         interactor.presenter = presenter
