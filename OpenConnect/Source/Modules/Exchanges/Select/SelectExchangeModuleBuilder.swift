@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 struct SelectExchangeModuleBuilder: ModuleBuilder {
+
+    typealias Payload = (exchanges: [Exchange], selectedIndex: Int, delegate: SelectExchangeDelegate)
     
     // MARK: SelectExchangeBuilder method
-    static func buildModule(dependency: (), payload: @escaping () -> Void) -> SelectExchangeViewController {
+    static func buildModule(dependency: (), payload: Payload) -> SelectExchangeViewController {
         let viewController = SelectExchangeViewController()
         let router = SelectExchangeRouter(viewController: viewController)
         let interactor = SelectExchangeInteractor()
-        let presenter = SelectExchangePresenter(addExchangeCompletion: payload)
+        let presenter = SelectExchangePresenter(exchanges: payload.exchanges, selectedIndex: payload.selectedIndex, delegate: payload.delegate)
         
         viewController.presenter = presenter
         interactor.presenter = presenter

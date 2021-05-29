@@ -32,12 +32,7 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
 
     private var tableViewCellHeight: CGFloat = 52
 
-    private var exchanges: [Exchange] = [
-        Exchange(title: "Binance Main Profile", image: Asset.icExchangeBinance.image),
-        Exchange(title: "Delta.Exchange BTC Profile", image: Asset.icExchangeDelta.image),
-        Exchange(title: "CoinDCX Sub Profile 2", image: Asset.icExchangeCoindcx.image),
-        Exchange(title: "Kraken Profile 1", image: Asset.icExhangeDeribit.image)
-    ]
+    private var viewModel: SelectExchangeViewModel?
 
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -55,6 +50,7 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
         setupViews()
         themeViews()
         setupConstraints()
+        presenter.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +60,7 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.contentView.roundCorners(corners: .allCorners, radius: 32)
+        self.contentView.roundCorners(corners: [.topLeft, .topRight], radius: 32)
     }
     
     // MARK: Private Methods
@@ -109,7 +105,7 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
         tableView.trailingToSuperview()
         tableView.topToBottom(of: titleLabel, offset: 20)
         tableView.bottomToTop(of: addExchangeBtn, offset: -10)
-        tableViewHeightConstraint = tableView.height(tableViewCellHeight * CGFloat(exchanges.count))
+        tableViewHeightConstraint = tableView.height(tableViewCellHeight * CGFloat(self.viewModel?.exchanges.count ?? 5))
 
         addExchangeBtn.edgesToSuperview(excluding: .top, usingSafeArea: true)
     }
@@ -148,6 +144,15 @@ final class SelectExchangeViewController: UIViewController, SelectExchangeViewIn
     func dismissScreen(completion: @escaping () -> Void) {
         self.dismiss(animated: true, completion: completion)
     }
+
+    func showExchanges(viewModel: SelectExchangeViewModel) {
+        self.viewModel = viewModel
+        let count = viewModel.exchanges.count
+        tableViewHeightConstraint?.constant = tableViewCellHeight * CGFloat(count > 5 ? 5 : count)
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
+        tableView.reloadData()
+    }
 }
 
 extension SelectExchangeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -157,12 +162,18 @@ extension SelectExchangeViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exchanges.count
+        guard let model = self.viewModel else {
+            return 0
+        }
+        return model.exchanges.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let model = self.viewModel else {
+            fatalError("ViewModel not configured")
+        }
         let cell: SelectExchangeTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(exchange: exchanges[indexPath.row], indexPath: indexPath, isSelected: indexPath.row == 0)
+        cell.configure(exchange: model.exchanges[indexPath.row], indexPath: indexPath, isSelected: indexPath.row == model.selectedIndex)
         return cell
     }
 

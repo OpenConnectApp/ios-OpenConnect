@@ -9,13 +9,20 @@
 import Foundation
 import UIKit
 
+protocol SelectExchangeDelegate: AnyObject {
+    func exchangeSelected(exchange: Exchange, selectedIndex: Int)
+    func addNewExchange()
+}
+
 // MARK: View
 protocol SelectExchangeViewInput: AnyObject {
+    func showExchanges(viewModel: SelectExchangeViewModel)
     func dismissScreen(completion: @escaping () -> Void)
 }
 
 // MARK: Presenter
 protocol SelectExchangeViewOutput: AnyObject {
+    func viewDidLoad()
     func addNewExchange()
     func exchangeSelected(at: IndexPath)
 }
