@@ -15,13 +15,27 @@ final class ProfileOverviewPresenter: ProfileOverviewViewOutput, ProfileOverview
     weak var view: ProfileOverviewViewInput?
     var router: ProfileOverviewRouterInput!
     var interactor: ProfileOverviewInteractorInput!
+
+    private var displayType: ProfileDisplayType
+    private var viewModel: ProfileOverviewViewModel
     
     // MARK: Initialization
     
-    init() {
+    init(displayType: ProfileDisplayType) {
+        self.displayType = displayType
+        viewModel = ProfileOverviewViewModel()
     }
     
     // MARK: ProfileOverviewViewOutput methods
+    func viewDidLoad() {
+        switch self.displayType {
+        case .exchange:
+            viewModel.update(assets: DataRepo.coins, sectionTitle: "Assets Overview")
+        case .asset:
+            viewModel.update(assets: DataRepo.exchanges, sectionTitle: "Exchanges Overview")
+        }
+        self.view?.displayData(viewModel: self.viewModel)
+    }
     
     // MARK: ProfileOverviewInteractorOutput methods
 }

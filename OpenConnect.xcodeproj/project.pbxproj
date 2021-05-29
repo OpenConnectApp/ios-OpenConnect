@@ -58,6 +58,7 @@
 		2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F00CF02258F9B7A0066D8B1 /* Theme.swift */; };
 		2F19A45F2642BC2300AF27F4 /* public_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45D2642BC2200AF27F4 /* public_service.pb.swift */; };
 		2F19A4602642BC2300AF27F4 /* public_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45E2642BC2300AF27F4 /* public_service.grpc.swift */; };
+		2F3FA4D3264FEE8F00D521C8 /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FA4D2264FEE8F00D521C8 /* DataRepo.swift */; };
 		2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C125B5730C00A74122 /* SearchExchangeModuleBuilder.swift */; };
 		2F6E42C825B5730C00A74122 /* SearchExchangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C225B5730C00A74122 /* SearchExchangePresenter.swift */; };
 		2F6E42C925B5730C00A74122 /* SearchExchangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E42C325B5730C00A74122 /* SearchExchangeRouter.swift */; };
@@ -234,6 +235,7 @@
 		2F00CF02258F9B7A0066D8B1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2F19A45D2642BC2200AF27F4 /* public_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.pb.swift; sourceTree = "<group>"; };
 		2F19A45E2642BC2300AF27F4 /* public_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = public_service.grpc.swift; sourceTree = "<group>"; };
+		2F3FA4D2264FEE8F00D521C8 /* DataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepo.swift; sourceTree = "<group>"; };
 		2F6E42C125B5730C00A74122 /* SearchExchangeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangeModuleBuilder.swift; sourceTree = "<group>"; };
 		2F6E42C225B5730C00A74122 /* SearchExchangePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangePresenter.swift; sourceTree = "<group>"; };
 		2F6E42C325B5730C00A74122 /* SearchExchangeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExchangeRouter.swift; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 				2F00CF00258F5CCE0066D8B1 /* Exchange.swift */,
 				2F6E436825B6AFE000A74122 /* Currency.swift */,
 				2F7D7EC62619ED510013769C /* AddExchange.swift */,
+				2F3FA4D2264FEE8F00D521C8 /* DataRepo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1262,6 +1265,7 @@
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
+				2F3FA4D3264FEE8F00D521C8 /* DataRepo.swift in Sources */,
 				2FEB7A36265165060055660B /* SettingsModuleBuilder.swift in Sources */,
 				2F6E42E425B588D400A74122 /* HomeModuleBuilder.swift in Sources */,
 				2F6E433D25B5998500A74122 /* ProfileRootPresenter.swift in Sources */,

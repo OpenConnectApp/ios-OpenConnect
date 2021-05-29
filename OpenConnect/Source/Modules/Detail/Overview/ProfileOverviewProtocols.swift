@@ -11,12 +11,12 @@ import UIKit
 
 // MARK: View
 protocol ProfileOverviewViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func displayData(viewModel: ProfileOverviewViewModel)
 }
 
 // MARK: Presenter
 protocol ProfileOverviewViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func viewDidLoad()
 }
 
 protocol ProfileOverviewModuleInput: AnyObject {
@@ -38,4 +38,16 @@ protocol ProfileOverviewInteractorInput: AnyObject {
 // MARK: Router
 protocol ProfileOverviewRouterInput: AnyObject {
     // TO-DO: Declare router methods
+}
+
+class ProfileOverviewViewModel {
+
+    private(set) var assets: [Exchange] = []
+    private(set) var sectionTitle: String = ""
+
+    func update(assets: [Exchange], sectionTitle: String) {
+        self.assets.removeAll()
+        self.assets.append(contentsOf: assets)
+        self.sectionTitle = sectionTitle
+    }
 }

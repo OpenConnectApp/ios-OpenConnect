@@ -51,7 +51,7 @@ class ExchangesInfoTVCell: UITableViewCell, Reusable {
     }
 
     private func setupConstraints() {
-        containerView.edgesToSuperview(insets: UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 5))
+        containerView.edgesToSuperview(insets: UIEdgeInsets(top: 2.5, left: 0, bottom: 2.5, right: 0))
 
         exchangeIcon.width(28)
         exchangeIcon.aspectRatio(1)
@@ -78,7 +78,7 @@ class ExchangesInfoTVCell: UITableViewCell, Reusable {
     }
 
     func configure(exchange: Exchange) {
-        exchangeIcon.image = exchange.image
+        exchangeIcon.setImage(with: exchange.imageUrl)
         exchangeNameLabel.text = exchange.title
         priceLabel.text = "INR 6.08cr"
         priceBtcLabel.text = "3.705 BTC"

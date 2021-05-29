@@ -16,18 +16,7 @@ final class AssetsViewController: UIViewController, AssetsViewInput {
     
     private var tableView: UITableView = .tableview()
 
-    private var assets: [Exchange] = [
-        Exchange(title: "Bitcoin", image: Asset.icExchangeCoindcx.image),
-        Exchange(title: "Litecoin", image: Asset.icExchangeBinance.image),
-        Exchange(title: "Deribit", image: Asset.icExhangeDeribit.image),
-        Exchange(title: "Kraken", image: Asset.icExchangeDelta.image),
-        Exchange(title: "Bitfinex", image: Asset.appLogo.image),
-        Exchange(title: "CEX.io", image: Asset.appLogo.image),
-        Exchange(title: "Coinbase", image: Asset.appLogo.image),
-        Exchange(title: "Kucoin", image: Asset.appLogo.image),
-        Exchange(title: "BitMex", image: Asset.appLogo.image),
-        Exchange(title: "BitBNS", image: Asset.appLogo.image)
-    ]
+    private var assets: [Exchange] = DataRepo.coins
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {

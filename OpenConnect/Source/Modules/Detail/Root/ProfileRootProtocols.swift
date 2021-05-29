@@ -12,6 +12,7 @@ import UIKit
 // MARK: View
 protocol ProfileRootViewInput: AnyObject {
     func setNavigationTitle(exchange: Exchange)
+    func displayTabs(viewControllers: [UIViewController], titles: [String])
 }
 
 // MARK: Presenter

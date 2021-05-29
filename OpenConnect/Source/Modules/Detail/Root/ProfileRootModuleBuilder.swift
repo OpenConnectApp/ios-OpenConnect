@@ -9,14 +9,19 @@
 import Foundation
 import UIKit
 
+enum ProfileDisplayType {
+    case exchange(exchange: Exchange)
+    case asset(exchange: Exchange)
+}
+
 struct ProfileRootModuleBuilder: ModuleBuilder {
     
     // MARK: ProfileRootBuilder method
-    static func buildModule(dependency: (), payload: Exchange) -> ProfileRootViewController {
+    static func buildModule(dependency: (), payload: ProfileDisplayType) -> ProfileRootViewController {
         let viewController = ProfileRootViewController()
         let router = ProfileRootRouter(viewController: viewController)
         let interactor = ProfileRootInteractor()
-        let presenter = ProfileRootPresenter(exchange: payload)
+        let presenter = ProfileRootPresenter(displayType: payload)
         
         viewController.presenter = presenter
         interactor.presenter = presenter

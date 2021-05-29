@@ -16,12 +16,9 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
     // MARK: Properties
     var presenter: ProfileRootViewOutput!
 
-    private var tabViewControllers: [UIViewController] = [
-        ProfileOverviewModuleBuilder.buildModule(dependency: (), payload: ()),
-        ProfileTransactionsModuleBuilder.buildModule(dependency: DependencyContainer.shared, payload: ())
-    ]
+    private var tabViewControllers: [UIViewController] = []
 
-    private var tabTitles: [String] = ["Overview", "Transactions"]
+    private var tabTitles: [String] = []
 
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -77,6 +74,14 @@ final class ProfileRootViewController: TabmanViewController, ProfileRootViewInpu
     // MARK: ProfileRootViewInput
     func setNavigationTitle(exchange: Exchange) {
         setNavigation(barType: .exchange(exchange: exchange))
+    }
+
+    func displayTabs(viewControllers: [UIViewController], titles: [String]) {
+        tabViewControllers.removeAll()
+        tabViewControllers.append(contentsOf: viewControllers)
+        self.tabTitles.removeAll()
+        self.tabTitles.append(contentsOf: titles)
+        self.reloadData()
     }
 }
 

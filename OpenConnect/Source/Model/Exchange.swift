@@ -27,4 +27,12 @@ struct Exchange {
         image = nil
         imageUrl = data.iconURL
     }
+
+    init(title: String, iconUrl: String) {
+        id = UUID().uuidString
+        self.title = title
+        enabled = true
+        image = nil
+        imageUrl = iconUrl
+    }
 }

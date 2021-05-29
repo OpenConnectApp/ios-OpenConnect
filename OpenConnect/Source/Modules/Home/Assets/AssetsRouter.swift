@@ -21,7 +21,7 @@ final class AssetsRouter: AssetsRouterInput {
     
     // MARK: AssetsRouterInput methods
     func showAssetDetail(exchange: Exchange) {
-        let vc = ProfileRootModuleBuilder.buildModule(dependency: (), payload: exchange)
+        let vc = ProfileRootModuleBuilder.buildModule(dependency: (), payload: .asset(exchange: exchange))
         self.viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

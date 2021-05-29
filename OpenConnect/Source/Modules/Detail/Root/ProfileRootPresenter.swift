@@ -16,17 +16,24 @@ final class ProfileRootPresenter: ProfileRootViewOutput, ProfileRootModuleInput,
     var router: ProfileRootRouterInput!
     var interactor: ProfileRootInteractorInput!
 
-    private var selectedExchange: Exchange
+    private var displayType: ProfileDisplayType
     
     // MARK: Initialization
     
-    init(exchange: Exchange) {
-        selectedExchange = exchange
+    init(displayType: ProfileDisplayType) {
+        self.displayType = displayType
     }
     
     // MARK: ProfileRootViewOutput methods
     func viewDidLoad() {
-        self.view?.setNavigationTitle(exchange: selectedExchange)
+        switch self.displayType {
+        case .exchange(let exchange), .asset(let exchange):
+            self.view?.setNavigationTitle(exchange: exchange)
+        }
+        self.view?.displayTabs(viewControllers: [
+            ProfileOverviewModuleBuilder.buildModule(dependency: (), payload: self.displayType),
+            ProfileTransactionsModuleBuilder.buildModule(dependency: DependencyContainer.shared, payload: ())
+        ], titles: ["Overview", "Transactions"])
     }
     
     // MARK: ProfileRootInteractorOutput methods

@@ -12,11 +12,11 @@ import UIKit
 struct ProfileOverviewModuleBuilder: ModuleBuilder {
     
     // MARK: ProfileOverviewBuilder method
-    static func buildModule(dependency: (), payload: ()) -> ProfileOverviewViewController {
+    static func buildModule(dependency: (), payload: ProfileDisplayType) -> ProfileOverviewViewController {
         let viewController = ProfileOverviewViewController()
         let router = ProfileOverviewRouter(viewController: viewController)
         let interactor = ProfileOverviewInteractor()
-        let presenter = ProfileOverviewPresenter()
+        let presenter = ProfileOverviewPresenter(displayType: payload)
         
         viewController.presenter = presenter
         interactor.presenter = presenter

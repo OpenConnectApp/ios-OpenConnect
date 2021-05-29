@@ -16,14 +16,7 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
 
     private var tableView: UITableView = .tableview()
 
-    private var exchanges: [Exchange] = [
-        Exchange(title: "Binance Main Profile", image: Asset.icExchangeCoindcx.image),
-        Exchange(title: "Delta.Exchange BTC", image: Asset.icExchangeBinance.image),
-        Exchange(title: "Coin DCX Sub Profile", image: Asset.icExhangeDeribit.image),
-        Exchange(title: "Kraken", image: Asset.icExchangeDelta.image),
-        Exchange(title: "Bitfinex", image: Asset.appLogo.image),
-        Exchange(title: "CEX.io", image: Asset.appLogo.image)
-    ]
+    private var exchanges: [Exchange] = DataRepo.exchanges
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {

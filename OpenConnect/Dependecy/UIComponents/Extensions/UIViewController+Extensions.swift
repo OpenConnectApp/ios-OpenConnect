@@ -147,7 +147,7 @@ private class NavigationTitleView: UIView {
 
     func configure(title: String, imageUrl: String?) {
         titleLabel.text = title
-        icon.kf.setImage(with: URL(string: imageUrl ?? ""))
+        icon.setImage(with: imageUrl)
     }
 
     func configure(title: String, image: UIImage?) {
