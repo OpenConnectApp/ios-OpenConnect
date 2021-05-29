@@ -20,6 +20,7 @@ public enum Strings {
         public static let home = "Home"
         public static let selectExchange = "Select your Exchange"
         public static let selectCurrency = "Select Currency"
+        public static let settings = "Settings"
     }
 
     public enum Button {

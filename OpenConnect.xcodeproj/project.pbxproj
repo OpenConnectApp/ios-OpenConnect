@@ -135,6 +135,9 @@
 		2F6E437725B721AC00A74122 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E437625B721AC00A74122 /* ChartType.swift */; };
 		2F7D7EC52619DE9F0013769C /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D7EC42619DE9F0013769C /* AppDataService.swift */; };
 		2F7D7EC72619ED510013769C /* AddExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D7EC62619ED510013769C /* AddExchange.swift */; };
+		2F9034F726610A4700D21B4C /* SettingMenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9034F626610A4700D21B4C /* SettingMenuTVCell.swift */; };
+		2F9034F926610A6800D21B4C /* SettingMenuFooterTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9034F826610A6800D21B4C /* SettingMenuFooterTVCell.swift */; };
+		2F9034FB26610A8300D21B4C /* SettingMenuHeaderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9034FA26610A8300D21B4C /* SettingMenuHeaderTVCell.swift */; };
 		2FACEA5F2619503F00783787 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA5E2619503F00783787 /* Dependency.swift */; };
 		2FACEA612619505600783787 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA602619505600783787 /* DependencyContainer.swift */; };
 		2FACEA632619508700783787 /* StartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACEA622619508700783787 /* StartupService.swift */; };
@@ -144,6 +147,12 @@
 		2FEAB8DF26109BD7006E6E36 /* auth_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */; };
 		2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */; };
 		2FEAB8E226109BD7006E6E36 /* private_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */; };
+		2FEB7A36265165060055660B /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A30265165060055660B /* SettingsModuleBuilder.swift */; };
+		2FEB7A37265165060055660B /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A31265165060055660B /* SettingsPresenter.swift */; };
+		2FEB7A38265165060055660B /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A32265165060055660B /* SettingsRouter.swift */; };
+		2FEB7A39265165060055660B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A33265165060055660B /* SettingsViewController.swift */; };
+		2FEB7A3A265165060055660B /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A34265165060055660B /* SettingsProtocols.swift */; };
+		2FEB7A3B265165060055660B /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB7A35265165060055660B /* SettingsInteractor.swift */; };
 		928CC2318126CC535E2E03A7 /* Pods_OpenConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */; };
 		97463F6453E975B37902A5DB /* Pods_OpenConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E9CE00B775F69D8DDF428 /* Pods_OpenConnect.framework */; };
 /* End PBXBuildFile section */
@@ -302,6 +311,9 @@
 		2F6E437625B721AC00A74122 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
 		2F7D7EC42619DE9F0013769C /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
 		2F7D7EC62619ED510013769C /* AddExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExchange.swift; sourceTree = "<group>"; };
+		2F9034F626610A4700D21B4C /* SettingMenuTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenuTVCell.swift; sourceTree = "<group>"; };
+		2F9034F826610A6800D21B4C /* SettingMenuFooterTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenuFooterTVCell.swift; sourceTree = "<group>"; };
+		2F9034FA26610A8300D21B4C /* SettingMenuHeaderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenuHeaderTVCell.swift; sourceTree = "<group>"; };
 		2FACEA5E2619503F00783787 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		2FACEA602619505600783787 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		2FACEA622619508700783787 /* StartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupService.swift; sourceTree = "<group>"; };
@@ -311,6 +323,12 @@
 		2FEAB8D926109BD6006E6E36 /* auth_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_service.grpc.swift; sourceTree = "<group>"; };
 		2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.pb.swift; sourceTree = "<group>"; };
 		2FEAB8DC26109BD7006E6E36 /* private_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = private_service.grpc.swift; sourceTree = "<group>"; };
+		2FEB7A30265165060055660B /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
+		2FEB7A31265165060055660B /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		2FEB7A32265165060055660B /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		2FEB7A33265165060055660B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2FEB7A34265165060055660B /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		2FEB7A35265165060055660B /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		53467CAF6B3BBBF6C650FDD3 /* Pods_OpenConnect_OpenConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnect_OpenConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD791A28A2A048FDCD03E6E /* Pods-OpenConnect-OpenConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenConnect-OpenConnectUITests/Pods-OpenConnect-OpenConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55CA9A1DD41C76929885543 /* Pods_OpenConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -491,6 +509,7 @@
 		2F00CEA5258F27190066D8B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2FEB7A2F265164E80055660B /* Setting */,
 				2F6E435825B6AE2000A74122 /* Currency */,
 				2F6E434225B5A4D600A74122 /* AddExchange */,
 				2F6E430B25B594E200A74122 /* Detail */,
@@ -863,6 +882,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2F9034F526610A3200D21B4C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F9034F626610A4700D21B4C /* SettingMenuTVCell.swift */,
+				2F9034F826610A6800D21B4C /* SettingMenuFooterTVCell.swift */,
+				2F9034FA26610A8300D21B4C /* SettingMenuHeaderTVCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2FACEA672619756B00783787 /* GRPC */ = {
 			isa = PBXGroup;
 			children = (
@@ -884,6 +913,20 @@
 				2FEAB8DB26109BD6006E6E36 /* private_service.pb.swift */,
 			);
 			path = Proto;
+			sourceTree = "<group>";
+		};
+		2FEB7A2F265164E80055660B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2F9034F526610A3200D21B4C /* Cell */,
+				2FEB7A30265165060055660B /* SettingsModuleBuilder.swift */,
+				2FEB7A31265165060055660B /* SettingsPresenter.swift */,
+				2FEB7A32265165060055660B /* SettingsRouter.swift */,
+				2FEB7A33265165060055660B /* SettingsViewController.swift */,
+				2FEB7A34265165060055660B /* SettingsProtocols.swift */,
+				2FEB7A35265165060055660B /* SettingsInteractor.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		D2C241BB24191C8091686A65 /* Frameworks */ = {
@@ -1219,6 +1262,7 @@
 				2F6E42C725B5730C00A74122 /* SearchExchangeModuleBuilder.swift in Sources */,
 				2FEAB8E126109BD7006E6E36 /* private_service.pb.swift in Sources */,
 				2F00CEC9258F2E720066D8B1 /* Reusable+UITableView.swift in Sources */,
+				2FEB7A36265165060055660B /* SettingsModuleBuilder.swift in Sources */,
 				2F6E42E425B588D400A74122 /* HomeModuleBuilder.swift in Sources */,
 				2F6E433D25B5998500A74122 /* ProfileRootPresenter.swift in Sources */,
 				2F00CEEC258F59B00066D8B1 /* Utils+UIColor+Extensions.swift in Sources */,
@@ -1234,6 +1278,7 @@
 				2F6E436725B6AE9A00A74122 /* CurrencyTVCell.swift in Sources */,
 				2F00CEE4258F58D40066D8B1 /* Collection+Extensions.swift in Sources */,
 				2F00CEE8258F59420066D8B1 /* String+Extensions.swift in Sources */,
+				2F9034F726610A4700D21B4C /* SettingMenuTVCell.swift in Sources */,
 				2F6E436425B6AE3A00A74122 /* SelectCurrencyInteractor.swift in Sources */,
 				2F6E435125B5BA4600A74122 /* AddExchangeTextFieldView.swift in Sources */,
 				2F19A4602642BC2300AF27F4 /* public_service.grpc.swift in Sources */,
@@ -1246,15 +1291,19 @@
 				2F00CEF8258F5BCB0066D8B1 /* SelectExchangePresenter.swift in Sources */,
 				2F6E436125B6AE3A00A74122 /* SelectCurrencyRouter.swift in Sources */,
 				2F00CF03258F9B7A0066D8B1 /* Theme.swift in Sources */,
+				2FEB7A39265165060055660B /* SettingsViewController.swift in Sources */,
 				2F6E434925B5A4ED00A74122 /* AddExchangeModuleBuilder.swift in Sources */,
+				2FEB7A38265165060055660B /* SettingsRouter.swift in Sources */,
 				2F6E42FB25B58A8900A74122 /* SectionHeaderView.swift in Sources */,
 				2F00CF01258F5CCE0066D8B1 /* Exchange.swift in Sources */,
 				2F00CED6258F56460066D8B1 /* UILabel+Extensions.swift in Sources */,
 				2F6E42D925B5884B00A74122 /* RootRouter.swift in Sources */,
+				2F9034FB26610A8300D21B4C /* SettingMenuHeaderTVCell.swift in Sources */,
 				2F6E42CA25B5730C00A74122 /* SearchExchangeViewController.swift in Sources */,
 				2F6E431525B5956A00A74122 /* ProfileOverviewRouter.swift in Sources */,
 				2F00CEDC258F57890066D8B1 /* UIButton+Extensions.swift in Sources */,
 				2F6E42F925B58A5900A74122 /* HomeExchangesHeaderTVCell.swift in Sources */,
+				2F9034F926610A6800D21B4C /* SettingMenuFooterTVCell.swift in Sources */,
 				2F00CED2258F56060066D8B1 /* UITableView+Extensions.swift in Sources */,
 				2F6E431425B5956A00A74122 /* ProfileOverviewPresenter.swift in Sources */,
 				2FACEA632619508700783787 /* StartupService.swift in Sources */,
@@ -1263,6 +1312,7 @@
 				2F00CEFF258F5CB10066D8B1 /* SelectExchangeTVCell.swift in Sources */,
 				2F00CED8258F56650066D8B1 /* UIImageView+Extensions.swift in Sources */,
 				2F6E42E925B588D400A74122 /* HomeInteractor.swift in Sources */,
+				2FEB7A3B265165060055660B /* SettingsInteractor.swift in Sources */,
 				2F6E431625B5956A00A74122 /* ProfileOverviewViewController.swift in Sources */,
 				2F6E430825B58C3300A74122 /* AssetsViewController.swift in Sources */,
 				2F6E435725B5E09B00A74122 /* TransactionFilterCVCell.swift in Sources */,
@@ -1287,12 +1337,14 @@
 				2F6E42E525B588D400A74122 /* HomePresenter.swift in Sources */,
 				2F6E433C25B5998500A74122 /* ProfileRootModuleBuilder.swift in Sources */,
 				2F6E432425B596E400A74122 /* ProfileTransactionsProtocols.swift in Sources */,
+				2FEB7A37265165060055660B /* SettingsPresenter.swift in Sources */,
 				2F6E436925B6AFE000A74122 /* Currency.swift in Sources */,
 				2F00CEDA258F56840066D8B1 /* UICollectionView+Extensions.swift in Sources */,
 				2F00CEC2258F2DB40066D8B1 /* Constants.swift in Sources */,
 				2F00CE62258E25020066D8B1 /* AppDelegate.swift in Sources */,
 				2F00CEFA258F5BCB0066D8B1 /* SelectExchangeViewController.swift in Sources */,
 				2F6E42C825B5730C00A74122 /* SearchExchangePresenter.swift in Sources */,
+				2FEB7A3A265165060055660B /* SettingsProtocols.swift in Sources */,
 				2F6E437225B703A600A74122 /* OCLineChartView.swift in Sources */,
 				2F00CEBF258F2D360066D8B1 /* BaseViewInput.swift in Sources */,
 				2F6E436225B6AE3A00A74122 /* SelectCurrencyViewController.swift in Sources */,
