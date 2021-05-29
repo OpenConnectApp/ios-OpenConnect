@@ -79,7 +79,7 @@ extension UIViewController {
     private func getNavBarTitleView(barType: UINavBar) -> UIView? {
         switch barType {
         case .openconnect:
-            return getNavView(title: "OpenConnect", image: Asset.appLogo.image)
+            return getNavView(title: Strings.NavigationTitle.appName, image: Asset.appLogo.image)
 
         case .exchange(let exchange):
             return getNavView(title: exchange.title, imageUrl: exchange.imageUrl)

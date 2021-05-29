@@ -26,7 +26,7 @@ final class RootViewController: UITabBarController, RootViewInput {
     // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavTitle(title: "OpenConnect")
+        setNavTitle(title: Strings.NavigationTitle.appName)
         setupViews()
         themeViews()
         setupConstraints()

@@ -17,6 +17,7 @@ import UIKit
 public enum Strings {
 
     public enum NavigationTitle {
+        public static let appName = "OpenConnect"
         public static let home = "Home"
         public static let selectExchange = "Select your Exchange"
         public static let selectCurrency = "Select Currency"
