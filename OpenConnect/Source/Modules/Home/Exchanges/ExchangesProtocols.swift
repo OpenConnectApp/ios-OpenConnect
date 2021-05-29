@@ -11,12 +11,14 @@ import UIKit
 
 // MARK: View
 protocol ExchangesViewInput: AnyObject {
-    // TO-DO: Declare ViewInput methods
+    func showExchanges(viewModel: ExchangesViewModel)
 }
 
 // MARK: Presenter
 protocol ExchangesViewOutput: AnyObject {
-    func exchangeSelected(at: Exchange)
+    func viewDidLoad()
+    func viewWillAppear()
+    func exchangeSelected(at: IndexPath)
 }
 
 protocol ExchangesModuleInput: AnyObject {
@@ -38,4 +40,14 @@ protocol ExchangesInteractorInput: AnyObject {
 // MARK: Router
 protocol ExchangesRouterInput: AnyObject {
     func showExchangeDetail(exchange: Exchange)
+}
+
+class ExchangesViewModel {
+
+    private(set) var exchanges: [Exchange] = []
+    
+    func update(exchanges: [Exchange]) {
+        self.exchanges.removeAll()
+        self.exchanges.append(contentsOf: exchanges)
+    }
 }

@@ -16,7 +16,7 @@ protocol RootViewInput: AnyObject {
 
 // MARK: Presenter
 protocol RootViewOutput: AnyObject {
-    // TO-DO: Declare presenter methods
+    func switchExchangeSelected()
 }
 
 protocol RootModuleInput: AnyObject {
@@ -37,5 +37,7 @@ protocol RootInteractorInput: AnyObject {
 
 // MARK: Router
 protocol RootRouterInput: AnyObject {
-    // TO-DO: Declare router methods
+    func showSwitchExchange(delegate: SelectExchangeDelegate)
+    func showAddNewExchange()
+    func showExchangeOverview(exchange: Exchange, selectedIndex: Int)
 }

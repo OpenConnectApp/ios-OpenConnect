@@ -15,15 +15,28 @@ final class ExchangesPresenter: ExchangesViewOutput, ExchangesModuleInput, Excha
     weak var view: ExchangesViewInput?
     var router: ExchangesRouterInput!
     var interactor: ExchangesInteractorInput!
+
+    private var viewModel: ExchangesViewModel
     
     // MARK: Initialization
     
     init() {
+        viewModel = ExchangesViewModel()
     }
     
     // MARK: ExchangesViewOutput methods
-    func exchangeSelected(at: Exchange) {
-        self.router.showExchangeDetail(exchange: at)
+    func viewDidLoad() {
+        viewModel.update(exchanges: DataRepo.exchanges)
+        self.view?.showExchanges(viewModel: self.viewModel)
+    }
+
+    func viewWillAppear() {
+        AppDataServiceImpl.currentSelectedExchange = -1
+    }
+
+    func exchangeSelected(at: IndexPath) {
+        AppDataServiceImpl.currentSelectedExchange = at.row
+        self.router.showExchangeDetail(exchange: viewModel.exchanges[at.row])
     }
     
     // MARK: ExchangesInteractorOutput methods

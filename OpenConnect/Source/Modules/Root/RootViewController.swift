@@ -54,9 +54,7 @@ final class RootViewController: UITabBarController, RootViewInput {
             selectedImage: Asset.icTabSwitch.image.withRenderingMode(.alwaysOriginal)
         )
 
-        let settingVC = UIViewController()
-        settingVC.view.backgroundColor = .background
-        settingVC.navigationItem.title = "Settings"
+        let settingVC = SettingsModuleBuilder.buildModule(dependency: (), payload: ())
         let settingNC = UINavigationController(rootViewController: settingVC)
         settingNC.tabBarItem = UITabBarItem(
             title: nil,
@@ -66,6 +64,12 @@ final class RootViewController: UITabBarController, RootViewInput {
 
         viewControllers = [homeNC, switchNC, settingNC]
         selectedIndex = 0
+        self.delegate = self
+
+        for tabBarItem in tabBar.items! {
+            tabBarItem.title = ""
+            tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
+        }
     }
     
     //Apply Theming for views here
@@ -85,6 +89,11 @@ final class RootViewController: UITabBarController, RootViewInput {
 extension RootViewController: UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController.isKind(of: UINavigationController.self),
+           ((viewController as? UINavigationController)?.topViewController is SwitchVC) {
+            self.presenter.switchExchangeSelected()
+            return false
+        }
         return true
     }
 
@@ -93,30 +102,4 @@ extension RootViewController: UITabBarControllerDelegate {
 }
 
 class SwitchVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + DispatchTimeInterval.seconds(1)) {
-            self.displaySelectExchange()
-        }
-    }
-
-    private func displaySelectExchange() {
-        let vc = SelectExchangeModuleBuilder.buildModule(dependency: ()) { [weak self] in
-            self?.presentSearchExchange()
-        }
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
-    }
-
-    private func presentSearchExchange() {
-        let vc = SearchExchangeModuleBuilder.buildModule(dependency: DependencyContainer.shared, payload: ())
-        let nc = UINavigationController(rootViewController: vc)
-        nc.modalPresentationStyle = .overFullScreen
-        self.present(nc, animated: true, completion: nil)
-    }
 }

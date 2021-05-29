@@ -16,7 +16,7 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
 
     private var tableView: UITableView = .tableview()
 
-    private var exchanges: [Exchange] = DataRepo.exchanges
+    private var viewModel: ExchangesViewModel?
     
     // MARK: Initialization
     override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
@@ -34,6 +34,12 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
         setupViews()
         themeViews()
         setupConstraints()
+        self.presenter.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.presenter.viewWillAppear()
     }
     
     // MARK: Private Methods
@@ -63,6 +69,10 @@ final class ExchangesViewController: UIViewController, ExchangesViewInput {
     }
     
     // MARK: ExchangesViewInput
+    func showExchanges(viewModel: ExchangesViewModel) {
+        self.viewModel = viewModel
+        tableView.reloadData()
+    }
 }
 
 extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -72,20 +82,26 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let model = self.viewModel else {
+            return 0
+        }
         if section == 0 {
             return 1
         }
-        return exchanges.count
+        return model.exchanges.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let model = self.viewModel else {
+            fatalError("ViewModel not configure")
+        }
         if indexPath.section == 0 {
             let cell: HomeExchangesHeaderTVCell = tableView.dequeueReusableCell(for: indexPath)
             cell.configure(chartType: .pie)
             return cell
         }
         let cell: ExchangesInfoTVCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(exchange: exchanges[indexPath.row])
+        cell.configure(exchange: model.exchanges[indexPath.row])
         return cell
     }
 
@@ -109,6 +125,6 @@ extension ExchangesViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return
         }
-        self.presenter.exchangeSelected(at: exchanges[indexPath.row])
+        self.presenter.exchangeSelected(at: indexPath)
     }
 }

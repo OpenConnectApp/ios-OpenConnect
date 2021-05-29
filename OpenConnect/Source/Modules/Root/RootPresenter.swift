@@ -22,6 +22,20 @@ final class RootPresenter: RootViewOutput, RootModuleInput, RootInteractorOutput
     }
     
     // MARK: RootViewOutput methods
+    func switchExchangeSelected() {
+        self.router.showSwitchExchange(delegate: self)
+    }
     
     // MARK: RootInteractorOutput methods
+}
+
+extension RootPresenter: SelectExchangeDelegate {
+
+    func addNewExchange() {
+        self.router.showAddNewExchange()
+    }
+    
+    func exchangeSelected(exchange: Exchange, selectedIndex: Int) {
+        self.router.showExchangeOverview(exchange: exchange, selectedIndex: selectedIndex)
+    }
 }

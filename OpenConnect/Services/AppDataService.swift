@@ -17,6 +17,8 @@ protocol AppDataService: AnyObject {
 
 final class AppDataServiceImpl: AppDataService {
 
+    public static var currentSelectedExchange: Int = -1
+
     private(set) var exchanges: [Exchange] = []
 
     private(set) var currencies: [Currency] = []
