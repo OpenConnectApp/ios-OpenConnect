@@ -11,6 +11,16 @@ class DataRepo {
 
     private init() {}
 
+    public static var newExchanges: [Exchange] = {
+        return [
+            Exchange(title: "Binance", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/270.png"),
+            Exchange(title: "Coinbase", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/89.png"),
+            Exchange(title: "Kraken", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/24.png"),
+            Exchange(title: "CoinDCX", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/949.png"),
+            Exchange(title: "Delta Exchange", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/705.png")
+        ]
+    }()
+
     public static var exchanges: [Exchange] = {
         return [
             Exchange(title: "Binance Main Profile", iconUrl: "https://s2.coinmarketcap.com/static/img/exchanges/64x64/270.png"),

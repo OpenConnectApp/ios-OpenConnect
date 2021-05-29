@@ -28,7 +28,7 @@ final class SearchExchangePresenter: SearchExchangeViewOutput, SearchExchangeMod
     
     // MARK: SearchExchangeViewOutput methods
     func viewDidLoad() {
-        self.viewModel.update(exchanges: self.dataService.exchanges)
+        self.viewModel.update(exchanges: DataRepo.newExchanges) // self.dataService.exchanges
         self.view?.showExchanges(viewModel: self.viewModel)
     }
 
