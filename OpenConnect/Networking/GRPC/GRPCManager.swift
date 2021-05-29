@@ -192,7 +192,7 @@ extension GRPCManager {
 
     private func currencies<T>(completion: @escaping (Result<T, Error>) -> Void) {
         let request: PublicDataService_ListCurrenciesRequest = .with { (request) in
-            request.sortBy = .name
+            request.sortBy = .currencyID
             request.enabled = true
         }
         let call = publicClient.listCurrencies(request)
