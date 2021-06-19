@@ -46,8 +46,8 @@ final class AddExchangePresenter: AddExchangeViewOutput, AddExchangeModuleInput,
     }
 
     private func addExchange(exchange: AddExchange) {
-        self.view?.showSpinner()
-        self.interactor.addExchange(exchange: exchange)
+//        self.view?.showSpinner()
+//        self.interactor.addExchange(exchange: exchange)
     }
     
     // MARK: AddExchangeInteractorOutput methods

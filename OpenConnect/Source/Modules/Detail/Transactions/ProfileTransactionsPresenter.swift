@@ -31,8 +31,8 @@ final class ProfileTransactionsPresenter: ProfileTransactionsViewOutput, Profile
     }
 
     private func getTransactions() {
-        self.view?.showSpinner()
-        interactor.loadTransactions()
+//        self.view?.showSpinner()
+//        interactor.loadTransactions()
     }
     
     // MARK: ProfileTransactionsInteractorOutput methods
